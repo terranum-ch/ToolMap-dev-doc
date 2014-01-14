@@ -3,7 +3,7 @@
   <property name="latex.dir"     value="../latex"/>
   <property name="out.dir"     value="../../bat"/>
 
-  <target name="run" depends="clear_cache">
+  <target name="run" depends="create_tex_from_md">
     <echo message="Creating PDF"/>
     <exec executable="texi2pdf" dir="${latex.dir}">
       <arg line="--quiet"/>
@@ -15,14 +15,24 @@
   </target>
 
 
-  <target name="clear_cache">
-    <echo message="Removing tmp directory" />
+  <target name="create_tex_from_md">
+    <echo message="Creating tex file from Markdown" />
+    <exec executable="multimarkdown" dir="../texts/">
+      <arg line="-t latex -b "/>
+      <arg value="resource.markdown"/>
+    </exec>
+
   </target>
 
   <target name="clear">
     <echo message="Cleaning temporary PDF files"/>
     <delete>
       <fileset dir="${latex.dir}" excludes="**/*.tex,**/*.sty"/>
+    </delete>
+
+    <echo message="Cleaning temporary TEX files"/>
+    <delete>
+      <fileset dir="../texts" includes="**/*.tex"/>
     </delete>
   </target>
 
