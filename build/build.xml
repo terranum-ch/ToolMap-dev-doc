@@ -1,0 +1,31 @@
+<project default="run">
+
+  <property name="latex.dir"     value="../latex"/>
+  <property name="out.dir"     value="../../bat"/>
+
+  <target name="run" depends="clear_cache">
+    <echo message="Creating PDF"/>
+    <exec executable="texi2pdf" dir="${latex.dir}">
+      <arg line="--quiet"/>
+      <arg line="toolmap_dev_documentation.tex"/>
+    </exec>
+
+    <echo message="Copying PDF"/>
+    <copy file="${latex.dir}/toolmap_dev_documentation.pdf" tofile="${out.dir}/toolmap_dev_documentation.pdf"/>
+  </target>
+
+
+  <target name="clear_cache">
+    <echo message="Removing tmp directory" />
+  </target>
+
+  <target name="clear">
+    <echo message="Cleaning temporary PDF files"/>
+    <delete>
+      <fileset dir="${latex.dir}" excludes="**/*.tex,**/*.sty"/>
+    </delete>
+  </target>
+
+
+</project>
+

@@ -1,0 +1,111 @@
+\ProvidesPackage{crealp-report}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{textcomp} % many text symbols
+%\usepackage[official]{eurosym} 
+\usepackage{lmodern}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref} 
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png} 
+
+
+%%%% debut macro %%%%
+\newenvironment{changemargin}[2]{\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{0pt}%
+\setlength{\rightmargin}{0pt}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{0pt plus 1pt}%
+\addtolength{\leftmargin}{#1}%
+\addtolength{\rightmargin}{#2}%
+}\item }{\end{list}}
+%%%% fin macro %%%%
+
+\usepackage{listings}
+
+%% nouvelle commande pour les listings %%
+\newcommand{\crealplisting} [1]{
+\lstset{
+  language=#1,
+  breaklines=true
+  basicstyle=\ttfamily
+  showstringspaces=false,
+  columns=fullflexible,
+  frame=leftline,
+  captionpos=b
+}
+}
+
+
+%% nouvelle commande pour créer le titre
+\newcommand {\crealptitle} [4] {
+	\begin{titlepage}
+	\begin{changemargin}{-1.5cm}{-1.5cm}
+		%%%%%% EN TETE %%%%%
+		\begin{center}
+		\begin{tabular}{|p{2.3cm}|p{13cm}|}
+		\hline
+		% colonne 1
+		\begin{center}
+		\includegraphics [width=65 pt]{../img/logo_crealp_seul.png}
+		\end{center}
+		& 
+		% colonne 2
+		\begin{center}
+		\textsc{ Centre de Recherche sur l'Environnement Alpin}\\
+		\textsc{\small Zentrum für Alpine Umweltforschung}\\
+		\scriptsize Industrie 45 - CH 1951 SION +4127 324 03 80 crealp@crealp.vs.ch
+		\end{center}
+		\\ \hline
+		\end{tabular}
+		\end{center}
+		%%%%%% FIN DE L EN TETE %%%%%%
+
+		\vspace{4cm}
+
+		%%%%%%%%%%%%%%%%%%%% TITRE %%%%%%%%%%%%%%%%%%
+		\begin{center}
+		\begin{tabular}{|p{13cm}|}	
+		\hline
+		\begin{center}
+			\bfseries {\Huge {\sffamily #1}}
+		\end{center}
+		\\ \hline
+		\end {tabular}
+		\end{center}
+		%%%%%%%%%%%%%%%%%%%% FIN TITRE %%%%%%%%%%%%%
+
+		\vspace{2cm}
+
+		%%%%%%%%%%%%%%%%%%%  DESCRIPTION %%%%%%%%%%%%%
+		\begin{center}
+		\begin{tabular}{p{14cm}}	
+		\hline
+		\begin{center}
+			\bfseries {\LARGE {\sffamily #2}}
+		\end{center}
+		\\ \hline
+		\end {tabular}
+		\end{center}
+		%%%%%%%%%%%%%%%%%  FIN DESCRIPTION %%%%%%%%%%%%
+
+		\vspace{6cm}
+
+		%%%%%%%%%%%%%%%%%%%  BAS DE PAGE - DATE %%%%%%%%%%%%%
+		\begin{center}
+			Version du \today 
+
+			#3 
+
+			\href{mailto:#4}{\url{#4}}
+		\end{center}
+		%%%%%%%%%%%%%%%%%%%  FIN DE BAS DE PAGE %%%%%%%%%%%%%
+	\end{changemargin}		
+	\end{titlepage}
+}
