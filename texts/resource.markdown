@@ -66,3 +66,16 @@ Lors de chaque installation de ToolMap (sur Windows), une version de ToolBasView
 
 [toolbaseview_ui]: ../img/toolbasview.png
 ![Interface utilisateur de ToolBasView] [toolbaseview_ui]
+
+### Windows
+
+#### Visual Studio Express
+Téléchargeable depuis l'adresse : <http://www.visualstudio.com/products/visual-studio-express-vs>.
+
+#### NSIS
+<http://nsis.sourceforge.net/Main_Page> 
+
+#### Dependency Walker
+<http://www.dependencywalker.com/> Scanne les executables et DLL et établit la liste de dépendances. Permet de s'assurer que les programmes proposés ne dépendent pas d'une librairie exotique.
+
+
