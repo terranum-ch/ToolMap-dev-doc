@@ -49,7 +49,7 @@ Nous avons choisi d'utiliser le plus possible l'environnement de développement 
 ### Outils communs
 
 #### CMake
-Le logiciel CMake téléchargeable gratuitement à l'adresse : <http://www.cmake.org> permet de créer, depuis un fichier unique, des projets pour les différents environnements de développements. Après installation, la commande `cmake --version` doit fonctionner et retourner le numéro de version installée.
+Le logiciel CMake téléchargeable gratuitement à l'adresse : <http://www.cmake.org> permet de créer, depuis un fichier unique, des projets pour les différents environnements de développements. Après installation, la commande `cmake --version` doit fonctionner et retourner le numéro de version installée. la commande `cmake --help` permet de lister les différents types de projets que CMake peut générer.
 
 #### Python
 Python est utilisé pour faciliter le développement de ToolMap. Des scripts ont été développé  (dans le répertoire trunk/build/build-script) pour automatiser la création d'executable de ToolMap. Il est nécessaire d'installer une version 3.X de Python. Si d'autres version de Python sont présentes sur le système ce n'est pas un problème par contre il faudra lancer les scripts avec la version 3 exclusivement. 
@@ -70,12 +70,22 @@ Lors de chaque installation de ToolMap (sur Windows), une version de ToolBasView
 ### Windows
 
 #### Visual Studio Express
-Téléchargeable depuis l'adresse : <http://www.visualstudio.com/products/visual-studio-express-vs>.
+Téléchargeable depuis l'adresse : <http://www.visualstudio.com/products/visual-studio-express-vs>. Il s'agit du compilateur gratuit de Microsoft. La dernière version utilisée est Visual Studio 2010. Une version plus à jour devrait également fonctionner. Il faut cepandant s'assurer que cmake peut générer des projets pour la version choisie (voir la partie concernant [CMake] [cmake]).
 
 #### NSIS
-<http://nsis.sourceforge.net/Main_Page> 
+NSIS permet de créer des programmes d'installation pour Windows depuis des fichiers script. Ces scripts peuvent être produits manuellement ou de manière automatique par CMake (cette option est mise en oeuvre pour ToolBasView). <http://nsis.sourceforge.net/Main_Page> 
 
 #### Dependency Walker
-<http://www.dependencywalker.com/> Scanne les executables et DLL et établit la liste de dépendances. Permet de s'assurer que les programmes proposés ne dépendent pas d'une librairie exotique.
+<http://www.dependencywalker.com/>  Permet de scanner les executables et librairies (DLL) afin d'établir la liste des dépendances. Cela permet de s'assurer que les programmes proposés ne dépendent pas d'une librairie exotique.
+
+### OSX
+
+#### Xcode
+Xcode est l'environnement de développement gratuit proposé par Apple. Il peut être téléchargé à l'adresse : ???. <!-- TODO Add address here --> Une fois Xcode installé et afin de s'assurer du bon fonctionnement des scripts, il est également nécessaire d'installer les outils permettant de travailler en ligne de commande. Cette opération peut être effectuée depuis l'onglet *Download* de la fenêtre Préférence de Xcode.
+
+### Linux
+
+#### Code::Blocks
+Code::Blocks est un IDE développé avec la librairie wxWidgets. Il est téléchargeable à l'adresse : ??? <!-- TODO Add adress -->. Il peut également être installé avec la commande : `sudo apt-get install codeblocks`
 
 
