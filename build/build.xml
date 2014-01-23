@@ -16,10 +16,14 @@
 
 
   <target name="create_tex_from_md">
+    <fileset dir="../texts" id="markdown.fs">
+       <include name="*.markdown"/>
+    </fileset>
+    <pathconvert refid="markdown.fs" pathsep=" " property="all.markdown.files"/>
+
     <echo message="Creating tex file from Markdown" />
     <exec executable="multimarkdown" dir="../texts/">
-      <arg line="-t latex -b "/>
-      <arg value="resource.markdown"/>
+      <arg line="-t latex -b ${all.markdown.files} "/>
     </exec>
 
   </target>
