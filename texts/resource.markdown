@@ -64,7 +64,7 @@ ToolBasView permet d'ouvrir, d'explorer et de manipuler des bases de données My
 
 Lors de chaque installation de ToolMap (sur Windows), une version de ToolBasView est également installée. Pour les autres plateformes il est nécessaire de compiler manuellement ToolBasView. Des instructions plus détaillées sur ToolBasView sont disponible au chapitre __Autre programmes__ <!-- TODO Vraie référence -->
 
-[toolbaseview_ui]: ../img/toolbasview.png
+[toolbaseview_ui]: ../img/toolbasview.png width="70%"
 ![Interface utilisateur de ToolBasView] [toolbaseview_ui]
 
 ### Windows
@@ -81,11 +81,13 @@ NSIS permet de créer des programmes d'installation pour Windows depuis des fich
 ### OSX
 
 #### Xcode
-Xcode est l'environnement de développement gratuit proposé par Apple. Il peut être téléchargé à l'adresse : ???. <!-- TODO Add address here --> Une fois Xcode installé et afin de s'assurer du bon fonctionnement des scripts, il est également nécessaire d'installer les outils permettant de travailler en ligne de commande. Cette opération peut être effectuée depuis l'onglet *Download* de la fenêtre Préférence de Xcode.
+Xcode est l'environnement de développement gratuit proposé par Apple. Il peut être téléchargé à l'adresse : <https://developer.apple.com/xcode/> ou directement depuis l'App Store. Une fois Xcode installé et afin de s'assurer du bon fonctionnement des scripts, il est également nécessaire d'installer les outils permettant de travailler en ligne de commande. Cette opération peut être effectuée depuis l'onglet *Download* de la fenêtre Préférence de Xcode.
 
 ### Linux
 
 #### Code::Blocks
-Code::Blocks est un IDE développé avec la librairie wxWidgets. Il est téléchargeable à l'adresse : ??? <!-- TODO Add adress -->. Il peut également être installé avec la commande : `sudo apt-get install codeblocks`
+Code::Blocks est un IDE développé avec la librairie wxWidgets. Il est téléchargeable à l'adresse : <http://www.codeblocks.org/>. Il peut également être installé avec la commande : `sudo apt-get install codeblocks`. Pour avoir la toute dernière version il est nécessaire d'ajouter le dépôt PPA suivant: <https://launchpad.net/~pasgui/+archive/ppa/>
+
+
 
 
