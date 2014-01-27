@@ -67,6 +67,18 @@ Lors de chaque installation de ToolMap (sur Windows), une version de ToolBasView
 [toolbaseview_ui]: ../img/toolbasview.png width="70%"
 ![Interface utilisateur de ToolBasView] [toolbaseview_ui]
 
+#### png2wx
+Il s'agit d'un petit script PERL, permettant de convertir des fichiers images (*.PNG) dans du code source C++. Cette manière de faire permet d'éviter de distribuer des images avec notre application : tout est inclus dedans. L'avantage par rapport aux XPM est le support du canal alpha. Plus d'informations sur l'inclusion des images dans du code : <http://wiki.wxwidgets.org/Embedding_PNG_Images>.
+Une fois installé ce script s'execute de la manière suivante : 
+
+    png2wx.pl 
+    -C images.cpp 
+    --H images.h
+    --M _IMAGES_H_ images/*
+
+#### cxxtest
+Téléchargeable à l'adresse <http://cxxtest.com/> cxxtest permet de créer automatiquement une suite de tests en parcourant des fichiers tests au format *.H.
+
 ### Windows
 
 #### Visual Studio Express
