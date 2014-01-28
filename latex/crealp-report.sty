@@ -43,6 +43,15 @@
 }
 
 
+% configuration de verbatim
+\usepackage{fancybox,fancyvrb}
+\usepackage{xcolor}
+\DefineVerbatimEnvironment%
+  {verbatim}{Verbatim}
+  {formatcom=\color{gray}, frame=single, fontsize=\small}
+
+
+
 %% nouvelle commande pour créer le titre
 \newcommand {\crealptitle} [4] {
 	\begin{titlepage}

@@ -90,6 +90,10 @@ NSIS permet de créer des programmes d'installation pour Windows depuis des fich
 #### Dependency Walker
 <http://www.dependencywalker.com/>  Permet de scanner les executables et librairies (DLL) afin d'établir la liste des dépendances. Cela permet de s'assurer que les programmes proposés ne dépendent pas d'une librairie exotique.
 
+#### WinMerge
+Disponible à l'adresse : <http://winmerge.org/>, WinMerge est un programme permettant d'afficher des différences entre deux fichiers ou dossiers. Il permet également de créer des fichier de différences (aussi appelés patchs.). Pour appliquer un fichier patch, il est nécessaire d'installer l'outil patch depuis GnuWin (<http://gnuwin32.sourceforge.net/packages.html>). 
+Il est également possible d'utiliser l'outil TortoiseMerge pour appliquer des patchs. Cet outil fait partie de l'installation de TortoiseSVN (<http://tortoisesvn.net/>).
+
 ### OSX
 
 #### Xcode
