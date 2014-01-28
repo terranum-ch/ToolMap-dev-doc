@@ -17,6 +17,29 @@ Un certain nombre de librairies sont nécessaire au bon fonctionnement de ToolMa
 
 Sous Windows, afin d'éviter des comportements bizarres ainsi que des erreurs lors du linking, il est nécessaire de compiler toutes les librairies avec le même compilateur (même version et mêmes options de compilation). Par défaut Visual Studio utilise les options /MD et /MDd (pour la version Debug). Ces options lient l'exécutable produit avec la librairie MSVCR100.DLL. Cela peut poser des problèmes lors de la distribution sur des systèmes plus anciens n'ayant pas cette librairie. Nous avons donc systématiquement utilisé les options de remplacement /MT et /MTd (pour la version Debug). Plus d'informations sur ces options sont disponible ici : <http://msdn.microsoft.com/en-us/library/2kzt1wy3.aspx>
 
+Sous Linux, il est possible d'utiliser les librairies fournies par les gestionnaires de paquets. Cette approche présente l'avantage d'être plus rapide mais en contrepartie les versions des librairies ne sont pas les dernières disponible. Cette approche est impérative pour distribuer un paquet d'installation de ToolMap pour les systèmes Linux. Les librairies qui peuvent être récupérées grâce au gestionnaires de paquets sont :
+
+ 1. GEOS (libgeos-dev)
+ 1. GDAL (libgdal1-dev)
+ 1. CURL (libcurl4-dev)
+ 1. MySQL (libmysqld-dev, mysql-server-core-5.1)
+ 
+ La commande suivante permet de télécharger et d'installer ces librairies
+ 
+     sudo apt-get install 
+     libmysqld-dev mysql-server-core-5.5 
+     libgeos-dev 
+     libcurl4-gnutls-dev 
+     libgdal1-dev 
+     libwrap0-dev
+     
+wxWidgets doit être compilé manuellement, en effet, la version 3.0 n'est pas encore disponible dans les dépôts et la version 2.8 est trop ancienne. Avant de suivre les instructions pour compiler wxWidgets, certaines librairies sont nécessaires et peuvent être installées avec la commande ci-dessous.
+     
+     sudo apt-get install
+     libgtk2.0-dev
+     libwebkitgtk-dev
+     libaio-dev
+  
 
 ### wxWidgets 
 wxWidgets permet de créer des interfaces multi-plateformes (<http://wxwidgets.org/>). Si l'on désire travailler avec la toute dernière version de wxWidgets, on peut effectuer un checkout depuis le dépôt Subversion du projet avec la commande suivante. Cette commande est à lancer directement dans le répertoire LIB: 
@@ -241,10 +264,39 @@ Puis pour compiler la version Release, modifier la ligne `/property:Configuratio
  
  Et lancer le script pour copier les librairies MySQL dans le répertoire D:\LIB\_LIBMYSQL.
  
+# ToolMap
+Une fois toutes les librairies compilées ou installées depuis le gestionnaire de paquet, il est possible de passer à la compilation de ToolMap. L'organisation des fichiers proposée est la suivante :
+
+  * **LIB** répertoire contenant les librairies (voir [Librairies](#prerequis)).
+  * **ToolMap**
+      * **bin** contiendra l'executable de ToolMap
+      * **bin_apps** contiendra des sous-répertoire pour les applications en ligne de commande fournies avec toolmap
+      * **install** contiendra les programme d'installation de ToolMap 
+      * **trunk** voir description dans [Structure des répertoire](#structuredesrepertoires)
+      
+Un script Python (**update_toolmap.py**) permettant de :
+
+ 1. Mettre à jour ToolMap depuis le dépôt SVN
+ 1. Créer le projet ToolMap (projet Visual Studio, Solution XCode, etc.)
+ 1. Compiler ToolMap
+ 1. Lancer les tests unitaires (optionnel).
+ 1. Créer le programme d'installation (optionnel)
+ 
+Est disponible dans le répertoire *build/build-script*. Avant de lancer ce script pour compiler ToolMap de manière interactive, il est nécessaire d'éditer, dans le même répertoire, le script Python correspondant à la plateforme désirée. Les premières lignes de ces scripts de configuration permettent de spécifier les répertoires dans lesquels se trouvent les différentes librairies.
+
+Lancer ensuite la compilation interactive de ToolMap avec la commande `python3 update_toolmap.py`
+
+# ToolApps
+Sous ce nom se cachent les applications en ligne de commande développées dans le cadre du projet ToolMap. Leurs utilités est décrite à la partie [Apps](#apps).
+
+Chacune de ces application dispose d'un script python permettant de la compiler. Editer ces scripts python pour corriger les chemins des différentes librairies puis exectuer : `python update_toolmerge.py` par exemple. Une fenêtre identique à celle illustrée à la [](#) devrait apparaître. 
+
+[update_toolmerge]: ../img/update_toolmerge.png width="50%"
+![Fenêtre permettant de configurer l'application en ligne de commande ToolMerge][update_toolmerge]
 
 
 
-    
+
 
 
 
