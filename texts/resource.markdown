@@ -62,7 +62,7 @@ wxWidgets utilisant beaucoup le concept de Sizer, soit des boîtes pouvant se re
 #### ToolBasView
 ToolBasView permet d'ouvrir, d'explorer et de manipuler des bases de données MySQL embarquées (cf [](#toolbaseview_ui)). Les projets ToolMap sont en effet des base de données MySQL embarquées. Nous avons développé ToolBasView en parallèle à ToolMap afin d'avoir un moyen simple de visualiser le contenu des projets ToolMap. 
 
-Lors de chaque installation de ToolMap (sur Windows), une version de ToolBasView est également installée. Pour les autres plateformes il est nécessaire de compiler manuellement ToolBasView. Des instructions plus détaillées sur ToolBasView sont disponible au chapitre __Autre programmes__ <!-- TODO Vraie référence -->
+Lors de chaque installation de ToolMap (sur Windows), une version de ToolBasView est également installée. Pour les autres plateformes il est nécessaire de compiler manuellement ToolBasView.
 
 [toolbaseview_ui]: ../img/toolbasview.png width="70%"
 ![Interface utilisateur de ToolBasView] [toolbaseview_ui]

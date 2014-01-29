@@ -271,8 +271,10 @@ Une fois toutes les librairies compilées ou installées depuis le gestionnaire 
   * **ToolMap**
       * **bin** contiendra l'executable de ToolMap
       * **bin_apps** contiendra des sous-répertoire pour les applications en ligne de commande fournies avec toolmap
+      * **bin_tbv** contiendra l'executable de ToolBasView
       * **install** contiendra les programme d'installation de ToolMap 
-      * **trunk** voir description dans [Structure des répertoire](#structuredesrepertoires)
+      * **trunk** code source de ToolMap, voir description dans [Structure des répertoire](#structuredesrpertoires)
+      * **trunk_tbv** code source de ToolBasView
       
 Un script Python (**update_toolmap.py**) permettant de :
 
@@ -289,10 +291,31 @@ Lancer ensuite la compilation interactive de ToolMap avec la commande `python3 u
 # ToolApps
 Sous ce nom se cachent les applications en ligne de commande développées dans le cadre du projet ToolMap. Leurs utilités est décrite à la partie [Apps](#apps).
 
-Chacune de ces application dispose d'un script python permettant de la compiler. Editer ces scripts python pour corriger les chemins des différentes librairies puis exectuer : `python update_toolmerge.py` par exemple. Une fenêtre identique à celle illustrée à la [](#) devrait apparaître. 
+Chacune de ces application dispose d'un script python permettant de la compiler. Editer ces scripts python pour corriger les chemins des différentes librairies puis exectuer : `python update_toolmerge.py` par exemple. Une fenêtre identique à celle illustrée à la [](#update_toolmerge) devrait apparaître. 
 
 [update_toolmerge]: ../img/update_toolmerge.png width="50%"
 ![Fenêtre permettant de configurer l'application en ligne de commande ToolMerge][update_toolmerge]
+
+# ToolBasView
+ToolBasView est une application permettant d'ouvrir et de manipuler les base de données MySQL embarquées. Pour plus d'informations sur l'outil, voir la partie consacrée à [ToolBasView](#toolbasview).
+
+## Dépôt SVN
+Le code source de ToolBasView est disponible sur l'ancien serveur SVN du CREALP. Il peut être récupéré avec la commande suivante (dans le répertoire ToolMap).
+
+    svn co https://213.221.129.20/svncrealp/toolbasview/trunk/ trunk_tbv
+    
+Par souci de cohérence, il serait judicieux de migrer le code vers le dépôt SVN principal du CREALP (<http://svn.crealp.ch/svn>).
+
+## Compilation
+ToolBasView (TBV) peut être compilé grâce à un script Python **update_toolbasview.py** disponible dans le répertoire *trunk_tbv/build/script*. Une fois lancé avec la commande `python update_toolbasview.py` ce script affiche la fenêtre illustrée à la [](#tbv_build_ui). Pour que ce script fonctionne python doit comprendre l'extension tkinter. Dans la plupart des cas, il n'y a rien à faire, cette extension est déjà installée. 
+
+[tbv_build_ui]: ../img/tbv_build_ui.png width="50%"
+![Interface TK permettant de compiler ToolBasView][tbv_build_ui]
+
+En fonction des chemins choisis il sera peut-être nécessaire de modifier quelque peu le script Python. Principalement les chemins listés dans les fonctions *BuildNomDeLaPlateforme()*.
+
+
+
 
 
 
