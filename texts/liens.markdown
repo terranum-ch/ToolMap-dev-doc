@@ -1,6 +1,6 @@
 # Liens 
 
-Cette partie regroupe les divers liens Internet principaux du projet. Ils apparaissent tous également dans divers endroit du texte et sont uniquement repris ici à but de syntèse.
+Cette partie regroupe les divers liens Internet principaux du projet. Ils apparaissent tous également dans divers endroit du texte et sont uniquement repris ici dans un but de syntèse.
 
  * Version stable de ToolMap : <http://www.toolmap.ch>
  * Version test de ToolMap : <http://www.crealp.ch/down/toolmap/release_status.html>

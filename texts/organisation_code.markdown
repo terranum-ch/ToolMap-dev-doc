@@ -2,7 +2,7 @@
 Cette partie décrit, de manière générale, la façon dont est organisée le code de ToolMap.
 
 ## Généralités
-La classe *ToolMapApp* sert de point d'entrée du programme. Elle crée et appelle la classe *ToolMapFrame* qui est vraiment le point central dans ToolMap. Dans *ToolMapFrame* sont traités les événements suivants:
+La classe *ToolMapApp* sert de point d'entrée du programme. Elle crée et appelle la classe *ToolMapFrame* qui est le point central dans ToolMap. Dans *ToolMapFrame* sont traités les événements suivants:
  
   * Réponses aux menus
   * Activation / Désactivation des éléments de l'UI
@@ -12,7 +12,7 @@ C'est également cette classe qui construit l'interface utilisateur (cf [](#tool
 [toolmap_class_ui]: ../img/classe_ui_tm.pdf width="100%"
 ![Interface utilisateur de ToolMap et classes en charges des différents composants][toolmap_class_ui]
 
-Les différentes fenêtres d'outils de ToolMap (TOC, Panneau des raccourcis clavier, Snapping, etc.) sont des panneaux basés sur la classe *wxAui*. Ils sont illustrés en jaune dans la [](#toolmap_class_ui). Ces panneaux contiennent ensuite une autre classe en charge de la gestion du contenu (illustrés en blanc). Il s'agit en général d'une liste ou d'un contrôle de type arbre. La fenêtre centrale est gérée par la classe *tmRenderer* (dérivée de *wxScrolledWindow*). La classe *tmDrawer* est chargée de dessiner les données SIG dans une image qui sera ensuite affichée dans *tmRenderer*.
+Les différentes fenêtres d'outils de ToolMap (TOC, Panneau des raccourcis clavier, Snapping, etc.) sont des panneaux basés sur la classe *wxAui*. Ils sont illustrés en jaune dans la [](#toolmap_class_ui). Ces panneaux contiennent une autre classe en charge de la gestion du contenu (illustrés en blanc). Il s'agit en général d'une liste ou d'un contrôle de type arbre. La fenêtre centrale est gérée par la classe *tmRenderer* (dérivée de *wxScrolledWindow*). La classe *tmDrawer* est chargée de dessiner les données SIG dans une image qui sera ensuite affichée dans *tmRenderer*.
 
 ## Managers
 Afin d'éviter de surcharger *ToolMapFrame* des classes "Managers" ont été crées. Ceux-ci servent principalement à séparer les fonctionnalités par domaines. Les principaux "Managers" sont listés ci-dessous
@@ -35,7 +35,7 @@ Lors de l'ouverture d'un projet, celui-ci est chargé depuis la base de donnée 
              1. *ProjectDefMemoryFieldsCodedVal* contient les paramètres d'une valeur pour un champ.
 
 [structure_projet]: ../img/structure_projet.jpg width="100%"
-![Illustration de la structure des données d'une projet ToolMap (d'un point de vue du code)][structure_projet]
+![Illustration de la structure des données d'un projet ToolMap (d'un point de vue du code)][structure_projet]
 
 
 ## Dessin

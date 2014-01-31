@@ -42,9 +42,9 @@ L'utilisateur est alors enregistré et peut créer des tickets. Pour accéder au
 
 ## Outils
 
-Pour pouvoir développer ToolMap un certain nombre d'outils doivent être installés. Certains outils sont communs à toutes les plateformes (Windows, OSX, Linux). D'autres sont spécifiques à une plateforme. 
+Pour pouvoir développer ToolMap un certain nombre d'outils doivent être installés. Certains outils sont communs à toutes les plates-formes (Windows, OSX, Linux). D'autres sont spécifiques à une plate-forme. 
 
-Nous avons choisi d'utiliser le plus possible l'environnement de développement recommandé pour chaque plate-forme afin d'obtenir les meilleures performances possible. Les quelques tests menés au début du projet en utilisant par exemple MinGW sous Windows montraient des executables beaucoup plus gros et plus lent que ceux produits par Visual Studio. Ces tests datant de 2008 il serait interessant de voir dans quelle mesure les résultats obtenus alors sont toujours pertinants.
+Nous avons choisi d'utiliser le plus possible l'environnement de développement recommandé pour chaque plate-forme afin d'obtenir les meilleures performances possible. Les quelques tests menés au début du projet en utilisant par exemple MinGW sous Windows montraient des exécutables beaucoup plus gros et plus lent que ceux produits par Visual Studio. Ces tests datant de 2008 il serait intéressant de voir dans quelle mesure les résultats obtenus alors sont toujours pertinents.
 
 ### Outils communs
 
@@ -52,12 +52,12 @@ Nous avons choisi d'utiliser le plus possible l'environnement de développement 
 Le logiciel CMake téléchargeable gratuitement à l'adresse : <http://www.cmake.org> permet de créer, depuis un fichier unique, des projets pour les différents environnements de développements. Après installation, la commande `cmake --version` doit fonctionner et retourner le numéro de version installée. la commande `cmake --help` permet de lister les différents types de projets que CMake peut générer.
 
 #### Python
-Python est utilisé pour faciliter le développement de ToolMap. Des scripts ont été développé  (dans le répertoire trunk/build/build-script) pour automatiser la création d'executable de ToolMap. Il est nécessaire d'installer une version 3.X de Python. Si d'autres version de Python sont présentes sur le système ce n'est pas un problème par contre il faudra lancer les scripts avec la version 3 exclusivement. 
+Python est utilisé pour faciliter le développement de ToolMap. Des scripts ont été développé  (dans le répertoire trunk/build/build-script) pour automatiser la création d’exécutable de ToolMap. Il est nécessaire d'installer une version 3.X de Python. Si d'autres version de Python sont présentes sur le système ce n'est pas un problème par contre il faudra lancer les scripts avec la version 3 exclusivement. 
 
 #### wxFormBuilder
 Disponible gratuitement à l'adresse suivante : <http://sourceforge.net/projects/wxformbuilder/> wxFormBuilder est un logiciel permettant de créer graphiquement des interfaces utilisateur pour wxWidgets puis de générer le code C++ correspondants. 
 
-wxWidgets utilisant beaucoup le concept de Sizer, soit des boîtes pouvant se redimensionner automatiquement selon leur contenu, l'écriture de code d'interface utilisateur est relativement longue et source d'erreurs. L'utilisation de wxFormBuilder permet de développer plus rapidement des interfaces.
+wxWidgets utilisant beaucoup le concept de Sizer (des boîtes pouvant se redimensionner automatiquement selon leur contenu) l'écriture de code d'interface utilisateur est relativement longue et source d'erreurs. L'utilisation de wxFormBuilder permet de développer plus rapidement des interfaces.
 
 #### ToolBasView
 ToolBasView permet d'ouvrir, d'explorer et de manipuler des bases de données MySQL embarquées (cf [](#toolbaseview_ui)). Les projets ToolMap sont en effet des base de données MySQL embarquées. Nous avons développé ToolBasView en parallèle à ToolMap afin d'avoir un moyen simple de visualiser le contenu des projets ToolMap. 

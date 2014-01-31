@@ -57,13 +57,13 @@ Cet outil permet d'importer des fichiers ESRI Shapefiles dans un projet ToolMap.
     [SHP directory] 
     [rule files directory]
 
-shpimporter fonctionne de la manière suivante. Il prend en entrée un projet ToolMap, un répertoire dans lequel sont stocké les fichiers ESRI Shapefiles ainsi qu'un répertoire dans lequel sont stockés les fichiers de règles (fichiers textes). shpimporter va parcourir touts les fichiers de règles et va, pour chacun, importer les données selon les règles spécifiées. Les fichiers de règles sont donc l'élément clé du processus. Il font le lien entre: 
+shpimporter fonctionne de la manière suivante. Il prend en entrée un projet ToolMap, un répertoire dans lequel sont stocké les fichiers ESRI Shapefiles ainsi qu'un répertoire dans lequel sont stockés les fichiers de règles (fichiers textes). shpimporter va parcourir touts les fichiers de règles et va, pour chacun, importer les données selon les règles spécifiées. Les fichiers de règles sont donc l'élément clé du processus. Ils font le lien entre: 
  
 * le nom du Shapefile et le thème de destination
 * Les objets du Shapefile et les objets du projet ToolMap
-* Les attributs du Shapefile et le attributs du projet ToolMap.
+* Les attributs du Shapefile et les attributs du projet ToolMap.
 
-Les fichiers de règles sont des fichiers avec l'extension .TXT, séparés par des tabulateurs. Ils peuvent être ouverts dans Excel (cf [](#shpimporter)). La structure exacte de ces fichiers serait trop longue à décrire ici, Pour un exemple relativement exhaustif, l'on pourra se référer aux fichiers produits pour la migration du projet SION. 
+Les fichiers de règles sont des fichiers avec l'extension .TXT, séparés par des tabulateurs. Ils peuvent être ouverts dans Excel (cf [](#shpimporter)). La structure exacte de ces fichiers serait trop longue à décrire ici, Pour un exemple relativement exhaustif, l'on pourra se référer aux fichiers produits pour la migration du projet SION (répertoire *sion_transfert*). 
 
 
 [shpimporter]: ../img/shpimporter.png width="50%"
@@ -71,7 +71,7 @@ Les fichiers de règles sont des fichiers avec l'extension .TXT, séparés par d
 
 ###  toolmerge
 
-Cet outil permet de fusionner deux projet ToolMap. Il s'utilise de la manière suivante : `toolmerge project1 project2`. toolmerge fonctionne de la manière suivante:
+Cet outil permet de fusionner deux projet ToolMap. Il s'utilise de la manière suivante : `toolmerge project1 project2`. Toolmerge fonctionne de la manière suivante:
 
  1. Vérification que les deux projets sont identiques
  2. Récupération de l'ID la plus haute pour les géométries du projet1.
@@ -114,13 +114,13 @@ Ce répertoire contient les ressources suivantes en lien avec ToolMap:
 ### database
 Contient diverses ressources en lien avec la base de donnée embarquée. L'on trouvera ici des fichiers *.MWB. Ces fichiers s'ouvrent avec le logiciel MySQL Workbench <http://www.mysql.fr/products/workbench/>. Ils contiennent les schémas jusqu'à la version 224 (la dernière version dans ToolMap actuellement est la 230).
 
-L'on trouveras également le fichier décrivant les changements effectués dans la base de donnée jusqu'à la version 221. Ce fichier n'est plus maintenu à jour, en effet, depuis la version 220, ToolMap est capable de mettre à jour d'une version de la base de donnée intégrée à la suivante. Pour plus de détails sur ce processus, on se référera au fichier *tmprojectupdater.cpp* 
+On trouvera également le fichier décrivant les changements effectués dans la base de donnée jusqu'à la version 221. Ce fichier n'est plus maintenu à jour, en effet, depuis la version 220, ToolMap est capable de mettre à jour d'une version de la base de donnée intégrée à la suivante. Pour plus de détails sur ce processus, on se référera au fichier *tmprojectupdater.cpp* 
 
 ### dialogs
 Contient principalement les fichiers de définition des fenêtres (fichiers FBP s'ouvrant avec [wxFormBuilder](#wxformbuilder)). Les fichiers *.CPP et *.H sont des fichiers automatiquement générés par wxFormBuilder et conservé ici pour référence. Ils ne devraient pas être modifiés.
 
 ### unused_web
-Contient des pages web pour Yahoo street et Yahoo satellite. Yahoo fonctionne visiblement selon un autre système de coordonnée ou avec d'autres niveaux de zoom que ceux présents dans Bing ou Google. Du coup ces ressources web ne sont actuellement pas intégrées dans ToolMap mais conservée ici à des fins d'archive.
+Contient des pages web pour Yahoo street et Yahoo satellite. Yahoo fonctionne visiblement selon un autre système de coordonnées ou avec d'autres niveaux de zoom que ceux présents dans Bing ou Google. Du coup ces ressources web ne sont actuellement pas intégrées dans ToolMap mais conservée ici à des fins d'archive.
 
 ### web
 Contient les fichiers *.HTML et *.JS permettant d'afficher les images de support web dans ToolMap. Ces fichiers sont copiés lors de la compilation (ainsi que lors de la création de l'installeur) dans les ressources de ToolMap. 
@@ -128,7 +128,7 @@ Contient les fichiers *.HTML et *.JS permettant d'afficher les images de support
 ## src
 Contient les fichiers de code (\*.CPP) et d'en-têtes (\*.H) répartis dans les répertoires suivants:
 
-1. **components** il s'agit en général de code tout ou partiellement récupéré ailleurs. Ces derniers sont trop petits pour constituer des plugins mais sont suffisamment indépendants pour être mis dans des composants séparés. 
+1. **components** il s'agit en général de code, tout ou partiellement récupéré ailleurs. Ces derniers sont trop petits pour constituer des plugins mais sont suffisamment indépendants pour être mis dans des composants séparés. 
 2. **core** contient les fonctions de base du code. Contient notamment le fichier d'entrée *toolmap.cpp*.
 3. **database** contient les fichiers et le code permettant l'interaction avec la base de donnée MySQL.
 4. **gis** contient le code lié de près ou de loin au fichiers SIG.

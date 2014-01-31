@@ -1,7 +1,7 @@
 # Compilation
 
 ## Prerequis
-Un certain nombre de librairies sont nécessaire au bon fonctionnement de ToolMap. Avant de pouvoir compiler ToolMap, il est nécessaire de compiler ces différentes librairies. Pour chaque librairie sont décrite les commande nécessaire à la compilation sous Windows et sous Unix. Les commandes pour compiler sous Linux et OSX sont en général identique. Le cas échéant, les éventuelles différences seront mise en évidence. Pour les systèmes Unix, j'utilise systématiquement l'option `--prefix` afin de pouvoir installer les librairies ailleurs que dans les répertoire système. Cela permet de garder un système propre. La convention des dossiers suivie pour les librairies est la suivante :
+Un certain nombre de librairies sont nécessaire au bon fonctionnement de ToolMap. Avant de pouvoir compiler ToolMap, il est nécessaire de compiler ces différentes librairies. Pour chaque librairie sont décrite les commandes nécessaire à la compilation sous Windows et sous Unix. Les commandes pour compiler sous Linux et OSX sont en général identique. Le cas échéant, les éventuelles différences seront mise en évidence. Pour les systèmes Unix, j'utilise systématiquement l'option `--prefix` afin de pouvoir installer les librairies ailleurs que dans les répertoire système. Cela permet de garder un système propre. La convention des dossiers suivie pour les librairies est la suivante :
 
  * **LIB** répertoire contenant toutes les librairies construites
      * **_LIBGIS** sert de préfixe pour les librairies GEOS, GDAL et PROJ
@@ -49,11 +49,11 @@ wxWidgets permet de créer des interfaces multi-plateformes (<http://wxwidgets.o
     wxWidgets-svn
 
 #### Compilation automatique
-En plus de la méthode manuelle de compilation de wxWidgets décrite un peu plus bas, il est également possible d'utiliser un script python **build_wxwidgets.py** que nous avons développé et qui permet de 
+En plus de la méthode manuelle de compilation de wxWidgets décrite un peu plus bas, il est également possible d'utiliser un script python (**build_wxwidgets.py**) que nous avons développé et qui permet de 
 
 1. mettre à jour wxWidgets avec la dernière version SVN
 2. supprimer éventuellement le code déjà existant
-3. Compiler la librairie sur toutes les plateformes
+3. Compiler la librairie sur toutes les plates-formes
 
 Ce script Python s'exécute de la façon suivante
 
@@ -77,7 +77,7 @@ Configuration de wxWidgets
    
 Options spécifiques à OSX: `--with-osx_cocoa`
        
-Sous OSX, si l'on veut spécifier une version Minimum du SDK 
+Sous OSX, si l'on veut spécifier une version minimum du SDK 
 
     --with-macosx-version-min=10.6
     --with-macosx-sdk=.../SDKs/MacOSX10.6.sdk
@@ -106,7 +106,7 @@ Lancer les commandes suivantes dans le répertoire *D:\LIB\wxWidgets-svn\build\m
 wxPDFDocument permet de créer des fichiers PDF de manière simple depuis wxWidgets. wxPDFDocument peut être téléchargé à l'adresse : <http://wxcode.sourceforge.net/components/wxpdfdoc/>
 
 #### Compilation automatique
-En plus de la méthode manuelle de compilation décrite un peu plus bas, il est également possible d'utiliser un script python **update_PDFLib.py** afin d'automatiser le processus. Ce script est situé dans le répertoire *build/build-script* de ToolMap et effectue les opérations suivantes : 
+En plus de la méthode manuelle de compilation décrite un peu plus bas, il est également possible d'utiliser un script python (**update_PDFLib.py**) afin d'automatiser le processus. Ce script est situé dans le répertoire *build/build-script* de ToolMap et effectue les opérations suivantes : 
 
 1. Supprime le répertoire de wxPDFDocument (wxpdfdoc-0.9.4)
 2. Supprime le contenu de _LIBPDF
@@ -114,7 +114,7 @@ En plus de la méthode manuelle de compilation décrite un peu plus bas, il est 
 3. Patch les fichiers si nécessaire
 4. Configure, compile et installe la librairie
 
-Ce script fonctionne de manière interactive et s'appelle de la manière suivante : `python3 update_PDFLib.py`. Les fonctions *Windows(), MacBook(), LinuxHome() et MacPro()* peuvent être éditées afin de spécifier les chemins corrects pour ces différentes plateformes.
+Ce script fonctionne de manière interactive et s'appelle de la manière suivante : `python3 update_PDFLib.py`. Les fonctions *Windows(), MacBook(), LinuxHome() et MacPro()* peuvent être éditées afin de spécifier les chemins corrects pour ces différentes plates-formes.
 
 #### Windows
 Dans le fichier *build29/makefile.vc* modifier la ligne WX_VERSION = 29 par WX_VERSION = 30 (ou 31 selon la version de wxWidgets utilisée). Dans le répertoire *build29*, lancez les commandes suivante pour compiler wxPDFDocument
@@ -154,7 +154,7 @@ Dans le répertoire de GEOS (geos-3.4.2) on lance la commande `autogen.bat` puis
 
     nmake -f makefile.vc GEOS_MSVC=10
 
-La version spécifiée ici de `GEOS_MSVC`correspond à Visual Studio 2010.
+La version spécifiée ici de `GEOS_MSVC` correspond à Visual Studio 2010.
 
 ### PROJ4
 Proj4 est une librairie permettant de projeter les données SIG dans divers systèmes de projections. Cette librairie n'est également pas directement utilisée mais elle est appelée par [GDAL](#gdal). Elle est disponible au téléchargement à l'adresse : <http://trac.osgeo.org/proj/>
@@ -169,7 +169,7 @@ Editer le fichier *nmake.opt* et remplacer /MD par /MT. Dans le même fichier, c
     nmake -f makefile.vc install-all
     
 ### GDAL
-GDAL est une librairie permettant d'accéder aux fichiers SIG de type image de manière unifiée. A l'intérieur du code de GDAL se trouve la librairie OGR qui permet l'accès aux données SIG vectorielles (<http://www.gdal.org/>). GDAL supporte un très grand nombre de formats de fichiers. Certains sont supportés nativement par GDAL, d'autres nécessitent des librairies externes. Afin d'éviter d'augmenter de manière significative les dépendances de GDAL, nous ne compilerons que le strict minimum de dépendances externe (GEOS et PROJ4).
+GDAL est une librairie permettant d'accéder aux fichiers SIG de type image, de manière unifiée. A l'intérieur du code de GDAL se trouve la librairie OGR qui permet l'accès aux données SIG vectorielles (<http://www.gdal.org/>). GDAL supporte un très grand nombre de formats de fichiers. Certains sont supportés nativement, d'autres nécessitent des librairies externes. Afin d'éviter d'augmenter de manière significative les dépendances de GDAL, nous ne compilerons que le strict minimum (GEOS et PROJ4).
 
 Un certain nombre de programmes en ligne de commande sont produits durant la compilation de GDAL. A eux seuls, ils permettent déjà d'effectuer un grand nombre d'opérations sur les données spatiales. Une documentation plus complète est disponible en ligne :
 
@@ -241,10 +241,10 @@ Les options suivantes peuvent être utilisées avec OSX pour contrôler l'archit
     -DCMAKE_OSX_DEPLOYMENT_TARGET:STRING="10.6"
     -DCMAKE_OSX_SYSROOT:PATH=.../SDKs/MacOSX10.6.sdk
    
-Puis la compilation et l'installation peuvent être lancés avec la commande : `make -j8; make install`.
+La compilation et l'installation peuvent être lancés avec la commande : `make -j8; make install`.
 
 #### Windows
-Modifier le fichier *cmake/build_configurations/feature_set.cmake* Changer community par small.
+Modifier le fichier *cmake/build_configurations/feature_set.cmake*, changer community par small.
 Lancer la commande suivante depuis le répertoire de MySQL (mysql-5.6.15)
     
     cmake . 
@@ -269,11 +269,11 @@ Une fois toutes les librairies compilées ou installées depuis le gestionnaire 
 
   * **LIB** répertoire contenant les librairies (voir [Librairies](#prerequis)).
   * **ToolMap**
-      * **bin** contiendra l'executable de ToolMap
+      * **bin** contiendra l’exécutable de ToolMap
       * **bin_apps** contiendra des sous-répertoire pour les applications en ligne de commande fournies avec toolmap
-      * **bin_tbv** contiendra l'executable de ToolBasView
+      * **bin_tbv** contiendra l’exécutable de ToolBasView
       * **install** contiendra les programme d'installation de ToolMap 
-      * **trunk** code source de ToolMap, voir description dans [Structure des répertoire](#structuredesrpertoires)
+      * **trunk** code source de ToolMap, voir description dans [Structure des répertoires](#structuredesrpertoires)
       * **trunk_tbv** code source de ToolBasView
       
 Un script Python (**update_toolmap.py**) permettant de :
@@ -297,7 +297,7 @@ Chacune de ces application dispose d'un script python permettant de la compiler.
 ![Fenêtre permettant de configurer l'application en ligne de commande ToolMerge][update_toolmerge]
 
 # ToolBasView
-ToolBasView est une application permettant d'ouvrir et de manipuler les base de données MySQL embarquées. Pour plus d'informations sur l'outil, voir la partie consacrée à [ToolBasView](#toolbasview).
+ToolBasView est une application permettant d'ouvrir et de manipuler les bases de données MySQL embarquées. Pour plus d'informations sur l'outil, voir la partie consacrée à [ToolBasView](#toolbasview).
 
 ## Dépôt SVN
 Le code source de ToolBasView est disponible sur l'ancien serveur SVN du CREALP. Il peut être récupéré avec la commande suivante (dans le répertoire ToolMap).
@@ -307,7 +307,7 @@ Le code source de ToolBasView est disponible sur l'ancien serveur SVN du CREALP.
 Par souci de cohérence, il serait judicieux de migrer le code vers le dépôt SVN principal du CREALP (<http://svn.crealp.ch/svn>).
 
 ## Compilation
-ToolBasView (TBV) peut être compilé grâce à un script Python **update_toolbasview.py** disponible dans le répertoire *trunk_tbv/build/script*. Une fois lancé avec la commande `python update_toolbasview.py` ce script affiche la fenêtre illustrée à la [](#tbv_build_ui). Pour que ce script fonctionne python doit comprendre l'extension tkinter. Dans la plupart des cas, il n'y a rien à faire, cette extension est déjà installée. 
+ToolBasView (TBV) peut être compilé grâce à un script Python (**update_toolbasview.py**) disponible dans le répertoire *trunk_tbv/build/script*. Une fois lancé avec la commande `python update_toolbasview.py` ce script affiche la fenêtre illustrée à la [](#tbv_build_ui). Pour que ce script fonctionne Python doit comprendre l'extension tkinter. Dans la plupart des cas, il n'y a rien à faire, cette extension est déjà installée. 
 
 [tbv_build_ui]: ../img/tbv_build_ui.png width="50%"
 ![Interface TK permettant de compiler ToolBasView][tbv_build_ui]
