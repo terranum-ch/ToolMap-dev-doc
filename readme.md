@@ -1,4 +1,4 @@
-# ToolMap developper documentation
+# ToolMap developer documentation
 
 This repository contains the ToolMap developper documentation
 
