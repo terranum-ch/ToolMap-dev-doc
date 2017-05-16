@@ -60,6 +60,19 @@ Essai avec la version 10.1.23 de MariaDB
         -DCMAKE_INSTALL_PREFIX=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBSQL
         -DPLUGIN_TOKUDB=NO
         -DWITH_EMBEDDED_SERVER=1
+        -DDISABLE_SHARED=ON
+
+Pour MySQL (5.7.18), voila la commande employée :
+
+        cmake .
+        -DCMAKE_INSTALL_PREFIX=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBMYSQL
+        -DWITH_UNIT_TESTS:BOOL=OFF
+        -DFEATURE_SET:STRING=small
+        -DDOWNLOAD_BOOST=1
+        -DWITH_BOOST=/Users/lucien/DATA/PROGRAMATION/_LIB/boost
+
+La partie concernant boost, permet de télécharger la version nécessaire de boost
+et de l'installer.
 
 
 ## Compilation de ToolMap
