@@ -94,13 +94,21 @@ et de l'installer.
 
 1. Le but est de construire les exécutables à l'extérieur de l'arbre du code. Depuis le répertoire `bin` lancez la commande suivante :
 
-            cmake
-            -DSEARCH_GIS_LIB_PATH=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBGIS
-            -DMYSQL_MAIN_DIR=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBSQL
-            -DSEARCH_WXPDFDOCUMENT_PATH=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBPDF
-            -DSEARCH_GEOS=1
-            -DSEARCH_GDAL=1
-            ../code/build
+        cmake
+        -DSEARCH_GIS_LIB_PATH=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBGIS
+        -DMYSQL_MAIN_DIR=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBSQL
+        -DSEARCH_WXPDFDOCUMENT_PATH=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBPDF
+        -DSEARCH_GEOS=1
+        -DSEARCH_GDAL=1
+        ../code/build
+
+ 1. pour avoir le support pour les tests unitaires il faut rajouter la commande ci-dessous :
+
+        -DUSE_UNITTEST=1
+        -DUNIT_TESTING_PATH=/Users/lucien/DATA/PRJ/TOOLMAP2/unit_testing
+        -DCXXTEST_INCLUDE_DIR=/Users/lucien/DATA/PROGRAMATION/_LIB/cxxtest-4.4
+        -DCXXTEST_PYTHON_TESTGEN_EXECUTABLE=/Users/lucien/DATA/PROGRAMATION/_LIB/cxxtest-4.4/bin/cxxtestgen
+
 
 ### VSCODE
 
