@@ -6,7 +6,8 @@ This repository contains the ToolMap developper documentation
 
 In order to generate the documentation, install the following:
 
-multimarkdown: http://fletcherpenney.net/multimarkdown/
+Multimarkdown: http://fletcherpenney.net/multimarkdown/
+
 LaTeX:
  - OSX: http://www.tug.org/mactex/
  - Windows: https://miktex.org or http://www.tug.org/texlive/
