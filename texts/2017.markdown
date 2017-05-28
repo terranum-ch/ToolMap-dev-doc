@@ -1,6 +1,6 @@
 # ToolMap 2017
 
-## compilation des librairies
+## compilation des librairies (UNIX / OSX / Mingw)
 
 ### wxWidgets
 
@@ -74,6 +74,97 @@ Pour MySQL (5.7.18), voila la commande employée :
 La partie concernant boost, permet de télécharger la version nécessaire de boost
 et de l'installer.
 
+## Compilation des librairies (Windows - Visual Studio)
+
+Version utilisée : Visual Studio 2017
+
+Lancer la commande `vcvars64.bat` et executez toutes les commandes dans ce terminal.
+
+### wxWidgets
+
+Version 3.1.0 téléchargée depuis le site http://wxwidgets.org
+
+
+naviguer jusqu'au répertoire `wxWidgets/build/msv` lancez ensuite la commande suivante :
+
+        nmake -f makefile.vc BUILD=debug UNICODE=1 MONOLITHIC=1
+        nmake -f makefile.vc BUILD=release UNICODE=1 MONOLITHIC=1
+
+### wxPDFDocument
+
+Version 0.9.5 depuis https://github.com/utelle/wxpdfdoc/releases.
+
+depuis le répertoire `wxPDFDocument/build`
+
+        nmake -f makefile.vc 
+        WX_DIR=P:\LIB\wxWidgets-3.1.0 
+        WX_VERSION=31 
+        WX_MONOLITHIC=1 
+        WX_DEBUG=1
+
+puis la même commande avec `WX_DEBUG=0`
+
+### Librairies spatiales (PROJ, GDAL, GEOS)
+
+
+1. PROJ : version  4.9.3
+
+       nmake -f makefile.vc INSTDIR=P:\programmation\LIB\_LIBGIS
+       nmake -f makefile.vc INSTDIR=P:\programmation\LIB\_LIBGIS install-all
+
+
+1. GEOS : version 3.6.1
+        
+   Dans le répertoire de GEOS (geos-3.4.2) on lance la commande `autogen.bat`
+
+   Pour l'instant, GEOS ne reconnait pas automatiquement le compilateur Visual Studio 2017. Il faut donc rajouter les lignes suivantes dans le fichier nmake.opt aux alentours de la ligne 150, juste avant le `!ELSE`
+
+        !ELSEIF "$(_NMAKE_VER)" == "14.10.25019.0"
+        GEOS_MSVC = 15.0
+        GEOS_MSC = 1910
+
+   puis lancer la compilation avec
+
+        nmake -f makefile.vc WIN64=YES
+   
+   Une version debug de GEOS peut être obtenue en rajoutant la commande suivante : `BUILD_DEBUG=YES`
+
+1. GDAL version 2.2.0 (avril 2017)
+
+   Les différentes valeurs peuvent être éditées dans le fichier `nmake.opt`ou alors passées en ligne de commande.
+
+        nmake -f makefile.vc MSVC_VER=1910 
+        WIN64=1
+        GDAL_HOME=P:\programmation\LIB\_LIBGIS
+        GEOS_DIR=P:/programmation/LIB/geos-3.6.1
+        GEOS_CFLAGS="-I$(GEOS_DIR)/capi -I$(GEOS_DIR)/include -DHAVE_GEOS" 
+        GEOS_LIB="$(GEOS_DIR)/src/geos_c_i.lib"
+
+puis la même commande suivie de `install` puis encore une fois suivie de `devinstall`
+
+**Attention** à bien respecter le sens des séparateurs de répertoire, comme dans la commande ci-dessus. GDAL_HOME doit être défini avec des "\\" et le reste avec des "/"
+
+### MySQL
+
+Version 5.6.36. Visiblement il y a une petite erreur de compilation étant donné que l'on n'utilise pas le moteur PARTITION. Il faut donc modifier le fichier `sql_table.cc` aux alentours de la ligne 2024 afin d'ajouter les deux lignes débutant avec des +
+
+        ++++ #ifdef WITH_PARTITION_STORAGE_ENGINE
+        if (old_part_info)
+        {
+                lpt->table->file->set_part_info(old_part_info, false);
+        }
+        +++++ #endif
+
+puis on peut lancer la compilation et l'installation avec :
+
+        mkdir bld
+        cd bld
+        cmake .. -G"Visual Studio 15 2017 Win64"
+        -DCMAKE_INSTALL_PREFIX=P:\programmation\LIB\_LIBMYSQL
+        -DWITH_UNIT_TESTS:BOOL=OFF
+        -DFEATURE_SET:STRING=small
+        cmake --build . --config relwithdebinfo
+        cmake --build . --config relwithdebinfo --target INSTALL
 
 ## Compilation de ToolMap
 
