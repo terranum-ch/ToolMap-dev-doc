@@ -166,7 +166,17 @@ puis on peut lancer la compilation et l'installation avec :
         cmake --build . --config relwithdebinfo
         cmake --build . --config relwithdebinfo --target INSTALL
 
-## Compilation de ToolMap
+## LibCURL 
+
+Version 7.54.0
+
+                cd winbuild
+                nmake /f Makefile.vc mode=dll VC=14 DEBUG=NO MACHINE=x64
+
+Copier manuellement les répertoires `bin`, `include` et `lib` qui ont été produits dans `LIB/curl/builds/libcurl-vc.....` et les placer dans le répertoire `LIB/_LIBCURL`
+
+
+## Compilation de ToolMap 
 
 1. La structure proposée pour ToolMap est la suivante :
 
@@ -182,6 +192,8 @@ puis on peut lancer la compilation et l'installation avec :
         └── unit_testing
 
 1. Récupérer le code source de ToolMap avec la commande suivante `git clone git@github.com:terranum-ch/ToolMap.git code`
+
+### Unix - OSX
 
 1. Le but est de construire les exécutables à l'extérieur de l'arbre du code. Depuis le répertoire `bin` lancez la commande suivante :
 
@@ -199,6 +211,23 @@ puis on peut lancer la compilation et l'installation avec :
         -DUNIT_TESTING_PATH=/Users/lucien/DATA/PRJ/TOOLMAP2/unit_testing
         -DCXXTEST_INCLUDE_DIR=/Users/lucien/DATA/PROGRAMATION/_LIB/cxxtest-4.4
         -DCXXTEST_PYTHON_TESTGEN_EXECUTABLE=/Users/lucien/DATA/PROGRAMATION/_LIB/cxxtest-4.4/bin/cxxtestgen
+
+### Windows - Visual Studio 2017
+
+Depuis le répertoire `bin` lancez la commande suivante :
+
+
+        set WXWIN="P:\programmation\LIB\wxWidgets-3.1.0"
+        cmake
+        -G"Visual Studio 15 2017 Win64"
+        -DSEARCH_GIS_LIB_PATH=P:\programmation\LIB\_LIBGIS
+        -DSEARCH_GEOS_LIB_PATH=P:\programmation\LIB\geos-3.6.1
+        -DSEARCH_CURL_LIB_PATH=P:\programmation\LIB\_LIBCURL
+        -DMYSQL_MAIN_DIR=P:\programmation\LIB\_LIBMYSQL
+        -DSEARCH_WXPDFDOCUMENT_PATH=P:\programmation\LIB\wxpdfdoc-0.9.5
+        -DSEARCH_GEOS=1
+        -DSEARCH_GDAL=1
+        ../code/build
 
 
 ### VSCODE
