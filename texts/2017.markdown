@@ -90,6 +90,12 @@ naviguer jusqu'au répertoire `wxWidgets/build/msv` lancez ensuite la commande s
         nmake -f makefile.vc BUILD=debug UNICODE=1 MONOLITHIC=1
         nmake -f makefile.vc BUILD=release UNICODE=1 MONOLITHIC=1
 
+copier les fichiers suivants :
+
+1. `lib\vc_lib\mswu\wx\setup.h` dans `include\wx`
+
+1. `lib\vc_lib\mswu\wx\msw\rcdefs.h`dans `include\wx\msw` (conserver l'ancien en changeant son extension)
+
 ### wxPDFDocument
 
 Version 0.9.5 depuis https://github.com/utelle/wxpdfdoc/releases.
