@@ -223,7 +223,7 @@ Copier manuellement les répertoires `bin`, `include` et `lib` qui ont été pro
 Depuis le répertoire `bin` lancez la commande suivante :
 
 
-        set WXWIN="P:\programmation\LIB\wxWidgets-3.1.0"
+        set WXWIN=P:\programmation\LIB\wxWidgets-3.1.0
         cmake
         -G"Visual Studio 15 2017 Win64"
         -DSEARCH_GIS_LIB_PATH=P:\programmation\LIB\_LIBGIS
@@ -234,6 +234,7 @@ Depuis le répertoire `bin` lancez la commande suivante :
         -DSEARCH_GEOS=1
         -DSEARCH_GDAL=1
         ../code/build
+        cmake --build . --config relwithdebinfo
 
 
 ### VSCODE
