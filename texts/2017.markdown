@@ -236,6 +236,12 @@ Depuis le répertoire `bin` lancez la commande suivante :
         ../code/build
         cmake --build . --config relwithdebinfo
 
+ 1. pour avoir le support pour les tests unitaires il faut rajouter la commande ci-dessous :
+
+        -DUSE_UNITTEST=1
+        -DUNIT_TESTING_PATH=P:\programmation\ToolMap\test_data
+        -DCXXTEST_INCLUDE_DIR=P:\programmation\LIB\cxxtest-4.3
+        -DCXXTEST_PYTHON_TESTGEN_EXECUTABLE=P:\programmation\LIB\cxxtest-4.3\bin\cxxtestgen
 
 ### VSCODE
 
