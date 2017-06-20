@@ -14,6 +14,7 @@ La version de Linux utilisée est Ubuntu 16.04.2 LTS (Xenial)
 
         sudo apt-get install libwxgtk3.0-dev
         sudo apt-get install libwxgtk-webview3.0-dev
+        sudo apt-get install libwxgtk-media3.0-dev
 
 ### Librairies spatiales (GDAL / GEOS / PROJ)
 
@@ -40,3 +41,25 @@ Ensuite on peut lancer la compilation avec
         -DWITH_UNIT_TESTS:BOOL=OFF
         -DFEATURE_SET:STRING=small
 
+## Compilation ToolMap
+
+1. Ouvrir le répertoire de ToolMap dans VSCODE
+
+1. Modifier le fichier de préférence `settings.json` et ajouter le code suivant dans les paramètres de l'espace utilisateur:
+
+                "cmake.sourceDirectory": "${workspaceRoot}/build",
+                "cmake.buildDirectory": "${workspaceRoot}/../bin",
+                "cmake.generator": "Unix Makefiles",
+                "cmake.configureArgs": [
+                        "-DMYSQL_MAIN_DIR=/home/lucien/programmation/LIB/_LIBMYSQL",
+                        "-DSEARCH_WXPDFDOCUMENT_PATH=/home/lucien/programmation/LIB/_WXPDF",
+                        "-DSEARCH_GEOS=1",
+                        "-DSEARCH_GDAL=1"
+                ]
+
+1. Pour les tests unitaires, rajouter les paramètres suivants :
+
+                ,"-DUSE_UNITTEST=1",
+                "-DUNIT_TESTING_PATH=/home/lucien/programmation/ToolMap/test_data",
+                "-DCXXTEST_INCLUDE_DIR=/home/lucien/programmation/LIB/cxxtest-4.4",
+                "-DCXXTEST_PYTHON_TESTGEN_EXECUTABLE=/home/lucien/programmation/LIB/cxxtest-4.4/bin/cxxtestgen/cxxtestgen"                 
