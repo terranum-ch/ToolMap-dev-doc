@@ -243,6 +243,8 @@ Depuis le répertoire `bin` lancez la commande suivante :
         -DCXXTEST_INCLUDE_DIR=P:\programmation\LIB\cxxtest-4.3
         -DCXXTEST_PYTHON_TESTGEN_EXECUTABLE=P:\programmation\LIB\cxxtest-4.3\bin\cxxtestgen
 
+Alternativement, si UNIT_TESTING_PATH n'est pas renseigné, les fichiers tests sont automatiquement téléchargés.
+
 ### VSCODE
 
 1. Installer le plugin **CMake** ainsi que **CMake Tools**
