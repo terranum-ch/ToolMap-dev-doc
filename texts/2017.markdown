@@ -209,7 +209,7 @@ Copier manuellement les répertoires `bin`, `include` et `lib` qui ont été pro
         -DSEARCH_WXPDFDOCUMENT_PATH=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBPDF
         -DSEARCH_GEOS=1
         -DSEARCH_GDAL=1
-        ../code/build
+        ..
 
  1. pour avoir le support pour les tests unitaires il faut rajouter la commande ci-dessous :
 
@@ -233,7 +233,7 @@ Depuis le répertoire `bin` lancez la commande suivante :
         -DSEARCH_WXPDFDOCUMENT_PATH=P:\programmation\LIB\wxpdfdoc-0.9.5
         -DSEARCH_GEOS=1
         -DSEARCH_GDAL=1
-        ../code/build
+        ..
         cmake --build . --config relwithdebinfo
 
  1. pour avoir le support pour les tests unitaires il faut rajouter la commande ci-dessous :
