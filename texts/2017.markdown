@@ -227,8 +227,8 @@ Depuis le répertoire `bin` lancez la commande suivante :
         cmake
         -G"Visual Studio 15 2017 Win64"
         -DSEARCH_GIS_LIB_PATH=P:\programmation\LIB\_LIBGIS
-        -DSEARCH_GEOS_LIB_PATH=P:\programmation\LIB\geos-3.6.1
-        -DSEARCH_CURL_LIB_PATH=P:\programmation\LIB\_LIBCURL
+        -DSEARCH_GEOS_PATH=P:\programmation\LIB\geos-3.6.1
+        -DSEARCH_CURL_PATH=P:\programmation\LIB\_LIBCURL
         -DMYSQL_MAIN_DIR=P:\programmation\LIB\_LIBMYSQL
         -DSEARCH_WXPDFDOCUMENT_PATH=P:\programmation\LIB\wxpdfdoc-0.9.5
         -DSEARCH_GEOS=1
@@ -236,7 +236,7 @@ Depuis le répertoire `bin` lancez la commande suivante :
         ..
         cmake --build . --config relwithdebinfo
 
- 1. pour avoir le support pour les tests unitaires il faut rajouter la commande ci-dessous :
+ 1. pour avoir le support pour les tests unitaires il faut rajouter la commande ci-dessous avant les ".." :
 
         -DUSE_UNITTEST=1
         -DUNIT_TESTING_PATH=P:\programmation\ToolMap\test_data
@@ -244,6 +244,18 @@ Depuis le répertoire `bin` lancez la commande suivante :
         -DCXXTEST_PYTHON_TESTGEN_EXECUTABLE=P:\programmation\LIB\cxxtest-4.3\bin\cxxtestgen
 
 Alternativement, si UNIT_TESTING_PATH n'est pas renseigné, les fichiers tests sont automatiquement téléchargés.
+
+1. pour utiliser tout les coeurs lors de la compilation sous Visual Studio il faut ajouter après "set WXWIN" :
+
+        set CFLAGS=/MP
+        set CXXFLAGS=/MP
+
+### Windows - CLion
+
+Il est possible de reprendre les options mentionnées ci-dessus, cepandant il faut noter que :
+
+ - le répertoire share n'est pas au bon endroit. il doit être déplacé un répertoire plus haut afin que les images web fonctionnent
+ - le debogage n'est pas (encore) possible avec les projet Visual Studio
 
 ### VSCODE
 
