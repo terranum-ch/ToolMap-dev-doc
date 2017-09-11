@@ -220,6 +220,8 @@ Copier manuellement les répertoires `bin`, `include` et `lib` qui ont été pro
 
 ### Windows - Visual Studio 2017
 
+#### Création du projet
+
 Depuis le répertoire `bin` lancez la commande suivante :
 
 
@@ -233,10 +235,23 @@ Depuis le répertoire `bin` lancez la commande suivante :
         -DSEARCH_WXPDFDOCUMENT_PATH=P:\programmation\LIB\wxpdfdoc-0.9.5
         -DSEARCH_GEOS=1
         -DSEARCH_GDAL=1
-        ..
+        ..\code
+
+#### Compilation
+
+Pour ne construire le projet ToolMap ainsi que les tests il est possible de lancer la commande :
+
         cmake --build . --config relwithdebinfo
 
- 1. pour avoir le support pour les tests unitaires il faut rajouter la commande ci-dessous avant les ".." :
+Pour ne pas construire les tests :
+
+        cmake --build . --target ToolMap --config relwithdebinfo
+
+La compilation s'effectue par défaut avec tous les coeurs disponibles.
+
+#### Test unitaires
+
+Pour activer le support pour les tests unitaires, il faut rajouter la commande ci-dessous avant les ".." lors de la création du projet :
 
         -DUSE_UNITTEST=1
         -DUNIT_TESTING_PATH=P:\programmation\ToolMap\test_data
@@ -245,17 +260,30 @@ Depuis le répertoire `bin` lancez la commande suivante :
 
 Alternativement, si UNIT_TESTING_PATH n'est pas renseigné, les fichiers tests sont automatiquement téléchargés.
 
-1. pour utiliser tout les coeurs lors de la compilation sous Visual Studio il faut ajouter après "set WXWIN" :
+Pour lancer les tests il faut lancer la commande suivante dans le répertoire `bin/test`:
 
-        set CFLAGS=/MP
-        set CXXFLAGS=/MP
+        ctest -V
+
+#### Programme d'installation
+
+Il est nécessaire d'installer le programme NSIS (http://nsis.sourceforge.net/Main_Page) puis le programme d'installation pour Windows peut être créé avec la commande suivante: 
+
+        cpack -C relwithdebinfo
+
+#### Copie des fichiers PCH
+
+**TODO:** Afin de pouvoir diagnostiquer les éventuels crash, il est nécessaire de conserver les fichiers PCH créés lors de la compilation
 
 ### Windows - CLion
 
 Il est possible de reprendre les options mentionnées ci-dessus, cepandant il faut noter que :
 
+ - Les variables CMAKE doivent être placées dans cmake settings comme illustré ci-dessous
  - le répertoire share n'est pas au bon endroit. il doit être déplacé un répertoire plus haut afin que les images web fonctionnent
  - le debogage n'est pas (encore) possible avec les projet Visual Studio
+ - CLion n'utilise qu'un seul coeur pour la compilation
+
+![cmake settings](../img/clion_cmake_settings.png)
 
 ### VSCODE
 
