@@ -201,7 +201,9 @@ Copier manuellement les répertoires `bin`, `include` et `lib` qui ont été pro
 
 ### Unix - OSX
 
-1. Le but est de construire les exécutables à l'extérieur de l'arbre du code. Depuis le répertoire `bin` lancez la commande suivante :
+#### Création du projet
+
+Le but est de construire les exécutables à l'extérieur de l'arbre du code. Depuis le répertoire `bin` lancez la commande suivante :
 
         cmake
         -DSEARCH_GIS_LIB_PATH=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBGIS
@@ -209,14 +211,36 @@ Copier manuellement les répertoires `bin`, `include` et `lib` qui ont été pro
         -DSEARCH_WXPDFDOCUMENT_PATH=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBPDF
         -DSEARCH_GEOS=1
         -DSEARCH_GDAL=1
-        ..
+        ../code
 
- 1. pour avoir le support pour les tests unitaires il faut rajouter la commande ci-dessous :
+#### Compilation
+
+        make -j<nombre de coeurs>
+
+Sous OSX, la commande suivante est également nécessaire afin d'installer les librairies dans le bundle et de corriger les liens de ces dernières
+
+        make install
+
+#### Test unitaires
+
+ pour avoir le support pour les tests unitaires il faut rajouter la commande ci-dessous avant les ".." lors de la phase de création du projet :
 
         -DUSE_UNITTEST=1
         -DUNIT_TESTING_PATH=/Users/lucien/DATA/PRJ/TOOLMAP2/unit_testing
         -DCXXTEST_INCLUDE_DIR=/Users/lucien/DATA/PROGRAMATION/_LIB/cxxtest-4.4
         -DCXXTEST_PYTHON_TESTGEN_EXECUTABLE=/Users/lucien/DATA/PROGRAMATION/_LIB/cxxtest-4.4/bin/cxxtestgen
+
+Les tests peuvent être lancés avec la commande
+
+        ctest -V
+
+#### Programme d'installation
+
+Le programme d'installation pour OSX (fichier DMG) peut être créé avec la commande suivante :
+
+        cpack -B /chemin/destination/programme/installation
+
+**TODO**: Le programme d'installation pour Linux n'est pas encore opérationnel, mais il devrait s'agir d'une image AppImage fonctionnant sous la majorité des Linux.
 
 ### Windows - Visual Studio 2017
 
