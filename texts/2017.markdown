@@ -294,6 +294,10 @@ Il est nécessaire d'installer le programme NSIS (http://nsis.sourceforge.net/Ma
 
         cpack -C relwithdebinfo
 
+Pour faire un fichier ZIP (utile pour installer sans les permissions)
+
+        cpack -G ZIP -C relwithdebinfo
+
 #### Copie des fichiers PCH
 
 **TODO:** Afin de pouvoir diagnostiquer les éventuels crash, il est nécessaire de conserver les fichiers PCH créés lors de la compilation
