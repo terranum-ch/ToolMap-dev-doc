@@ -145,6 +145,11 @@ puis la même commande avec `WX_DEBUG=0`
         GEOS_DIR=P:/programmation/LIB/geos-3.6.1
         GEOS_CFLAGS="-I$(GEOS_DIR)/capi -I$(GEOS_DIR)/include -DHAVE_GEOS" 
         GEOS_LIB="$(GEOS_DIR)/src/geos_c_i.lib"
+        CURL_DIR=P:\programmation\LIB\_LIBCURL
+        CURL_INC="-I$(CURL_DIR)/include"
+        CURL_LIB="$(CURL_DIR)/lib/libcurl.lib wsock32.lib wldap32.lib winmm.lib"
+        CURL_CFLAGS=-DCURL_STATICLIB
+
 
 puis la même commande suivie de `install` puis encore une fois suivie de `devinstall`
 
