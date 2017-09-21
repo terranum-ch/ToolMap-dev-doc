@@ -110,6 +110,17 @@ depuis le répertoire `wxPDFDocument/build`
 
 puis la même commande avec `WX_DEBUG=0`
 
+### Libcurl
+
+Version 7.55.1 depuis https://curl.haxx.se/download.html
+
+depuis le répertoire curl-7.55.1/winbuild: 
+
+        nmake -f Makefile.vc mode=dll VC=14 MACHINE=x64 DEBUG=no
+        mkdir P:\programmation\LIB\_LIBCURL
+        xcopy ..\builds\libcurl-vc14-x64-release-dll-ipv6-sspi-winssl\*.* p:\programmation\LIB\_LIBCURL /E /Y
+
+
 ### Librairies spatiales (PROJ, GDAL, GEOS)
 
 
@@ -148,7 +159,6 @@ puis la même commande avec `WX_DEBUG=0`
         CURL_DIR=P:\programmation\LIB\_LIBCURL
         CURL_INC="-I$(CURL_DIR)/include"
         CURL_LIB="$(CURL_DIR)/lib/libcurl.lib wsock32.lib wldap32.lib winmm.lib"
-        CURL_CFLAGS=-DCURL_STATICLIB
 
 
 puis la même commande suivie de `install` puis encore une fois suivie de `devinstall`
