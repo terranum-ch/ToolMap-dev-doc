@@ -39,6 +39,11 @@ il est également possible de compiler la version 0.9.7. Avant de pouvoir utilis
         mkdir build
         ../configure
         --prefix=/Users/lucien/DATA/PROGRAMATION/_LIB/_LIBGIS
+
+   Pour Mojave et PROJ version 6.0.0, il est nécessaire d'installer pkg-config :
+
+        brew install pkg-config
+
 1. GEOS : version 3.6.1
 
         mkdir build
