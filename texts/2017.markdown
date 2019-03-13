@@ -26,6 +26,12 @@ Version 0.9.5 depuis https://github.com/utelle/wxpdfdoc/releases. La version 0.9
 
 Utiliser les mêmes options que pour la compilation de wxWidgets !
 
+il est également possible de compiler la version 0.9.7. Avant de pouvoir utiliser la même commande que ci-dessus, il est nécessaire de rajouter cette étape (fonctionne sous OSX Mojave) :
+
+        brew install autoconf automake libtool
+        autoreconf
+
+
 ### Librairies spatiales (PROJ, GDAL, GEOS)
 
 1. PROJ : version 4.9.3
