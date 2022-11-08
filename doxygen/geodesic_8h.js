@@ -1,0 +1,36 @@
+var geodesic_8h =
+[
+    [ "geod_geodesic", "structgeod__geodesic.html", "structgeod__geodesic" ],
+    [ "geod_geodesicline", "structgeod__geodesicline.html", "structgeod__geodesicline" ],
+    [ "geod_polygon", "structgeod__polygon.html", "structgeod__polygon" ],
+    [ "GEODESIC_VERSION_MAJOR", "geodesic_8h.html#aa1ab60cc36acda46bf5a36912798d301", null ],
+    [ "GEODESIC_VERSION_MINOR", "geodesic_8h.html#a0c184207064c950e11388ef12c7a055c", null ],
+    [ "GEODESIC_VERSION_PATCH", "geodesic_8h.html#a4bd9945ba2bb3fade45faa3bc017f6ad", null ],
+    [ "geod_mask", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6e", [
+      [ "GEOD_NONE", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6eae22ae71ca672ded9811711bbee94378c", null ],
+      [ "GEOD_LATITUDE", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6ea4a91360f17ece136774405203fc82a77", null ],
+      [ "GEOD_LONGITUDE", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6ea31db22e3891097a65a5dbacde93bc9b9", null ],
+      [ "GEOD_AZIMUTH", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6ea133a763df7edb34abac009ac5bc68198", null ],
+      [ "GEOD_DISTANCE", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6eacc5dba1694d33678aaa88319b3031e1b", null ],
+      [ "GEOD_DISTANCE_IN", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6eadbbfce582c4a7e3a2151c8db8d3561ca", null ],
+      [ "GEOD_REDUCEDLENGTH", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6ea187e51906b0c056ac163a1ce7bfa7bde", null ],
+      [ "GEOD_GEODESICSCALE", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6eac093650099cfb32655d9324bfbc2de8e", null ],
+      [ "GEOD_AREA", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6eabd3942ee2187ea3db94652e995e9fefa", null ],
+      [ "GEOD_ALL", "geodesic_8h.html#a13d1d4e7ad788044ac154396cb8ffa6eab690c7b683ec89508b0797535c5a2130", null ]
+    ] ],
+    [ "geod_direct", "geodesic_8h.html#a676f59f07987ddd3dd4109fcfeccdb9d", null ],
+    [ "geod_gendirect", "geodesic_8h.html#a31959a079115ec0440482e4aa124b556", null ],
+    [ "geod_geninverse", "geodesic_8h.html#a73f22c8aef9d1f2a8b13aebea4e8cae3", null ],
+    [ "geod_genposition", "geodesic_8h.html#a85679144e60bddbad4e142c3918d7803", null ],
+    [ "geod_init", "geodesic_8h.html#ace6823e6a47719d500f1a063e4255e5f", null ],
+    [ "geod_inverse", "geodesic_8h.html#a19bc3d000428010ad9d8509174e672c9", null ],
+    [ "geod_lineinit", "geodesic_8h.html#a09e376205aa792afe7ab50d6ef7d3435", null ],
+    [ "geod_polygon_addedge", "geodesic_8h.html#a18a039bd09181fad7b5238bef1a3a667", null ],
+    [ "geod_polygon_addpoint", "geodesic_8h.html#ae8efc9ecc11362c7ce2b67909d20eeaf", null ],
+    [ "geod_polygon_compute", "geodesic_8h.html#a82f0bc17da7f4304b059733917d11c4f", null ],
+    [ "geod_polygon_init", "geodesic_8h.html#a35bcc76a7597c0431d7eb1b2a60b5fc5", null ],
+    [ "geod_polygon_testedge", "geodesic_8h.html#a55b07aebad98323e339656343fa68d2d", null ],
+    [ "geod_polygon_testpoint", "geodesic_8h.html#a2d95ee1a89aca82ac8d364ad4163e769", null ],
+    [ "geod_polygonarea", "geodesic_8h.html#aafa25f138d78c387a107ec0221bbb181", null ],
+    [ "geod_position", "geodesic_8h.html#a639904c52fc74105d084ec679988ccb6", null ]
+];
