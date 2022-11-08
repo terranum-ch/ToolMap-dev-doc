@@ -3,5 +3,6 @@
 This repository contains the ToolMap developper documentation:
 
 * [Code reference](doxygen/index.html)
-* [Development instructions](instructions/readme.md)
+* [Build instructions (new)](instructions/build.md)
+* [Development instructions (old)](instructions_old/index.md)
 
