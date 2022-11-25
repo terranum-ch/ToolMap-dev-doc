@@ -1,6 +1,6 @@
 var classtmAttributionManager =
 [
-    [ "tmAttributionManager", "classtmAttributionManager.html#a3fedbf1066dc0d95124ea6ef2c6858b6", null ],
+    [ "tmAttributionManager", "classtmAttributionManager.html#a8f057e06d0fd04c4bcc440a9c5f48f17", null ],
     [ "~tmAttributionManager", "classtmAttributionManager.html#ab6ff201371958ad423da6b6bf916a3d6", null ],
     [ "AAttributionButtonShow", "classtmAttributionManager.html#ad91bd026448f3acbc1fc1ef19c7b42e1", null ],
     [ "DisplayInformationsWnd", "classtmAttributionManager.html#a3cba5369cc03f721011ce1a0724db38b", null ],

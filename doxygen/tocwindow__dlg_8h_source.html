@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('tocwindow__dlg_8h_source.html',''); in
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;wx/aui/dockart.h&gt;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;wx/tglbtn.h&gt;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;../gis/tocctrl.h&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;../gis/tmtocctrl.h&quot;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;wxflatbutton.h&quot;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#define ID_TOCWINDOW_DLG 10035</span></div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('tocwindow__dlg_8h_source.html',''); in
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  DECLARE_DYNAMIC_CLASS(<a class="code hl_class" href="classTocWindowContent.html">TocWindowContent</a>);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_class" href="classTocCtrl.html">TocCtrl</a> *m_toc_ctrl;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_class" href="classtmTOCCtrl.html">tmTOCCtrl</a> *m_TOCCtrl;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_class" href="classTocWindowContent.html">TocWindowContent</a>();</div>
@@ -169,8 +169,8 @@ $(document).ready(function(){initNavTree('tocwindow__dlg_8h_source.html',''); in
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> FALSE;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <a class="code hl_class" href="classTocCtrl.html">TocCtrl</a> *GetTocCtrl() {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> m_toc_ctrl;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <a class="code hl_class" href="classtmTOCCtrl.html">tmTOCCtrl</a> *GetTOCCtrl() {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> m_TOCCtrl;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
@@ -205,10 +205,10 @@ $(document).ready(function(){initNavTree('tocwindow__dlg_8h_source.html',''); in
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>};</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassTocCtrl_html"><div class="ttname"><a href="classTocCtrl.html">TocCtrl</a></div><div class="ttdef"><b>Definition:</b> tocctrl.h:29</div></div>
 <div class="ttc" id="aclassTocWindowContent_html"><div class="ttname"><a href="classTocWindowContent.html">TocWindowContent</a></div><div class="ttdef"><b>Definition:</b> tocwindow_dlg.h:47</div></div>
 <div class="ttc" id="aclassTocWindowContent_html_a47b57b496ddbbeda555aed9ae55cf43d"><div class="ttname"><a href="classTocWindowContent.html#a47b57b496ddbbeda555aed9ae55cf43d">TocWindowContent::CreateControls</a></div><div class="ttdeci">wxSizer * CreateControls(wxWindow *parent, bool call_fit=TRUE, bool set_sizer=TRUE)</div><div class="ttdoc">Creates the controls and sizers.</div><div class="ttdef"><b>Definition:</b> tocwindow_dlg.cpp:33</div></div>
 <div class="ttc" id="aclassTocWindowDlgGen_html"><div class="ttname"><a href="classTocWindowDlgGen.html">TocWindowDlgGen</a></div><div class="ttdef"><b>Definition:</b> tocwindow_dlg.h:78</div></div>
+<div class="ttc" id="aclasstmTOCCtrl_html"><div class="ttname"><a href="classtmTOCCtrl.html">tmTOCCtrl</a></div><div class="ttdoc">GIS TOC class.</div><div class="ttdef"><b>Definition:</b> tmtocctrl.h:59</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
