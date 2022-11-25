@@ -112,37 +112,54 @@ $(document).ready(function(){initNavTree('tocctrl_8h_source.html',''); initResiz
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;wx/dataview.h&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;tocctrlmodel.h&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classTocCtrl.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="classTocCtrl.html">TocCtrl</a> : <span class="keyword">public</span> wxDataViewCtrl {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_class" href="classTocCtrl.html">TocCtrl</a>(wxWindow *parent, wxWindowID <span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">void</span> add_test_data();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">void</span> ExpandAll();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_class" href="classTocCtrlModel.html">TocCtrlModel</a> *GetTocModel();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">void</span> SetColour(<span class="keyword">const</span> wxColour &amp;colour_normal = wxNullColour, <span class="keyword">const</span> wxColour &amp;colour_dark = wxNullColour);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  wxColour GetColourNormal();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  wxColour GetColourDark();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="comment">//    wxTreeListItem add_group(wxTreeListItem parent, const wxString &amp; label);</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="comment">//    wxTreeListItem add_layer(wxTreeListItem parent, const wxString &amp;label, int type);</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">void</span> OnDragndropBegin(wxDataViewEvent &amp;event);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">void</span> OnDragndropPossible(wxDataViewEvent &amp;event);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> OnDragndropDrop(wxDataViewEvent &amp;event);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> OnValueChanged(wxDataViewEvent &amp;event);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_class" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> * m_drag_node_start;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_class" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> * m_drag_node_end;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif  </span><span class="comment">// FEATURE_TOC_TOCCTRL_H</span></div>
-<div class="ttc" id="aclassTocCtrlModelNode_html"><div class="ttname"><a href="classTocCtrlModelNode.html">TocCtrlModelNode</a></div><div class="ttdoc">Node for TocCtrlModel.</div><div class="ttdef"><b>Definition:</b> tocctrlmodel.h:18</div></div>
-<div class="ttc" id="aclassTocCtrlModel_html"><div class="ttname"><a href="classTocCtrlModel.html">TocCtrlModel</a></div><div class="ttdoc">Model for TocCtrl.</div><div class="ttdef"><b>Definition:</b> tocctrlmodel.h:55</div></div>
-<div class="ttc" id="aclassTocCtrl_html"><div class="ttname"><a href="classTocCtrl.html">TocCtrl</a></div><div class="ttdef"><b>Definition:</b> tocctrl.h:16</div></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;tmlayerproperties.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// EVENT FOR TOC CTRL</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>DECLARE_EVENT_TYPE(tmEVT_LM_REMOVE, -1)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>DECLARE_EVENT_TYPE(tmEVT_LM_ADD, -1)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>DECLARE_EVENT_TYPE(tmEVT_LM_UPDATE, -1)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>DECLARE_EVENT_TYPE(tmEVT_LM_SHOW_PROPERTIES, -1)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>DECLARE_EVENT_TYPE(tmEVT_LM_SHOW_LABELS, -1);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>DECLARE_EVENT_TYPE(tmEVT_LM_TOC_EDITED, -1)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>DECLARE_EVENT_TYPE(tmEVT_EM_EDIT_START, -1)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>DECLARE_EVENT_TYPE(tmEVT_EM_EDIT_STOP, -1)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>DECLARE_EVENT_TYPE(tmEVT_TOC_SELECTION_CHANGED, -1)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classTocCtrl.html">   29</a></span>class <a class="code hl_class" href="classTocCtrl.html">TocCtrl</a> : public wxDataViewCtrl {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_class" href="classTocCtrl.html">TocCtrl</a>(wxWindow *parent, wxWindowID <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">void</span> add_test_data();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> ExpandAll();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_class" href="classTocCtrlModel.html">TocCtrlModel</a> *GetTocModel();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> SetColour(<span class="keyword">const</span> wxColour &amp;colour_normal = wxNullColour, <span class="keyword">const</span> wxColour &amp;colour_dark = wxNullColour);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  wxColour GetColourNormal();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  wxColour GetColourDark();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// toc ctrl function for toolmap</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="classtmLayerProperties.html">tmLayerProperties</a> * GetSelectionLayer();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">void</span> SetSelectedLayer(<span class="keywordtype">int</span> layerID);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> OnDragndropBegin(wxDataViewEvent &amp;event);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> OnDragndropPossible(wxDataViewEvent &amp;event);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> OnDragndropDrop(wxDataViewEvent &amp;event);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> OnValueChanged(wxDataViewEvent &amp;event);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_class" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> * m_drag_node_start;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_class" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> * m_drag_node_end;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif  </span><span class="comment">// FEATURE_TOC_TOCCTRL_H</span></div>
+<div class="ttc" id="aclassTocCtrlModelNode_html"><div class="ttname"><a href="classTocCtrlModelNode.html">TocCtrlModelNode</a></div><div class="ttdoc">Node for TocCtrlModel.</div><div class="ttdef"><b>Definition:</b> tocctrlmodel.h:20</div></div>
+<div class="ttc" id="aclassTocCtrlModel_html"><div class="ttname"><a href="classTocCtrlModel.html">TocCtrlModel</a></div><div class="ttdoc">Model for TocCtrl.</div><div class="ttdef"><b>Definition:</b> tocctrlmodel.h:58</div></div>
+<div class="ttc" id="aclassTocCtrl_html"><div class="ttname"><a href="classTocCtrl.html">TocCtrl</a></div><div class="ttdef"><b>Definition:</b> tocctrl.h:29</div></div>
+<div class="ttc" id="aclasstmLayerProperties_html"><div class="ttname"><a href="classtmLayerProperties.html">tmLayerProperties</a></div><div class="ttdoc">Storing object of layer type.</div><div class="ttdef"><b>Definition:</b> tmlayerproperties.h:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

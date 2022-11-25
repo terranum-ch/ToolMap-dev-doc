@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('queries__panel_8h_source.html',''); in
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <a class="code hl_class" href="classQueriesList.html">QueriesList</a> *m_QueriesList;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  wxWindow *m_ParentEvt;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">bool</span> m_IsProjectOpen;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <a class="code hl_class" href="classtmTOCCtrl.html">tmTOCCtrl</a> *m_TOC;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <a class="code hl_class" href="classTocCtrl.html">TocCtrl</a> *m_toc_ctrl;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keywordtype">void</span> InitMemberValues();</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
@@ -231,8 +231,8 @@ $(document).ready(function(){initNavTree('queries__panel_8h_source.html',''); in
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="keywordtype">void</span> SetSelectedData(<a class="code hl_class" href="classtmSelectedDataMemory.html">tmSelectedDataMemory</a> *selected);</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">void</span> SetTOCCtrl(<a class="code hl_class" href="classtmTOCCtrl.html">tmTOCCtrl</a> *toc) {</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    m_TOC = toc;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">void</span> SetTOCCtrl(<a class="code hl_class" href="classTocCtrl.html">TocCtrl</a> *toc) {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    m_toc_ctrl = toc;</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  }</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classQueries__PANEL.html#a889e0e23486a198c37ce37da861afef1">LoadQueries</a>(<a class="code hl_class" href="classDataBaseTM.html">DataBaseTM</a> *database);</div>
@@ -257,8 +257,8 @@ $(document).ready(function(){initNavTree('queries__panel_8h_source.html',''); in
 <div class="ttc" id="aclassQueries__PANEL_html_a889e0e23486a198c37ce37da861afef1"><div class="ttname"><a href="classQueries__PANEL.html#a889e0e23486a198c37ce37da861afef1">Queries_PANEL::LoadQueries</a></div><div class="ttdeci">bool LoadQueries(DataBaseTM *database)</div><div class="ttdoc">Load the queries from the database.</div><div class="ttdef"><b>Definition:</b> queries_panel.cpp:163</div></div>
 <div class="ttc" id="aclassQueries__PANEL_html_a8a7480f0c50e4dcd24a386e3d7bf6a79"><div class="ttname"><a href="classQueries__PANEL.html#a8a7480f0c50e4dcd24a386e3d7bf6a79">Queries_PANEL::CreateControls</a></div><div class="ttdeci">wxSizer * CreateControls(wxWindow *parent, bool call_fit=true, bool set_sizer=true)</div><div class="ttdoc">Creates the controls and sizers.</div><div class="ttdef"><b>Definition:</b> queries_panel.cpp:103</div></div>
 <div class="ttc" id="aclassQueries__PANEL_html_ab5d330e6c1c2968c53025e2d4b7c3384"><div class="ttname"><a href="classQueries__PANEL.html#ab5d330e6c1c2968c53025e2d4b7c3384">Queries_PANEL::~Queries_PANEL</a></div><div class="ttdeci">~Queries_PANEL()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> queries_panel.cpp:82</div></div>
+<div class="ttc" id="aclassTocCtrl_html"><div class="ttname"><a href="classTocCtrl.html">TocCtrl</a></div><div class="ttdef"><b>Definition:</b> tocctrl.h:29</div></div>
 <div class="ttc" id="aclasstmSelectedDataMemory_html"><div class="ttname"><a href="classtmSelectedDataMemory.html">tmSelectedDataMemory</a></div><div class="ttdoc">Store ID of selected data into memory.</div><div class="ttdef"><b>Definition:</b> tmselecteddatamemory.h:43</div></div>
-<div class="ttc" id="aclasstmTOCCtrl_html"><div class="ttname"><a href="classtmTOCCtrl.html">tmTOCCtrl</a></div><div class="ttdoc">GIS TOC class.</div><div class="ttdef"><b>Definition:</b> tmtocctrl.h:59</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
