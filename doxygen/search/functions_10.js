@@ -20,7 +20,7 @@ var searchData=
   ['tmlayerproperties_17',['tmLayerProperties',['../classtmLayerProperties.html#a689d35772b51a600ded08be1bf656119',1,'tmLayerProperties']]],
   ['tmmemoryzoommanager_18',['tmMemoryZoomManager',['../classtmMemoryZoomManager.html#a1cd2f89145e33149f4c90e38efb9a263',1,'tmMemoryZoomManager']]],
   ['tmselecteddatamemory_19',['tmSelectedDataMemory',['../classtmSelectedDataMemory.html#af3758d96d05879da100b9d2987d8383f',1,'tmSelectedDataMemory']]],
-  ['tmselectioninfoctrl_20',['tmSelectionInfoCtrl',['../classtmSelectionInfoCtrl.html#aa346d572a50f0ab753197b88e49069b1',1,'tmSelectionInfoCtrl']]],
+  ['tmselectioninfoctrl_20',['tmSelectionInfoCtrl',['../classtmSelectionInfoCtrl.html#adcc8af2f833eaec1dfaaf4aff367f7a6',1,'tmSelectionInfoCtrl']]],
   ['tmsnappingmemory_21',['tmSnappingMemory',['../classtmSnappingMemory.html#af3a71b11ad4c68289189ff833d37c765',1,'tmSnappingMemory']]],
   ['tmsymboldlg_22',['tmSymbolDLG',['../classtmSymbolDLG.html#af43d81291ba80b796cedefc097056850',1,'tmSymbolDLG']]],
   ['tmsymboldlgline_23',['tmSymbolDLGLine',['../classtmSymbolDLGLine.html#a59207e617d4fc5e5010c8532a689cb0f',1,'tmSymbolDLGLine']]],

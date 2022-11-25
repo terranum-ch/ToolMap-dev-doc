@@ -78,7 +78,7 @@ var searchData=
   ['tmrotationwarning_5fdlg_75',['tmRotationWarning_DLG',['../classtmRotationWarning__DLG.html',1,'']]],
   ['tmscalectrlcombo_76',['tmScaleCtrlCombo',['../classtmScaleCtrlCombo.html',1,'']]],
   ['tmselecteddatamemory_77',['tmSelectedDataMemory',['../classtmSelectedDataMemory.html',1,'tmSelectedDataMemory'],['../classtmSelectedDataMemory.html#af3758d96d05879da100b9d2987d8383f',1,'tmSelectedDataMemory::tmSelectedDataMemory()']]],
-  ['tmselectioninfoctrl_78',['tmSelectionInfoCtrl',['../classtmSelectionInfoCtrl.html',1,'tmSelectionInfoCtrl'],['../classtmSelectionInfoCtrl.html#aa346d572a50f0ab753197b88e49069b1',1,'tmSelectionInfoCtrl::tmSelectionInfoCtrl()']]],
+  ['tmselectioninfoctrl_78',['tmSelectionInfoCtrl',['../classtmSelectionInfoCtrl.html',1,'tmSelectionInfoCtrl'],['../classtmSelectionInfoCtrl.html#adcc8af2f833eaec1dfaaf4aff367f7a6',1,'tmSelectionInfoCtrl::tmSelectionInfoCtrl()']]],
   ['tmserialize_79',['tmSerialize',['../classtmSerialize.html',1,'']]],
   ['tmsharednodeedit_80',['tmSharedNodeEdit',['../classtmSharedNodeEdit.html',1,'']]],
   ['tmshortcutmemory_81',['tmShortcutMemory',['../classtmShortcutMemory.html',1,'']]],
