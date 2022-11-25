@@ -319,9 +319,6 @@ var hierarchy =
     [ "wxThread", null, [
       [ "WebUpdateThread", "classWebUpdateThread.html", null ]
     ] ],
-    [ "wxTreeCtrl", null, [
-      [ "tmTOCCtrl", "classtmTOCCtrl.html", null ]
-    ] ],
     [ "wxTreeItemData", null, [
       [ "tmLayerProperties", "classtmLayerProperties.html", null ]
     ] ],

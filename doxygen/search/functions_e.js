@@ -7,6 +7,6 @@ var searchData=
   ['removefilefromrecent_4',['RemoveFileFromRecent',['../classMenuManager.html#a71cb55458e9884350a8d44701f5c0eba',1,'MenuManager']]],
   ['removeflag_5',['RemoveFlag',['../classwxTreeMultiWindowInfo.html#a40095928fb63d68884f81df35a559e46',1,'wxTreeMultiWindowInfo']]],
   ['removeitem_6',['RemoveItem',['../classtmCheckListBox.html#ad766f77bf89c2b02c6bc2efbf1887cea',1,'tmCheckListBox']]],
-  ['removelayer_7',['RemoveLayer',['../classtmLayerManager.html#ae4b8303975546012364d0521801cd392',1,'tmLayerManager::RemoveLayer()'],['../classtmTOCCtrl.html#ad199d69047f2eddfe36347517985ae07',1,'tmTOCCtrl::RemoveLayer()']]],
+  ['removelayer_7',['RemoveLayer',['../classtmLayerManager.html#ae4b8303975546012364d0521801cd392',1,'tmLayerManager']]],
   ['removetoclayer_8',['RemoveTOCLayer',['../classDataBaseTM.html#a86ed4f461e5f42bfdb5fb745de5feb56',1,'DataBaseTM']]]
 ];

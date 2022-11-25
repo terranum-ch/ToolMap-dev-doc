@@ -227,7 +227,6 @@ var annotated_dup =
     [ "tmSymbolVectorPoint", "classtmSymbolVectorPoint.html", null ],
     [ "tmSymbolVectorPointMultiple", "classtmSymbolVectorPointMultiple.html", null ],
     [ "tmSymbolVectorPolygon", "classtmSymbolVectorPolygon.html", null ],
-    [ "tmTOCCtrl", "classtmTOCCtrl.html", "classtmTOCCtrl" ],
     [ "tmTOCCtrlMenu", "classtmTOCCtrlMenu.html", null ],
     [ "tmToolManager", "classtmToolManager.html", null ],
     [ "tmValidator", "classtmValidator.html", "classtmValidator" ],

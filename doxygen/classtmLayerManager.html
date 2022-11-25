@@ -135,7 +135,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InitScaleCtrlList</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMemoryProject</b> (<a class="el" href="classPrjDefMemManage.html">PrjDefMemManage</a> *memoryprj)</td></tr>
 <tr class="separator:a24f06716e12c9d333971fd43a8dea8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b8303975546012364d0521801cd392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtmLayerManager.html#ae4b8303975546012364d0521801cd392">RemoveLayer</a> (wxCommandEvent &amp;event)</td></tr>
-<tr class="memdesc:ae4b8303975546012364d0521801cd392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Response to the event sent by the <a class="el" href="classtmTOCCtrl.html" title="GIS TOC class.">tmTOCCtrl</a>.  <a href="classtmLayerManager.html#ae4b8303975546012364d0521801cd392">More...</a><br /></td></tr>
+<tr class="memdesc:ae4b8303975546012364d0521801cd392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Response to the event sent by the #tmTOCCtrl.  <a href="classtmLayerManager.html#ae4b8303975546012364d0521801cd392">More...</a><br /></td></tr>
 <tr class="separator:ae4b8303975546012364d0521801cd392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acec3f0ff7536dd4fa211256fa6b5bbc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtmLayerManager.html#acec3f0ff7536dd4fa211256fa6b5bbc6">AddLayer</a> (wxCommandEvent &amp;event)</td></tr>
 <tr class="memdesc:acec3f0ff7536dd4fa211256fa6b5bbc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Response to the event sent by the "Add Gis Data" menu.  <a href="classtmLayerManager.html#acec3f0ff7536dd4fa211256fa6b5bbc6">More...</a><br /></td></tr>
@@ -253,7 +253,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoggingEnabl
 <div class="textblock"><p >GIS class for dealing with layers. </p>
 <p >This is the super class for dealing with GIS. This class is the central point dealing with :</p><ul>
 <li>Database (<a class="el" href="classDataBaseTM.html">DataBaseTM</a>)</li>
-<li>TOC controls (<a class="el" href="classtmTOCCtrl.html" title="GIS TOC class.">tmTOCCtrl</a>)</li>
+<li>TOC controls (#tmTOCCtrl)</li>
 <li>GIS progress indicator (#tmProgressIndicator)</li>
 <li>... <dl class="section author"><dt>Author</dt><dd>Lucien Schreiber (c) CREALP 2008 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>07 July 2008 </dd></dl>
@@ -350,10 +350,10 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoggingEnabl
 
 <p>Response to the event sent by the "Add Gis Data" menu. </p>
 <p >This function is doing following operations :</p><ul>
-<li>Checking that <a class="el" href="classtmTOCCtrl.html" title="GIS TOC class.">tmTOCCtrl</a> is ready : <a class="el" href="classtmTOCCtrl.html#aad759a72d1bf7344100df2c7537477e0" title="Checks if the TOC is ready.">tmTOCCtrl::IsTOCReady()</a></li>
+<li>Checking that #tmTOCCtrl is ready : tmTOCCtrl::IsTOCReady()</li>
 <li>Importing data</li>
 <li>Saving layer to the database and getting back his real ID</li>
-<li>Adding layer to the <a class="el" href="classtmTOCCtrl.html" title="GIS TOC class.">tmTOCCtrl</a> with his real ID. <dl class="section author"><dt>Author</dt><dd>Lucien Schreiber (c) CREALP 2008 </dd></dl>
+<li>Adding layer to the tmTOCCtrl with his real ID. <dl class="section author"><dt>Author</dt><dd>Lucien Schreiber (c) CREALP 2008 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>11 July 2008 </dd></dl>
 </li>
 </ul>
@@ -483,7 +483,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoggingEnabl
 </div><div class="memdoc">
 
 <p>Called when showing or hiding a layer. </p>
-<p >This function is called by the TOC (<a class="el" href="classtmTOCCtrl.html" title="GIS TOC class.">tmTOCCtrl</a>) when a layers is displayed or hidden </p><dl class="params"><dt>Parameters</dt><dd>
+<p >This function is called by the TOC (#tmTOCCtrl) when a layers is displayed or hidden </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>empty. </td></tr>
   </table>
@@ -589,8 +589,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoggingEnabl
       </table>
 </div><div class="memdoc">
 
-<p>Response to the event sent by the <a class="el" href="classtmTOCCtrl.html" title="GIS TOC class.">tmTOCCtrl</a>. </p>
-<p >Item was already deleted from the <a class="el" href="classtmTOCCtrl.html" title="GIS TOC class.">tmTOCCtrl</a> and is now removed from the DB and the display is refreshed. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Response to the event sent by the #tmTOCCtrl. </p>
+<p >Item was already deleted from the tmTOCCtrl and is now removed from the DB and the display is refreshed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>Contain the layer database ID into the GetExtraLong() function </td></tr>
   </table>
