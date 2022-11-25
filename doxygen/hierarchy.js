@@ -15,7 +15,6 @@ var hierarchy =
       [ "DataBaseTM", "classDataBaseTM.html", null ]
     ] ],
     [ "DataBaseResult", "classDataBaseResult.html", null ],
-    [ "feature_toc_bitmaps", "classfeature__toc__bitmaps.html", null ],
     [ "geod_geodesic", "structgeod__geodesic.html", null ],
     [ "geod_geodesicline", "structgeod__geodesicline.html", null ],
     [ "geod_polygon", "structgeod__polygon.html", null ],
@@ -77,7 +76,6 @@ var hierarchy =
     [ "tmSymbolRule", "classtmSymbolRule.html", null ],
     [ "tmSymbolRuleManager", "classtmSymbolRuleManager.html", null ],
     [ "tmZoomExtent", "classtmZoomExtent.html", null ],
-    [ "TocCtrlModelNode", "classTocCtrlModelNode.html", null ],
     [ "TreeMultiItemBase", "classTreeMultiItemBase.html", [
       [ "TreeMultiItemNode", "classTreeMultiItemNode.html", [
         [ "TreeMultiItemRoot", "classTreeMultiItemRoot.html", null ]
@@ -105,15 +103,6 @@ var hierarchy =
     ] ],
     [ "wxComboBox", null, [
       [ "tmScaleCtrlCombo", "classtmScaleCtrlCombo.html", null ]
-    ] ],
-    [ "wxDataViewCtrl", null, [
-      [ "TocCtrl", "classTocCtrl.html", null ]
-    ] ],
-    [ "wxDataViewCustomRenderer", null, [
-      [ "tocRenderer", "classtocRenderer.html", null ]
-    ] ],
-    [ "wxDataViewModel", null, [
-      [ "TocCtrlModel", "classTocCtrlModel.html", null ]
     ] ],
     [ "wxDialog", null, [
       [ "AAttribBatch_DLG", "classAAttribBatch__DLG.html", null ],
@@ -327,9 +316,6 @@ var hierarchy =
     ] ],
     [ "wxTreeMultiItem", "classwxTreeMultiItem.html", null ],
     [ "wxTreeMultiWindowInfo", "classwxTreeMultiWindowInfo.html", null ],
-    [ "wxVariantData", null, [
-      [ "tocRendererData", "classtocRendererData.html", null ]
-    ] ],
     [ "wxWizard", null, [
       [ "NewTemplatePrjWizard", "classNewTemplatePrjWizard.html", null ],
       [ "PdfExportWizard", "classPdfExportWizard.html", null ],

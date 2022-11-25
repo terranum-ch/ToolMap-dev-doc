@@ -54,10 +54,6 @@ var dir_f798bfd495d7fe9c68c3cfda0f50bf7b =
     [ "tmsymbolvectorpolygon.h", "tmsymbolvectorpolygon_8h_source.html", null ],
     [ "tmtocctrl.h", "tmtocctrl_8h_source.html", null ],
     [ "tmtocctrlmenu.h", "tmtocctrlmenu_8h_source.html", null ],
-    [ "tocbitmaps.h", "tocbitmaps_8h_source.html", null ],
-    [ "tocctrl.h", "tocctrl_8h_source.html", null ],
-    [ "tocctrlmodel.h", "tocctrlmodel_8h_source.html", null ],
-    [ "tocrenderer.h", "tocrenderer_8h_source.html", null ],
     [ "tooldanglingnodes.h", "tooldanglingnodes_8h_source.html", null ],
     [ "vrprogress.h", "vrprogress_8h_source.html", null ]
 ];
