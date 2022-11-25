@@ -184,12 +184,13 @@ $(document).ready(function(){initNavTree('lscrashreport_8h_source.html',''); ini
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">bool</span> SendReportWeb(<span class="keyword">const</span> wxString &amp;serverurl, <span class="keyword">const</span> wxString &amp;proxy = wxEmptyString);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordtype">bool</span> SaveReportFile(<span class="keyword">const</span> wxString &amp;directory);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// CALLBACK FOR CURL</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">size_t</span> wxcurl_string_write(<span class="keywordtype">void</span> *ptr, <span class="keywordtype">size_t</span> size, <span class="keywordtype">size_t</span> nmemb, <span class="keywordtype">void</span> *stream);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  wxString BuildReportBaseName() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// CALLBACK FOR CURL</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">size_t</span> wxcurl_string_write(<span class="keywordtype">void</span> *ptr, <span class="keywordtype">size_t</span> size, <span class="keywordtype">size_t</span> nmemb, <span class="keywordtype">void</span> *stream);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclasslsCrashReport__DLG_html"><div class="ttname"><a href="classlsCrashReport__DLG.html">lsCrashReport_DLG</a></div><div class="ttdef"><b>Definition:</b> lscrashreport.h:33</div></div>
 <div class="ttc" id="aclasslsCrashReport_html"><div class="ttname"><a href="classlsCrashReport.html">lsCrashReport</a></div><div class="ttdoc">Crash report class.</div><div class="ttdef"><b>Definition:</b> lscrashreport.h:65</div></div>
 </div><!-- fragment --></div><!-- contents -->
