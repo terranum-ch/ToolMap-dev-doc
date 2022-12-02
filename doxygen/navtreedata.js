@@ -67,9 +67,9 @@ var NAVTREEINDEX =
 [
 "Misc.html",
 "classQueriesList.html",
-"classtmEditManager.html#a26dfa0d931ba0a3fd4e6be0094a8e0d1",
-"classtmSymbolDLGPolygon.html",
-"menumanager_8h.html"
+"classtmEditManager.html#abd14596f7440bfcf6601ce400d74b13e",
+"classtmSymbolRuleEdit__DLG.html",
+"menumanager_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
