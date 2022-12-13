@@ -65,12 +65,11 @@ var NAVTREEINDEX1 =
 "classTextParserTxtFileTab.html":[10,0,92],
 "classTocCtrl.html":[10,0,209],
 "classTocCtrlModel.html":[10,0,210],
-"classTocCtrlModel.html#a2c1c7d274b30c6eb9ee5c4fe24f9f6a0":[10,0,210,1],
-"classTocCtrlModel.html#a49965b13da7fca2ef29d9660fd690484":[10,0,210,3],
-"classTocCtrlModel.html#a545334afb812b7def2e25aa4601722c4":[10,0,210,4],
-"classTocCtrlModel.html#a5b30fba08fe4b082b99d5af7dea709cd":[10,0,210,2],
+"classTocCtrlModel.html#a49965b13da7fca2ef29d9660fd690484":[10,0,210,2],
+"classTocCtrlModel.html#a545334afb812b7def2e25aa4601722c4":[10,0,210,3],
+"classTocCtrlModel.html#a5b30fba08fe4b082b99d5af7dea709cd":[10,0,210,1],
 "classTocCtrlModel.html#ae5af97f7daab08bf62aba620aca33c79":[10,0,210,0],
-"classTocCtrlModel.html#affdbb26abda9687a8b31ca1f045ba0c2":[10,0,210,5],
+"classTocCtrlModel.html#affdbb26abda9687a8b31ca1f045ba0c2":[10,0,210,4],
 "classTocCtrlModelNode.html":[10,0,211],
 "classTocCtrlModelNode.html#ab8991515792116b0faed3a0abca8d87d":[10,0,211,0],
 "classTocWindowContent.html":[10,0,214],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classtmEditManager.html":[10,0,121],
 "classtmEditManager.html#a0f245184f8e36299581289fa9c31df50":[10,0,121,8],
 "classtmEditManager.html#a26dfa0d931ba0a3fd4e6be0094a8e0d1":[10,0,121,5],
-"classtmEditManager.html#a38e68c52fa5616bfe3423c7f41107d60":[10,0,121,2]
+"classtmEditManager.html#a38e68c52fa5616bfe3423c7f41107d60":[10,0,121,2],
+"classtmEditManager.html#a400e3d15fe484df7f73114f02dbfd7bd":[10,0,121,11]
 };
