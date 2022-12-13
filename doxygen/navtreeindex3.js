@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classtmSymbolDLGPolygon.html":[10,0,191],
 "classtmSymbolDLGPolygon.html#aa406e991fadba73957feab9e1f6ec491":[10,0,191,0],
 "classtmSymbolDLGRaster.html":[10,0,193],
 "classtmSymbolDLGRaster.html#ae95bf069f0d9f08359e68d8698f7bf98":[10,0,193,0],
@@ -124,7 +123,7 @@ var NAVTREEINDEX3 =
 "classwxTreeMultiWindowInfo.html#aa7eeee27a54488e32c8cf0f43a983097":[9,2,1,1],
 "classwxTreeMultiWindowInfo.html#ae016abfa5efaf001f44030ce053eda91":[9,2,1,2],
 "classwxTreeMultiWindowInfo.html#af8e7106f77e94a72301b806fa6191416":[9,2,1,3],
-"cursor__bmp_8h_source.html":[11,0,0,5,1],
+"cursor__bmp_8h_source.html":[11,0,0,5,0],
 "danglingnodes__dlg_8h_source.html":[11,0,0,4,5],
 "database_8cpp.html":[11,0,0,2,0],
 "database_8h.html":[11,0,0,2,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "main__panel_8h_source.html":[11,0,0,4,11],
 "managed__aui__wnd_8h_source.html":[11,0,0,4,12],
 "menumanager_8cpp.html":[11,0,0,4,13],
-"menumanager_8h.html":[11,0,0,4,14]
+"menumanager_8h.html":[11,0,0,4,14],
+"menumanager_8h_source.html":[11,0,0,4,14]
 };

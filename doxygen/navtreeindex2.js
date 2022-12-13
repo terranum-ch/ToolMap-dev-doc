@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classtmEditManager.html#a26dfa0d931ba0a3fd4e6be0094a8e0d1":[10,0,122,5],
 "classtmEditManager.html#a38e68c52fa5616bfe3423c7f41107d60":[10,0,122,2],
 "classtmEditManager.html#a400e3d15fe484df7f73114f02dbfd7bd":[10,0,122,11],
 "classtmEditManager.html#a4b3f07a9d239d4fdb2f8334556749ac6":[10,0,122,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "classtmSymbolDLGPointMultiple.html":[10,0,189],
 "classtmSymbolDLGPointMultiple.html#a4b71c46cc73db871588f79fe138a7699":[10,0,189,0],
 "classtmSymbolDLGPointRule.html":[10,0,190],
-"classtmSymbolDLGPolyRule.html":[10,0,192]
+"classtmSymbolDLGPolyRule.html":[10,0,192],
+"classtmSymbolDLGPolygon.html":[10,0,191]
 };

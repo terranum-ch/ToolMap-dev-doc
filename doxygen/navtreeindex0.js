@@ -18,7 +18,6 @@ var NAVTREEINDEX0 =
 "agg__curves_8h_source.html":[11,0,0,1,2],
 "annotated.html":[10,0],
 "attribution__obj__type_8h_source.html":[11,0,0,4,1],
-"backup__bmp_8h_source.html":[11,0,0,5,0],
 "backupmanager_8h_source.html":[11,0,0,1,3],
 "backupmanager__dlg_8h_source.html":[11,0,0,4,2],
 "bezierethz_8h_source.html":[11,0,0,1,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "classProjectPropertiesDLG.html#aa202aafd2f96defdc587570dae6fdae5":[10,0,60,2],
 "classQueriesBuilder.html":[10,0,62],
 "classQueriesData.html":[10,0,63],
-"classQueriesGeneric.html":[10,0,64]
+"classQueriesGeneric.html":[10,0,64],
+"classQueriesLayerList.html":[10,0,65]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"menumanager_8h_source.html":[11,0,0,4,14],
 "modules.html":[9],
 "newtemplateprjwizard_8h_source.html":[11,0,0,4,15],
 "objectattribution__dlg_8h_source.html":[11,0,0,4,16],

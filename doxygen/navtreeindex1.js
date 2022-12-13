@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classQueriesLayerList.html":[10,0,65],
 "classQueriesList.html":[10,0,66],
 "classQueriesList.html#a95a06959717cb5d9204bf0040ccb8756":[10,0,66,0],
 "classQueriesList.html#ad7b51e846e34ac622183e92efad674e5":[10,0,66,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classtmDrawerEditLine.html":[10,0,120],
 "classtmDropFiles.html":[10,0,121],
 "classtmEditManager.html":[10,0,122],
-"classtmEditManager.html#a0f245184f8e36299581289fa9c31df50":[10,0,122,8]
+"classtmEditManager.html#a0f245184f8e36299581289fa9c31df50":[10,0,122,8],
+"classtmEditManager.html#a26dfa0d931ba0a3fd4e6be0094a8e0d1":[10,0,122,5]
 };
