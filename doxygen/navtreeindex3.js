@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classtmSymbolDLGPolygon.html#aa406e991fadba73957feab9e1f6ec491":[10,0,190,0],
 "classtmSymbolDLGRaster.html":[10,0,192],
 "classtmSymbolDLGRaster.html#ae95bf069f0d9f08359e68d8698f7bf98":[10,0,192,0],
 "classtmSymbolDataLineMultiple.html":[10,0,177],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "managed__aui__wnd_8h_source.html":[11,0,0,4,12],
 "menumanager_8cpp.html":[11,0,0,4,13],
 "menumanager_8h.html":[11,0,0,4,14],
-"menumanager_8h_source.html":[11,0,0,4,14],
-"modules.html":[9]
+"menumanager_8h_source.html":[11,0,0,4,14]
 };

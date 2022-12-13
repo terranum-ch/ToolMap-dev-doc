@@ -68,8 +68,8 @@ var NAVTREEINDEX =
 "Misc.html",
 "classQueriesList.html",
 "classtmEditManager.html#a400e3d15fe484df7f73114f02dbfd7bd",
-"classtmSymbolDLGRaster.html",
-"newtemplateprjwizard_8h_source.html"
+"classtmSymbolDLGPolygon.html#aa406e991fadba73957feab9e1f6ec491",
+"modules.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
