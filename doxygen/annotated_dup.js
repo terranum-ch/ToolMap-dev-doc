@@ -31,6 +31,7 @@ var annotated_dup =
     [ "BezierEthz", "classBezierEthz.html", null ],
     [ "BezierSettings_DLG", "classBezierSettings__DLG.html", null ],
     [ "BezierSettingsData", "classBezierSettingsData.html", null ],
+    [ "Bitmaps", "classBitmaps.html", null ],
     [ "DanglingNode_DLG", "classDanglingNode__DLG.html", null ],
     [ "DanglingPtsToCheck", "classDanglingPtsToCheck.html", null ],
     [ "DataBase", "classDataBase.html", "classDataBase" ],

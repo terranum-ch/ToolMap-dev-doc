@@ -4,6 +4,7 @@ var hierarchy =
     [ "BackupManager", "classBackupManager.html", null ],
     [ "BezierEthz", "classBezierEthz.html", null ],
     [ "BezierSettingsData", "classBezierSettingsData.html", null ],
+    [ "Bitmaps", "classBitmaps.html", null ],
     [ "agg::block_allocator", "classagg_1_1block__allocator.html", null ],
     [ "agg::const_row_info< T >", "structagg_1_1const__row__info.html", null ],
     [ "agg::curve4", "classagg_1_1curve4.html", null ],

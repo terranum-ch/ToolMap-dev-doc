@@ -4,6 +4,7 @@ var dir_99d0482cf009f9d97a0877749b817f19 =
     [ "attribution_obj_type.h", "attribution__obj__type_8h_source.html", null ],
     [ "backupmanager_dlg.h", "backupmanager__dlg_8h_source.html", null ],
     [ "beziersettings_dlg.h", "beziersettings__dlg_8h_source.html", null ],
+    [ "bitmaps.h", "bitmaps_8h_source.html", null ],
     [ "danglingnodes_dlg.h", "danglingnodes__dlg_8h_source.html", null ],
     [ "editvertex_dlg.h", "editvertex__dlg_8h_source.html", null ],
     [ "framecomponent.h", "framecomponent_8h_source.html", null ],

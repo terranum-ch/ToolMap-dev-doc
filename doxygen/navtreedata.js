@@ -66,10 +66,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Misc.html",
-"classQueriesList.html",
-"classtmEditManager.html#a26dfa0d931ba0a3fd4e6be0094a8e0d1",
-"classtmSymbolDLGPolygon.html",
-"menumanager_8h.html"
+"classQueriesGeneric.html",
+"classtmEditManager.html",
+"classtmSymbolDLGPointRule.html",
+"managed__aui__wnd_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

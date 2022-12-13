@@ -6,6 +6,7 @@ var searchData=
   ['bezierethz_3',['BezierEthz',['../classBezierEthz.html',1,'']]],
   ['beziersettings_5fdlg_4',['BezierSettings_DLG',['../classBezierSettings__DLG.html',1,'']]],
   ['beziersettingsdata_5',['BezierSettingsData',['../classBezierSettingsData.html',1,'']]],
-  ['block_5fallocator_6',['block_allocator',['../classagg_1_1block__allocator.html',1,'agg']]],
-  ['bug_20list_7',['Bug List',['../bug.html',1,'']]]
+  ['bitmaps_6',['Bitmaps',['../classBitmaps.html',1,'']]],
+  ['block_5fallocator_7',['block_allocator',['../classagg_1_1block__allocator.html',1,'agg']]],
+  ['bug_20list_8',['Bug List',['../bug.html',1,'']]]
 ];
