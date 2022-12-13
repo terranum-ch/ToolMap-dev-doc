@@ -122,7 +122,6 @@ var hierarchy =
       [ "BezierSettings_DLG", "classBezierSettings__DLG.html", null ],
       [ "DanglingNode_DLG", "classDanglingNode__DLG.html", null ],
       [ "EditVertexDLG", "classEditVertexDLG.html", null ],
-      [ "FrameComponents", "classFrameComponents.html", null ],
       [ "ImportLogDLG", "classImportLogDLG.html", null ],
       [ "InformationDLG", "classInformationDLG.html", null ],
       [ "ListGenDialog", "classListGenDialog.html", null ],

@@ -7,7 +7,6 @@ var dir_99d0482cf009f9d97a0877749b817f19 =
     [ "bitmaps.h", "bitmaps_8h_source.html", null ],
     [ "danglingnodes_dlg.h", "danglingnodes__dlg_8h_source.html", null ],
     [ "editvertex_dlg.h", "editvertex__dlg_8h_source.html", null ],
-    [ "framecomponent.h", "framecomponent_8h_source.html", null ],
     [ "information_dlg.h", "information__dlg_8h_source.html", null ],
     [ "listgenreport.h", "listgenreport_8h_source.html", null ],
     [ "listgenreport_status.h", "listgenreport__status_8h_source.html", null ],

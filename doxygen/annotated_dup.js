@@ -41,7 +41,6 @@ var annotated_dup =
     [ "DirOperation", "classDirOperation.html", null ],
     [ "EditVertexDLG", "classEditVertexDLG.html", "classEditVertexDLG" ],
     [ "feature_toc_bitmaps", "classfeature__toc__bitmaps.html", null ],
-    [ "FrameComponents", "classFrameComponents.html", null ],
     [ "geod_geodesic", "structgeod__geodesic.html", "structgeod__geodesic" ],
     [ "geod_geodesicline", "structgeod__geodesicline.html", "structgeod__geodesicline" ],
     [ "geod_polygon", "structgeod__polygon.html", "structgeod__polygon" ],
