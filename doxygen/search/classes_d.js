@@ -1,25 +1,6 @@
 var searchData=
 [
-  ['queries_5fpanel_0',['Queries_PANEL',['../classQueries__PANEL.html',1,'']]],
-  ['queriesbuilder_1',['QueriesBuilder',['../classQueriesBuilder.html',1,'']]],
-  ['queriesdata_2',['QueriesData',['../classQueriesData.html',1,'']]],
-  ['queriesgeneric_3',['QueriesGeneric',['../classQueriesGeneric.html',1,'']]],
-  ['querieslayerlist_4',['QueriesLayerList',['../classQueriesLayerList.html',1,'']]],
-  ['querieslist_5',['QueriesList',['../classQueriesList.html',1,'']]],
-  ['querieslistdlg_6',['QueriesListDLG',['../classQueriesListDLG.html',1,'']]],
-  ['queriespageattribut1_7',['QueriesPageAttribut1',['../classQueriesPageAttribut1.html',1,'']]],
-  ['queriespageattribut2_8',['QueriesPageAttribut2',['../classQueriesPageAttribut2.html',1,'']]],
-  ['queriespageexpert_9',['QueriesPageExpert',['../classQueriesPageExpert.html',1,'']]],
-  ['queriespagegeneric_10',['QueriesPageGeneric',['../classQueriesPageGeneric.html',1,'']]],
-  ['queriespagegenericdata_11',['QueriesPageGenericData',['../classQueriesPageGenericData.html',1,'']]],
-  ['queriespagegeomline_12',['QueriesPageGeomLine',['../classQueriesPageGeomLine.html',1,'']]],
-  ['queriespagegeomnodes_13',['QueriesPageGeomNodes',['../classQueriesPageGeomNodes.html',1,'']]],
-  ['queriespageintro_14',['QueriesPageIntro',['../classQueriesPageIntro.html',1,'']]],
-  ['queriespagelayer_15',['QueriesPageLayer',['../classQueriesPageLayer.html',1,'']]],
-  ['queriespagename_16',['QueriesPageName',['../classQueriesPageName.html',1,'']]],
-  ['queriespageobject_17',['QueriesPageObject',['../classQueriesPageObject.html',1,'']]],
-  ['queriespageobjecttype_18',['QueriesPageObjectType',['../classQueriesPageObjectType.html',1,'']]],
-  ['queriespageselection_19',['QueriesPageSelection',['../classQueriesPageSelection.html',1,'']]],
-  ['queriespagesql_20',['QueriesPageSQL',['../classQueriesPageSQL.html',1,'']]],
-  ['querieswizard_21',['QueriesWizard',['../classQueriesWizard.html',1,'']]]
+  ['range_5fadaptor_0',['range_adaptor',['../classagg_1_1range__adaptor.html',1,'agg']]],
+  ['rect_5fbase_1',['rect_base',['../structagg_1_1rect__base.html',1,'agg']]],
+  ['row_5finfo_2',['row_info',['../structagg_1_1row__info.html',1,'agg']]]
 ];

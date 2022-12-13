@@ -16,7 +16,6 @@ var hierarchy =
       [ "DataBaseTM", "classDataBaseTM.html", null ]
     ] ],
     [ "DataBaseResult", "classDataBaseResult.html", null ],
-    [ "feature_toc_bitmaps", "classfeature__toc__bitmaps.html", null ],
     [ "geod_geodesic", "structgeod__geodesic.html", null ],
     [ "geod_geodesicline", "structgeod__geodesicline.html", null ],
     [ "geod_polygon", "structgeod__polygon.html", null ],

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['feature_5ftoc_5fbitmaps_0',['feature_toc_bitmaps',['../classfeature__toc__bitmaps.html',1,'']]]
+  ['geod_5fgeodesic_0',['geod_geodesic',['../structgeod__geodesic.html',1,'']]],
+  ['geod_5fgeodesicline_1',['geod_geodesicline',['../structgeod__geodesicline.html',1,'']]],
+  ['geod_5fpolygon_2',['geod_polygon',['../structgeod__polygon.html',1,'']]]
 ];

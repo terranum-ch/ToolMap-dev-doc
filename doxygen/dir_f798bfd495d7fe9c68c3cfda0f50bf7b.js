@@ -53,7 +53,6 @@ var dir_f798bfd495d7fe9c68c3cfda0f50bf7b =
     [ "tmsymbolvectorpointmultiple.h", "tmsymbolvectorpointmultiple_8h_source.html", null ],
     [ "tmsymbolvectorpolygon.h", "tmsymbolvectorpolygon_8h_source.html", null ],
     [ "tmtocctrlmenu.h", "tmtocctrlmenu_8h_source.html", null ],
-    [ "tocbitmaps.h", "tocbitmaps_8h_source.html", null ],
     [ "tocctrl.h", "tocctrl_8h_source.html", null ],
     [ "tocctrlmodel.h", "tocctrlmodel_8h_source.html", null ],
     [ "tocrenderer.h", "tocrenderer_8h_source.html", null ],
