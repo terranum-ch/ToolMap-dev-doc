@@ -2,8 +2,8 @@ var classtmLayerManager =
 [
     [ "tmLayerManager", "classtmLayerManager.html#a2c687b310cea91a92def79847c40d97c", null ],
     [ "~tmLayerManager", "classtmLayerManager.html#ad308eb5fcd4734517fd08bca4e500fbb", null ],
-    [ "AddGroup", "classtmLayerManager.html#a660f32f64ff546afd35f3f26b814e62e", null ],
     [ "AddLayer", "classtmLayerManager.html#acec3f0ff7536dd4fa211256fa6b5bbc6", null ],
+    [ "GroupAdd", "classtmLayerManager.html#a4eef47474129b9c67f3d4fd176c11e38", null ],
     [ "InitLayerManager", "classtmLayerManager.html#aa1aa39d80cc1e881dc59fbb6603cc00f", null ],
     [ "LoadProjectLayers", "classtmLayerManager.html#aa689014f44a0e1fe66debcb61fd25c93", null ],
     [ "OnDisplayProperties", "classtmLayerManager.html#a79b233f540c621e459353b3f218fef0a", null ],

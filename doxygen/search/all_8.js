@@ -135,7 +135,7 @@ var searchData=
   ['getsimpleattribdatawithspatial_132',['GetSimpleAttribDataWithSpatial',['../classtmExportData.html#a6f53dec660a09c4bb54ad7fb88eec385',1,'tmExportData']]],
   ['getsizeofenum_133',['GetSizeOfEnum',['../classtmExportData.html#a983c0828ce78f4d0475ac386b94b99a2',1,'tmExportData']]],
   ['getsizeofobjdesc_134',['GetSizeOfObjDesc',['../classtmExportData.html#a9e1af4eebca4156272fab063fbd716e7',1,'tmExportData']]],
-  ['getsnapcoord_135',['GetSnapCoord',['../classtmGISDataVectorSHP.html#af511f0af6348e31de1ddfb450e6927f6',1,'tmGISDataVectorSHP::GetSnapCoord()'],['../classtmGISDataVectorMYSQL.html#abf0c3f8ff047905c6cfa6886e972c43c',1,'tmGISDataVectorMYSQL::GetSnapCoord()']]],
+  ['getsnapcoord_135',['GetSnapCoord',['../classtmGISDataVectorMYSQL.html#abf0c3f8ff047905c6cfa6886e972c43c',1,'tmGISDataVectorMYSQL::GetSnapCoord()'],['../classtmGISDataVectorSHP.html#af511f0af6348e31de1ddfb450e6927f6',1,'tmGISDataVectorSHP::GetSnapCoord()']]],
   ['getsnappinginfo_136',['GetSnappingInfo',['../classtmSnappingMemory.html#a47f421aad98b43df54c58d2205860e65',1,'tmSnappingMemory']]],
   ['getsnappingmemorystatus_137',['GetSnappingMemoryStatus',['../classtmSnappingMemory.html#a71fbb692638315b6e9c64946e3689f58',1,'tmSnappingMemory']]],
   ['getsnappingtolerence_138',['GetSnappingTolerence',['../classDataBaseTM.html#aad3b13b6f090ddfce5c9e25262419927',1,'DataBaseTM']]],
@@ -148,5 +148,6 @@ var searchData=
   ['getvalidlayersforsnapping_145',['GetValidLayersForSnapping',['../classDataBaseTM.html#af599fe4790b4079ec2e7057e4ad1dc67',1,'DataBaseTM']]],
   ['getvertexintersection_146',['GetVertexIntersection',['../classtmGISDataVector.html#a88557860a2decf3939f43217930de294',1,'tmGISDataVector']]],
   ['getvisiblenotebook_147',['GetVisibleNotebook',['../classAttribObjType__PANEL.html#a66ec7c640083c615baca65e515c451c8',1,'AttribObjType_PANEL']]],
-  ['getwindow_148',['GetWindow',['../classTreeMultiItemWindow.html#ae34fc2689cf2f79b42ebd77186efdc85',1,'TreeMultiItemWindow::GetWindow()'],['../classwxTreeMultiCtrl.html#a2f393e8f5c09af1b19658e7c404d6d46',1,'wxTreeMultiCtrl::GetWindow()']]]
+  ['getwindow_148',['GetWindow',['../classTreeMultiItemWindow.html#ae34fc2689cf2f79b42ebd77186efdc85',1,'TreeMultiItemWindow::GetWindow()'],['../classwxTreeMultiCtrl.html#a2f393e8f5c09af1b19658e7c404d6d46',1,'wxTreeMultiCtrl::GetWindow()']]],
+  ['groupadd_149',['GroupAdd',['../classtmLayerManager.html#a4eef47474129b9c67f3d4fd176c11e38',1,'tmLayerManager']]]
 ];

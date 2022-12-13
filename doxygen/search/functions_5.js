@@ -130,5 +130,6 @@ var searchData=
   ['getvalidlayersforsnapping_127',['GetValidLayersForSnapping',['../classDataBaseTM.html#af599fe4790b4079ec2e7057e4ad1dc67',1,'DataBaseTM']]],
   ['getvertexintersection_128',['GetVertexIntersection',['../classtmGISDataVector.html#a88557860a2decf3939f43217930de294',1,'tmGISDataVector']]],
   ['getvisiblenotebook_129',['GetVisibleNotebook',['../classAttribObjType__PANEL.html#a66ec7c640083c615baca65e515c451c8',1,'AttribObjType_PANEL']]],
-  ['getwindow_130',['GetWindow',['../classwxTreeMultiCtrl.html#a2f393e8f5c09af1b19658e7c404d6d46',1,'wxTreeMultiCtrl::GetWindow()'],['../classTreeMultiItemWindow.html#ae34fc2689cf2f79b42ebd77186efdc85',1,'TreeMultiItemWindow::GetWindow()']]]
+  ['getwindow_130',['GetWindow',['../classwxTreeMultiCtrl.html#a2f393e8f5c09af1b19658e7c404d6d46',1,'wxTreeMultiCtrl::GetWindow()'],['../classTreeMultiItemWindow.html#ae34fc2689cf2f79b42ebd77186efdc85',1,'TreeMultiItemWindow::GetWindow()']]],
+  ['groupadd_131',['GroupAdd',['../classtmLayerManager.html#a4eef47474129b9c67f3d4fd176c11e38',1,'tmLayerManager']]]
 ];
