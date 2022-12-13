@@ -140,7 +140,6 @@ var annotated_dup =
     [ "tmCloseFile_DLG", "classtmCloseFile__DLG.html", null ],
     [ "tmColourPickerCtrl", "classtmColourPickerCtrl.html", "classtmColourPickerCtrl" ],
     [ "tmCoordConvert", "classtmCoordConvert.html", null ],
-    [ "tmCrash_DLG", "classtmCrash__DLG.html", null ],
     [ "tmDataIntegrity", "classtmDataIntegrity.html", null ],
     [ "tmDrawer", "classtmDrawer.html", "classtmDrawer" ],
     [ "tmDrawerEditLine", "classtmDrawerEditLine.html", null ],

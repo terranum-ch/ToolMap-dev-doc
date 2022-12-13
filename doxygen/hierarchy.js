@@ -140,7 +140,6 @@ var hierarchy =
       [ "tmAAttribWindow", "classtmAAttribWindow.html", null ],
       [ "tmAboutDLG", "classtmAboutDLG.html", null ],
       [ "tmCloseFile_DLG", "classtmCloseFile__DLG.html", null ],
-      [ "tmCrash_DLG", "classtmCrash__DLG.html", null ],
       [ "tmExportSelected_DLG", "classtmExportSelected__DLG.html", null ],
       [ "tmLabelDLG", "classtmLabelDLG.html", null ],
       [ "tmOpenError_DLG", "classtmOpenError__DLG.html", null ],
