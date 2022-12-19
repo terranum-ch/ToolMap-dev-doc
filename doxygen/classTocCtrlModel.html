@@ -142,8 +142,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetChecked</b> (const
 <tr class="memitem:a3b78c236ae154b3dc2ab577f61ff94ad"><td class="memItemLeft" align="right" valign="top"><a id="a3b78c236ae154b3dc2ab577f61ff94ad" name="a3b78c236ae154b3dc2ab577f61ff94ad"></a>
 <a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>NodeInsert</b> (<a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *parent, <a class="el" href="classtmLayerProperties.html">tmLayerProperties</a> *layerprop, int index=0)</td></tr>
 <tr class="separator:a3b78c236ae154b3dc2ab577f61ff94ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a545334afb812b7def2e25aa4601722c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTocCtrlModel.html#a545334afb812b7def2e25aa4601722c4">NodeMove</a> (<a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *source, <a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *destination, int proposed_index=wxNOT_FOUND)</td></tr>
-<tr class="separator:a545334afb812b7def2e25aa4601722c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7041fbe0e17055c81dc28b5b2fb7c8cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTocCtrlModel.html#a7041fbe0e17055c81dc28b5b2fb7c8cd">NodeMove</a> (wxDataViewItemArray &amp;selectedItems, <a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *destination, int proposedIndex=wxNOT_FOUND)</td></tr>
+<tr class="separator:a7041fbe0e17055c81dc28b5b2fb7c8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a548aa1e2572939388f18b7d27d9fb0bc"><td class="memItemLeft" align="right" valign="top"><a id="a548aa1e2572939388f18b7d27d9fb0bc" name="a548aa1e2572939388f18b7d27d9fb0bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>NodeRecursiveAdd</b> (<a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *parent, <a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *start)</td></tr>
 <tr class="separator:a548aa1e2572939388f18b7d27d9fb0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,8 +257,8 @@ static <a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *&#1
 
 </div>
 </div>
-<a id="a545334afb812b7def2e25aa4601722c4" name="a545334afb812b7def2e25aa4601722c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a545334afb812b7def2e25aa4601722c4">&#9670;&#160;</a></span>NodeMove()</h2>
+<a id="a7041fbe0e17055c81dc28b5b2fb7c8cd" name="a7041fbe0e17055c81dc28b5b2fb7c8cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7041fbe0e17055c81dc28b5b2fb7c8cd">&#9670;&#160;</a></span>NodeMove()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,8 +266,8 @@ static <a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *&#1
         <tr>
           <td class="memname">bool TocCtrlModel::NodeMove </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">wxDataViewItemArray &amp;&#160;</td>
+          <td class="paramname"><em>selectedItems</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -279,7 +279,7 @@ static <a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *&#1
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>proposed_index</em> = <code>wxNOT_FOUND</code>&#160;</td>
+          <td class="paramname"><em>proposedIndex</em> = <code>wxNOT_FOUND</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -288,11 +288,11 @@ static <a class="el" href="classTocCtrlModelNode.html">TocCtrlModelNode</a> *&#1
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Move a node or a container from source to destination. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Move nodes to destination. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">source</td><td></td></tr>
+    <tr><td class="paramname">selectedItems</td><td></td></tr>
     <tr><td class="paramname">destination</td><td></td></tr>
-    <tr><td class="paramname">proposed_index</td><td>wxNOT_FOUND means move to the end, otherwise try to move to the specified index of the destination container </td></tr>
+    <tr><td class="paramname">proposedIndex</td><td>wxNOT_FOUND means move to the end, otherwise try to move to the specified index of the destination container </td></tr>
   </table>
   </dd>
 </dl>
