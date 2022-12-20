@@ -153,86 +153,86 @@ $(document).ready(function(){initNavTree('objectattribution__dlg_8h_source.html'
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define ID_DLGPEO_BTN_IMPORT 10232</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#define ID_DLGPEO_BTN_EXPORT 10233</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_STYLE \</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">  wxCAPTION | wxRESIZE_BORDER | wxSYSTEM_MENU | wxCLOSE_BOX | wxMAXIMIZE_BOX</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">    wxCAPTION | wxRESIZE_BORDER | wxSYSTEM_MENU | wxCLOSE_BOX | wxMAXIMIZE_BOX</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#define SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_TITLE _(&quot;Objects Kind definition&quot;</span>)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#define SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_IDNAME ID_DLG_ATTRIBUTION</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#define SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_SIZE wxDefaultSize</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#define SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_POSITION wxDefaultPosition</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classProjectEditObjectDefinitionDLG.html">   55</a></span><span class="keyword">class </span><a class="code hl_class" href="classProjectEditObjectDefinitionDLG.html">ProjectEditObjectDefinitionDLG</a> : <span class="keyword">public</span> wxDialog {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_class" href="classDataBaseTM.html">DataBaseTM</a> *m_DB;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="classDataBaseTM.html">DataBaseTM</a>* m_DB;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="comment">// create a memory layer object for storing changes</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a> m_MemoryObject;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// create a memory layer object for storing changes</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a> m_MemoryObject;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="comment">// EVENT FUNCTION</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> OnAddObject(wxCommandEvent &amp;event);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// EVENT FUNCTION</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> OnAddObject(wxCommandEvent&amp; event);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> OnRemoveObject(wxCommandEvent &amp;event);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> OnRemoveObject(wxCommandEvent&amp; event);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">void</span> OnImportFile(wxCommandEvent &amp;event);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> OnImportFile(wxCommandEvent&amp; event);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">void</span> OnExportFile(wxCommandEvent &amp;event);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> OnExportFile(wxCommandEvent&amp; event);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> OnChangeLayerName(wxCommandEvent &amp;event);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> OnChangeLayerName(wxCommandEvent&amp; event);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">void</span> OnSaveChanges(wxCommandEvent &amp;event);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> OnSaveChanges(wxCommandEvent&amp; event);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">void</span> OnNotebookChangeTab(wxNotebookEvent &amp;event);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> OnNotebookChangeTab(wxNotebookEvent&amp; event);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="comment">// PRIVATE DATABASE FUNCTION</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordtype">bool</span> SetChoiceListText(wxChoice *choice, <span class="keywordtype">int</span> listtype);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// PRIVATE DATABASE FUNCTION</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">bool</span> SetChoiceListText(wxChoice* choice, <span class="keywordtype">int</span> listtype);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  DECLARE_DYNAMIC_CLASS(<a class="code hl_class" href="classProjectEditObjectDefinitionDLG.html">ProjectEditObjectDefinitionDLG</a>)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    DECLARE_DYNAMIC_CLASS(<a class="code hl_class" href="classProjectEditObjectDefinitionDLG.html">ProjectEditObjectDefinitionDLG</a>)</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  DECLARE_EVENT_TABLE()</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    DECLARE_EVENT_TABLE()</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_function" href="classProjectEditObjectDefinitionDLG.html#a16abd95838abc8c55eb64d3322ee6fde">ProjectEditObjectDefinitionDLG</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_function" href="classProjectEditObjectDefinitionDLG.html#a16abd95838abc8c55eb64d3322ee6fde">ProjectEditObjectDefinitionDLG</a>();</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_function" href="classProjectEditObjectDefinitionDLG.html#a16abd95838abc8c55eb64d3322ee6fde">ProjectEditObjectDefinitionDLG</a>(wxWindow *parent, <a class="code hl_class" href="classDataBaseTM.html">DataBaseTM</a> *pDatabase,</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                                 wxWindowID <span class="keywordtype">id</span> = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_IDNAME,</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                 <span class="keyword">const</span> wxString &amp;caption = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_TITLE,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                                 <span class="keyword">const</span> wxPoint &amp;pos = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_POSITION,</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                                 <span class="keyword">const</span> wxSize &amp;size = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_SIZE,</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                                 <span class="keywordtype">long</span> style = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_STYLE);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_function" href="classProjectEditObjectDefinitionDLG.html#a16abd95838abc8c55eb64d3322ee6fde">ProjectEditObjectDefinitionDLG</a>(wxWindow* parent, <a class="code hl_class" href="classDataBaseTM.html">DataBaseTM</a>* pDatabase,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                                   wxWindowID <span class="keywordtype">id</span> = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_IDNAME,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                   <span class="keyword">const</span> wxString&amp; caption = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_TITLE,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                                   <span class="keyword">const</span> wxPoint&amp; pos = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_POSITION,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                                   <span class="keyword">const</span> wxSize&amp; size = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_SIZE,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                                   <span class="keywordtype">long</span> style = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_STYLE);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classProjectEditObjectDefinitionDLG.html#a86ea8fa0965ddaa2fa42163d16e0ce4a">Create</a>(wxWindow *parent, wxWindowID <span class="keywordtype">id</span> = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_IDNAME,</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>              <span class="keyword">const</span> wxString &amp;caption = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_TITLE,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>              <span class="keyword">const</span> wxPoint &amp;pos = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_POSITION,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>              <span class="keyword">const</span> wxSize &amp;size = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_SIZE,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>              <span class="keywordtype">long</span> style = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_STYLE);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classProjectEditObjectDefinitionDLG.html#a86ea8fa0965ddaa2fa42163d16e0ce4a">Create</a>(wxWindow* parent, wxWindowID <span class="keywordtype">id</span> = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_IDNAME,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="keyword">const</span> wxString&amp; caption = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_TITLE,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <span class="keyword">const</span> wxPoint&amp; pos = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_POSITION,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keyword">const</span> wxSize&amp; size = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_SIZE,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="keywordtype">long</span> style = SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_STYLE);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <a class="code hl_function" href="classProjectEditObjectDefinitionDLG.html#a65bf27376f3b9342cea2f5cde3d3bfc7">~ProjectEditObjectDefinitionDLG</a>();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_function" href="classProjectEditObjectDefinitionDLG.html#a65bf27376f3b9342cea2f5cde3d3bfc7">~ProjectEditObjectDefinitionDLG</a>();</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordtype">void</span> Init();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">void</span> Init();</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordtype">void</span> PostInit();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">void</span> PostInit();</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">void</span> CreateControls();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">void</span> CreateControls();</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  wxNotebook *m_DLGPEO_Notebook;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  wxPanel *m_DLGPEO_Panel_Line;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_class" href="classObjectDefinitionList.html">ObjectDefinitionList</a> *m_DLGPEO_List_Line;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  wxChoice *m_DLGPEO_Choice_Lyr_Line_Name;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  wxPanel *m_DLGPEO_Panel_Point;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <a class="code hl_class" href="classObjectDefinitionList.html">ObjectDefinitionList</a> *m_DLGPEO_List_Point;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  wxChoice *m_DLGPEO_Choice_Lyr_Point_Name;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  wxPanel *m_DLGPEO_Panel_Poly;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <a class="code hl_class" href="classObjectDefinitionList.html">ObjectDefinitionList</a> *m_DLGPEO_List_Poly;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  wxChoice *m_DLGPEO_Choice_Lyr_Poly_Name;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  wxStatusBar *m_DLGPEO_StatusBar;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    wxNotebook* m_DLGPEO_Notebook;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    wxPanel* m_DLGPEO_Panel_Line;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_class" href="classObjectDefinitionList.html">ObjectDefinitionList</a>* m_DLGPEO_List_Line;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    wxChoice* m_DLGPEO_Choice_Lyr_Line_Name;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    wxPanel* m_DLGPEO_Panel_Point;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <a class="code hl_class" href="classObjectDefinitionList.html">ObjectDefinitionList</a>* m_DLGPEO_List_Point;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    wxChoice* m_DLGPEO_Choice_Lyr_Point_Name;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    wxPanel* m_DLGPEO_Panel_Poly;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <a class="code hl_class" href="classObjectDefinitionList.html">ObjectDefinitionList</a>* m_DLGPEO_List_Poly;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    wxChoice* m_DLGPEO_Choice_Lyr_Poly_Name;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    wxStatusBar* m_DLGPEO_StatusBar;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassDataBaseTM_html"><div class="ttname"><a href="classDataBaseTM.html">DataBaseTM</a></div><div class="ttdef"><b>Definition:</b> database_tm.h:81</div></div>
+<div class="ttc" id="aclassDataBaseTM_html"><div class="ttname"><a href="classDataBaseTM.html">DataBaseTM</a></div><div class="ttdef"><b>Definition:</b> database_tm.h:80</div></div>
 <div class="ttc" id="aclassObjectDefinitionList_html"><div class="ttname"><a href="classObjectDefinitionList.html">ObjectDefinitionList</a></div><div class="ttdef"><b>Definition:</b> objectdefinitionlistdlg.h:96</div></div>
 <div class="ttc" id="aclassPrjDefMemManage_html"><div class="ttname"><a href="classPrjDefMemManage.html">PrjDefMemManage</a></div><div class="ttdef"><b>Definition:</b> prjdefmemmanage.h:54</div></div>
 <div class="ttc" id="aclassProjectEditObjectDefinitionDLG_html"><div class="ttname"><a href="classProjectEditObjectDefinitionDLG.html">ProjectEditObjectDefinitionDLG</a></div><div class="ttdef"><b>Definition:</b> objectattribution_dlg.h:55</div></div>
-<div class="ttc" id="aclassProjectEditObjectDefinitionDLG_html_a16abd95838abc8c55eb64d3322ee6fde"><div class="ttname"><a href="classProjectEditObjectDefinitionDLG.html#a16abd95838abc8c55eb64d3322ee6fde">ProjectEditObjectDefinitionDLG::ProjectEditObjectDefinitionDLG</a></div><div class="ttdeci">ProjectEditObjectDefinitionDLG()</div><div class="ttdoc">Constructors.</div><div class="ttdef"><b>Definition:</b> objectattribution_dlg.cpp:244</div></div>
-<div class="ttc" id="aclassProjectEditObjectDefinitionDLG_html_a65bf27376f3b9342cea2f5cde3d3bfc7"><div class="ttname"><a href="classProjectEditObjectDefinitionDLG.html#a65bf27376f3b9342cea2f5cde3d3bfc7">ProjectEditObjectDefinitionDLG::~ProjectEditObjectDefinitionDLG</a></div><div class="ttdeci">~ProjectEditObjectDefinitionDLG()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> objectattribution_dlg.cpp:300</div></div>
-<div class="ttc" id="aclassProjectEditObjectDefinitionDLG_html_a86ea8fa0965ddaa2fa42163d16e0ce4a"><div class="ttname"><a href="classProjectEditObjectDefinitionDLG.html#a86ea8fa0965ddaa2fa42163d16e0ce4a">ProjectEditObjectDefinitionDLG::Create</a></div><div class="ttdeci">bool Create(wxWindow *parent, wxWindowID id=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_IDNAME, const wxString &amp;caption=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_TITLE, const wxPoint &amp;pos=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_POSITION, const wxSize &amp;size=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_SIZE, long style=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_STYLE)</div><div class="ttdoc">Creation.</div><div class="ttdef"><b>Definition:</b> objectattribution_dlg.cpp:261</div></div>
+<div class="ttc" id="aclassProjectEditObjectDefinitionDLG_html_a16abd95838abc8c55eb64d3322ee6fde"><div class="ttname"><a href="classProjectEditObjectDefinitionDLG.html#a16abd95838abc8c55eb64d3322ee6fde">ProjectEditObjectDefinitionDLG::ProjectEditObjectDefinitionDLG</a></div><div class="ttdeci">ProjectEditObjectDefinitionDLG()</div><div class="ttdoc">Constructors.</div><div class="ttdef"><b>Definition:</b> objectattribution_dlg.cpp:246</div></div>
+<div class="ttc" id="aclassProjectEditObjectDefinitionDLG_html_a65bf27376f3b9342cea2f5cde3d3bfc7"><div class="ttname"><a href="classProjectEditObjectDefinitionDLG.html#a65bf27376f3b9342cea2f5cde3d3bfc7">ProjectEditObjectDefinitionDLG::~ProjectEditObjectDefinitionDLG</a></div><div class="ttdeci">~ProjectEditObjectDefinitionDLG()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> objectattribution_dlg.cpp:302</div></div>
+<div class="ttc" id="aclassProjectEditObjectDefinitionDLG_html_a86ea8fa0965ddaa2fa42163d16e0ce4a"><div class="ttname"><a href="classProjectEditObjectDefinitionDLG.html#a86ea8fa0965ddaa2fa42163d16e0ce4a">ProjectEditObjectDefinitionDLG::Create</a></div><div class="ttdeci">bool Create(wxWindow *parent, wxWindowID id=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_IDNAME, const wxString &amp;caption=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_TITLE, const wxPoint &amp;pos=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_POSITION, const wxSize &amp;size=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_SIZE, long style=SYMBOL_PROJECTEDITOBJECTDEFINITIONDLG_STYLE)</div><div class="ttdoc">Creation.</div><div class="ttdef"><b>Definition:</b> objectattribution_dlg.cpp:263</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

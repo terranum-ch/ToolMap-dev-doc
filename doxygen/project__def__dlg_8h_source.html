@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('project__def__dlg_8h_source.html','');
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;listgenreport.h&quot;</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;project_def_layers_dlg.h&quot;</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &quot;wxflatbutton.h&quot;</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//#include &lt;wx/dirdlg.h&gt; // for directory selection dialog</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// #include &lt;wx/dirdlg.h&gt; // for directory selection dialog</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &quot;../core/wxdirpickerctrlbest.h&quot;</span>  <span class="comment">// directory picker (best version)</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#include &quot;listgenreport_status.h&quot;</span>         <span class="comment">// list with status</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
@@ -167,119 +167,120 @@ $(document).ready(function(){initNavTree('project__def__dlg_8h_source.html','');
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">/***************************************************************************/</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classProjectDefDLG.html">   90</a></span><span class="keyword">class </span><a class="code hl_class" href="classProjectDefDLG.html">ProjectDefDLG</a> : <span class="keyword">public</span> wxDialog {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// Project memory class</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a> *m_pPrjDefinition;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// Project memory class</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a>* m_pPrjDefinition;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">void</span> OnAddLayer(wxCommandEvent &amp;event);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">void</span> OnAddLayer(wxCommandEvent&amp; event);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordtype">void</span> OnRemoveLayer(wxCommandEvent &amp;event);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> OnRemoveLayer(wxCommandEvent&amp; event);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">void</span> OnIdleWait(wxIdleEvent &amp;event);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">void</span> OnIdleWait(wxIdleEvent&amp; event);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordtype">bool</span> CheckIdleRules();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">bool</span> CheckIdleRules();</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  DECLARE_DYNAMIC_CLASS(<a class="code hl_class" href="classProjectDefDLG.html">ProjectDefDLG</a>);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  DECLARE_EVENT_TABLE();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    DECLARE_DYNAMIC_CLASS(<a class="code hl_class" href="classProjectDefDLG.html">ProjectDefDLG</a>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    DECLARE_EVENT_TABLE();</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">bool</span> m_bIsModeEditing;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">bool</span> m_bIsModeEditing;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keywordtype">void</span> DisableControlsForEdition();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">void</span> DisableControlsForEdition();</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <a class="code hl_function" href="classProjectDefDLG.html#a9a74148c75a51e1824c9c52e91500e70">ProjectDefDLG</a>();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_function" href="classProjectDefDLG.html#a9a74148c75a51e1824c9c52e91500e70">ProjectDefDLG</a>();</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <a class="code hl_function" href="classProjectDefDLG.html#a9a74148c75a51e1824c9c52e91500e70">ProjectDefDLG</a>(wxWindow *parent, <a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a> *myPrjDefinition, <span class="keywordtype">bool</span> isEditingMode = FALSE,</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                wxWindowID <span class="keywordtype">id</span> = SYMBOL_PROJECTDEFDLG_IDNAME, <span class="keyword">const</span> wxString &amp;caption = SYMBOL_PROJECTDEFDLG_TITLE,</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                <span class="keyword">const</span> wxPoint &amp;pos = SYMBOL_PROJECTDEFDLG_POSITION, <span class="keyword">const</span> wxSize &amp;size = SYMBOL_PROJECTDEFDLG_SIZE,</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                <span class="keywordtype">long</span> style = SYMBOL_PROJECTDEFDLG_STYLE);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_function" href="classProjectDefDLG.html#a9a74148c75a51e1824c9c52e91500e70">ProjectDefDLG</a>(wxWindow* parent, <a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a>* myPrjDefinition, <span class="keywordtype">bool</span> isEditingMode = FALSE,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                  wxWindowID <span class="keywordtype">id</span> = SYMBOL_PROJECTDEFDLG_IDNAME, <span class="keyword">const</span> wxString&amp; caption = SYMBOL_PROJECTDEFDLG_TITLE,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                  <span class="keyword">const</span> wxPoint&amp; pos = SYMBOL_PROJECTDEFDLG_POSITION, <span class="keyword">const</span> wxSize&amp; size = SYMBOL_PROJECTDEFDLG_SIZE,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                  <span class="keywordtype">long</span> style = SYMBOL_PROJECTDEFDLG_STYLE);</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classProjectDefDLG.html#ab606935b9a42b9f7ebe6f010f44a191c">Create</a>(wxWindow *parent, wxWindowID <span class="keywordtype">id</span> = SYMBOL_PROJECTDEFDLG_IDNAME,</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>              <span class="keyword">const</span> wxString &amp;caption = SYMBOL_PROJECTDEFDLG_TITLE, <span class="keyword">const</span> wxPoint &amp;pos = SYMBOL_PROJECTDEFDLG_POSITION,</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>              <span class="keyword">const</span> wxSize &amp;size = SYMBOL_PROJECTDEFDLG_SIZE, <span class="keywordtype">long</span> style = SYMBOL_PROJECTDEFDLG_STYLE);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <a class="code hl_function" href="classProjectDefDLG.html#a3e900f35e3cf7dbcb062f63860092019">~ProjectDefDLG</a>();</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classProjectDefDLG.html#a19e40ec5d184e344df57ac1fd0ea2a20">Init</a>();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classProjectDefDLG.html#af1ed09dc4ab035f1dba6b3742f6ca23b">CreateControls</a>();</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keywordtype">void</span> SetNotebook(<span class="keywordtype">int</span> notebooknumber);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="comment">// void RemoveObjFromArray();</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> TransferDataFromWindow();</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> TransferDataToWindow();</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keywordtype">bool</span> IsEditMode() {</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordflow">return</span> m_bIsModeEditing;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  }</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  wxPanel *m_DlgPd_Panel_Proj;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="comment">// wxDirPickerCtrlBest* m_DlgPD_Proj_Path;</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="comment">// wxTextCtrl* m_DlgPd_Proj_Name;</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  wxChoice *m_DlgPd_Proj_Unit;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  wxChoice *m_DlgPd_Proj_Projection;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  wxTextCtrl *m_DlgPd_Proj_Author;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  wxTextCtrl *m_DlgPd_Proj_Comment;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  wxPanel *m_DlgPd_Panel_Spatial;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <a class="code hl_class" href="classProjectDefList.html">ProjectDefList</a> *m_DlgPd_Stat_Model_List;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <a class="code hl_class" href="classwxFlatButton.html">wxFlatButton</a> *m_DlgPd_Spat_Mdl_Add;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <a class="code hl_class" href="classwxFlatButton.html">wxFlatButton</a> *m_DljPd_Spat_Mdl_Del;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  wxButton *m_DlgPd_Button_Ok;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  wxStatusBar *m_DlgPd_Status;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>};</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">/***************************************************************************/</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classProjectDefList.html">  166</a></span><span class="keyword">class </span><a class="code hl_class" href="classProjectDefList.html">ProjectDefList</a> : <span class="keyword">public</span> <a class="code hl_class" href="classListGenReportWithStatus.html">ListGenReportWithStatus</a> {</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keywordtype">bool</span> m_bIsModeEditing;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="comment">// void OnMySelectionChange (wxListEvent &amp; event);</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  wxChoice *m_ChoiceToChange;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  PrjMemLayersArray *m_LayersArray;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="comment">// create object for storing layers data</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <a class="code hl_class" href="classProjectDefLayersDlg.html">ProjectDefLayersDlg</a> *m_LayersDialog;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  <a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a> *m_pPrjDefinition;</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <a class="code hl_class" href="classProjectDefMemoryLayers.html">ProjectDefMemoryLayers</a> *m_LayersObj;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> BeforeAdding();</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> AfterAdding(<span class="keywordtype">bool</span> bRealyAddItem);</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> BeforeDeleting();</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> BeforeEditing();</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> AfterEditing(<span class="keywordtype">bool</span> bRealyEdited);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keywordtype">bool</span> m_bAscending[2];</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnSortColumns(wxListEvent &amp;event);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> ID_PARAMLIST;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <a class="code hl_class" href="classProjectDefList.html">ProjectDefList</a>(wxWindow *parent, wxWindowID <span class="keywordtype">id</span>, wxSize size, <a class="code hl_class" href="classProjectDefDLG.html">ProjectDefDLG</a> *myParentDlg);</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <a class="code hl_class" href="classProjectDefList.html">~ProjectDefList</a>();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordtype">void</span> PassPrjDefToList(<a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a> *myPrjMemManage) {</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    m_pPrjDefinition = myPrjMemManage;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  }</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="comment">// int GetParamType (wxString myTextParam);</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <span class="comment">//</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="comment">// wxString GetParamType (int imyType);</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="comment">//</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="comment">// void AddItemToParamList(wxString myValue, wxString myComment, ACOMMENTPOSITION type);</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <span class="comment">// void SetChoiceList (wxChoice * myChoiceList);</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="comment">// DECLARE_EVENT_TABLE();</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>};</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classProjectDefDLG.html#ab606935b9a42b9f7ebe6f010f44a191c">Create</a>(wxWindow* parent, wxWindowID <span class="keywordtype">id</span> = SYMBOL_PROJECTDEFDLG_IDNAME,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <span class="keyword">const</span> wxString&amp; caption = SYMBOL_PROJECTDEFDLG_TITLE,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                <span class="keyword">const</span> wxPoint&amp; pos = SYMBOL_PROJECTDEFDLG_POSITION, <span class="keyword">const</span> wxSize&amp; size = SYMBOL_PROJECTDEFDLG_SIZE,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                <span class="keywordtype">long</span> style = SYMBOL_PROJECTDEFDLG_STYLE);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_function" href="classProjectDefDLG.html#a3e900f35e3cf7dbcb062f63860092019">~ProjectDefDLG</a>();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classProjectDefDLG.html#a19e40ec5d184e344df57ac1fd0ea2a20">Init</a>();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classProjectDefDLG.html#af1ed09dc4ab035f1dba6b3742f6ca23b">CreateControls</a>();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> SetNotebook(<span class="keywordtype">int</span> notebooknumber);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">// void RemoveObjFromArray();</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> TransferDataFromWindow();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> TransferDataToWindow();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">bool</span> IsEditMode() {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordflow">return</span> m_bIsModeEditing;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    wxPanel* m_DlgPd_Panel_Proj;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="comment">// wxDirPickerCtrlBest* m_DlgPD_Proj_Path;</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="comment">// wxTextCtrl* m_DlgPd_Proj_Name;</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    wxChoice* m_DlgPd_Proj_Unit;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    wxChoice* m_DlgPd_Proj_Projection;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    wxTextCtrl* m_DlgPd_Proj_Author;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    wxTextCtrl* m_DlgPd_Proj_Comment;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    wxPanel* m_DlgPd_Panel_Spatial;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <a class="code hl_class" href="classProjectDefList.html">ProjectDefList</a>* m_DlgPd_Stat_Model_List;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <a class="code hl_class" href="classwxFlatButton.html">wxFlatButton</a>* m_DlgPd_Spat_Mdl_Add;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_class" href="classwxFlatButton.html">wxFlatButton</a>* m_DljPd_Spat_Mdl_Del;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    wxButton* m_DlgPd_Button_Ok;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    wxStatusBar* m_DlgPd_Status;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>};</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">/***************************************************************************/</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="classProjectDefList.html">  167</a></span><span class="keyword">class </span><a class="code hl_class" href="classProjectDefList.html">ProjectDefList</a> : <span class="keyword">public</span> <a class="code hl_class" href="classListGenReportWithStatus.html">ListGenReportWithStatus</a> {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordtype">bool</span> m_bIsModeEditing;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="comment">// void OnMySelectionChange (wxListEvent &amp; event);</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    wxChoice* m_ChoiceToChange;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    PrjMemLayersArray* m_LayersArray;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="comment">// create object for storing layers data</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_class" href="classProjectDefLayersDlg.html">ProjectDefLayersDlg</a>* m_LayersDialog;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a>* m_pPrjDefinition;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_class" href="classProjectDefMemoryLayers.html">ProjectDefMemoryLayers</a>* m_LayersObj;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> BeforeAdding();</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> AfterAdding(<span class="keywordtype">bool</span> bRealyAddItem);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> BeforeDeleting();</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> BeforeEditing();</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> AfterEditing(<span class="keywordtype">bool</span> bRealyEdited);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordtype">bool</span> m_bAscending[2];</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnSortColumns(wxListEvent&amp; event);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> ID_PARAMLIST;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <a class="code hl_class" href="classProjectDefList.html">ProjectDefList</a>(wxWindow* parent, wxWindowID <span class="keywordtype">id</span>, wxSize size, <a class="code hl_class" href="classProjectDefDLG.html">ProjectDefDLG</a>* myParentDlg);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <a class="code hl_class" href="classProjectDefList.html">~ProjectDefList</a>();</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordtype">void</span> PassPrjDefToList(<a class="code hl_class" href="classPrjDefMemManage.html">PrjDefMemManage</a>* myPrjMemManage) {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        m_pPrjDefinition = myPrjMemManage;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="comment">// int GetParamType (wxString myTextParam);</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="comment">// wxString GetParamType (int imyType);</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="comment">// void AddItemToParamList(wxString myValue, wxString myComment, ACOMMENTPOSITION type);</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="comment">// void SetChoiceList (wxChoice * myChoiceList);</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="comment">// DECLARE_EVENT_TABLE();</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>};</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassListGenReportWithStatus_html"><div class="ttname"><a href="classListGenReportWithStatus.html">ListGenReportWithStatus</a></div><div class="ttdoc">Enhance the ListGenReportWithDialog for supporting status bar.</div><div class="ttdef"><b>Definition:</b> listgenreport_status.h:50</div></div>
 <div class="ttc" id="aclassPrjDefMemManage_html"><div class="ttname"><a href="classPrjDefMemManage.html">PrjDefMemManage</a></div><div class="ttdef"><b>Definition:</b> prjdefmemmanage.h:54</div></div>
 <div class="ttc" id="aclassProjectDefDLG_html"><div class="ttname"><a href="classProjectDefDLG.html">ProjectDefDLG</a></div><div class="ttdoc">Definition of the Project definition dialog.</div><div class="ttdef"><b>Definition:</b> project_def_dlg.h:90</div></div>
@@ -289,9 +290,9 @@ $(document).ready(function(){initNavTree('project__def__dlg_8h_source.html','');
 <div class="ttc" id="aclassProjectDefDLG_html_ab606935b9a42b9f7ebe6f010f44a191c"><div class="ttname"><a href="classProjectDefDLG.html#ab606935b9a42b9f7ebe6f010f44a191c">ProjectDefDLG::Create</a></div><div class="ttdeci">bool Create(wxWindow *parent, wxWindowID id=SYMBOL_PROJECTDEFDLG_IDNAME, const wxString &amp;caption=SYMBOL_PROJECTDEFDLG_TITLE, const wxPoint &amp;pos=SYMBOL_PROJECTDEFDLG_POSITION, const wxSize &amp;size=SYMBOL_PROJECTDEFDLG_SIZE, long style=SYMBOL_PROJECTDEFDLG_STYLE)</div><div class="ttdoc">Creation.</div><div class="ttdef"><b>Definition:</b> project_def_dlg.cpp:69</div></div>
 <div class="ttc" id="aclassProjectDefDLG_html_af1ed09dc4ab035f1dba6b3742f6ca23b"><div class="ttname"><a href="classProjectDefDLG.html#af1ed09dc4ab035f1dba6b3742f6ca23b">ProjectDefDLG::CreateControls</a></div><div class="ttdeci">void CreateControls()</div><div class="ttdoc">Creates the controls and sizers.</div><div class="ttdef"><b>Definition:</b> project_def_dlg.cpp:108</div></div>
 <div class="ttc" id="aclassProjectDefLayersDlg_html"><div class="ttname"><a href="classProjectDefLayersDlg.html">ProjectDefLayersDlg</a></div><div class="ttdef"><b>Definition:</b> project_def_layers_dlg.h:233</div></div>
-<div class="ttc" id="aclassProjectDefList_html"><div class="ttname"><a href="classProjectDefList.html">ProjectDefList</a></div><div class="ttdoc">List of the Project Definition Dialog.</div><div class="ttdef"><b>Definition:</b> project_def_dlg.h:166</div></div>
-<div class="ttc" id="aclassProjectDefMemoryLayers_html"><div class="ttname"><a href="classProjectDefMemoryLayers.html">ProjectDefMemoryLayers</a></div><div class="ttdoc">Storing layers properties in memory.</div><div class="ttdef"><b>Definition:</b> projectdefmemory.h:222</div></div>
-<div class="ttc" id="aclasswxFlatButton_html"><div class="ttname"><a href="classwxFlatButton.html">wxFlatButton</a></div><div class="ttdef"><b>Definition:</b> wxflatbutton.h:60</div></div>
+<div class="ttc" id="aclassProjectDefList_html"><div class="ttname"><a href="classProjectDefList.html">ProjectDefList</a></div><div class="ttdoc">List of the Project Definition Dialog.</div><div class="ttdef"><b>Definition:</b> project_def_dlg.h:167</div></div>
+<div class="ttc" id="aclassProjectDefMemoryLayers_html"><div class="ttname"><a href="classProjectDefMemoryLayers.html">ProjectDefMemoryLayers</a></div><div class="ttdoc">Storing layers properties in memory.</div><div class="ttdef"><b>Definition:</b> projectdefmemory.h:246</div></div>
+<div class="ttc" id="aclasswxFlatButton_html"><div class="ttname"><a href="classwxFlatButton.html">wxFlatButton</a></div><div class="ttdef"><b>Definition:</b> wxflatbutton.h:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
