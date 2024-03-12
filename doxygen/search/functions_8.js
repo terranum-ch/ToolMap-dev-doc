@@ -1,7 +1,7 @@
 var searchData=
 [
   ['linesmerge_0',['LinesMerge',['../classtmGISDataVector.html#af27b98c1e709b2bf6100f6377e4e4ae3',1,'tmGISDataVector']]],
-  ['listgenreport_1',['ListGenReport',['../classListGenReport.html#ae00528a11bd8b6a12d483702c057c8a0',1,'ListGenReport::ListGenReport(wxWindow *parent, wxWindowID id, wxSize size=wxDefaultSize)'],['../classListGenReport.html#a6c9da3a5f45508d6168d0b38855acbaf',1,'ListGenReport::ListGenReport(wxWindow *parent, wxWindowID id, wxArrayString *pColsName, wxArrayInt *pColsSize=nullptr, wxSize size=wxDefaultSize, long style=wxLC_REPORT)']]],
+  ['listgenreport_1',['listgenreport',['../classListGenReport.html#ae00528a11bd8b6a12d483702c057c8a0',1,'ListGenReport::ListGenReport(wxWindow *parent, wxWindowID id, wxSize size=wxDefaultSize)'],['../classListGenReport.html#a6c9da3a5f45508d6168d0b38855acbaf',1,'ListGenReport::ListGenReport(wxWindow *parent, wxWindowID id, wxArrayString *pColsName, wxArrayInt *pColsSize=nullptr, wxSize size=wxDefaultSize, long style=wxLC_REPORT)']]],
   ['listgenreportwithstatus_2',['ListGenReportWithStatus',['../classListGenReportWithStatus.html#af8ec8faa96a76d9af08a4bd1c0fbd74b',1,'ListGenReportWithStatus']]],
   ['loadlayer_3',['LoadLayer',['../classtmGISData.html#a541e5796f3d69922b857d605c8823f00',1,'tmGISData']]],
   ['loadprojectdefintion_4',['LoadProjectDefintion',['../classProjectManager.html#a05e59518ef9c2980ec05dea01afc5ab6',1,'ProjectManager']]],

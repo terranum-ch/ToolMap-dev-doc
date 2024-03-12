@@ -143,15 +143,15 @@ var NAVTREEINDEX3 =
 "diroperation_8h_source.html":[11,0,0,1,6],
 "editvertex__dlg_8h_source.html":[11,0,0,4,6],
 "files.html":[11,0],
-"functions.html":[10,3,0,0],
 "functions.html":[10,3,0],
+"functions.html":[10,3,0,0],
 "functions_a.html":[10,3,0,1],
 "functions_c.html":[10,3,0,2],
 "functions_d.html":[10,3,0,3],
 "functions_e.html":[10,3,0,4],
 "functions_f.html":[10,3,0,5],
-"functions_func.html":[10,3,1,0],
 "functions_func.html":[10,3,1],
+"functions_func.html":[10,3,1,0],
 "functions_func_c.html":[10,3,1,1],
 "functions_func_d.html":[10,3,1,2],
 "functions_func_e.html":[10,3,1,3],
@@ -247,7 +247,7 @@ var NAVTREEINDEX3 =
 "menumanager_8cpp.html":[11,0,0,4,13],
 "menumanager_8h.html":[11,0,0,4,14],
 "menumanager_8h_source.html":[11,0,0,4,14],
-"modules.html":[9],
 "newtemplateprjwizard_8h_source.html":[11,0,0,4,15],
-"objectattribution__dlg_8h_source.html":[11,0,0,4,16]
+"objectattribution__dlg_8h_source.html":[11,0,0,4,16],
+"objectdefinitionlistdlg_8h_source.html":[11,0,0,4,17]
 };

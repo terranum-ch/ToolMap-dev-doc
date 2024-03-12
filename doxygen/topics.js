@@ -1,4 +1,4 @@
-var modules =
+var topics =
 [
     [ "wxTreeMultiWindowItem flags", "group__wndflags.html", "group__wndflags" ],
     [ "wxTreeMultiCtrl HitTest flags", "group__hitflags.html", null ],

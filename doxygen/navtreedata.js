@@ -36,10 +36,19 @@ var NAVTREE =
     [ "Object Definition", "Prj_Edit_Obj.html", [
       [ "How does it work in details", "Prj_Edit_Obj.html#Details", null ]
     ] ],
-    [ "\"Miscellaneous\"", "Misc.html", "Misc" ],
+    [ "\"Miscellaneous\"", "Misc.html", [
+      [ "Controls", "Misc.html#ctrl", null ],
+      [ "Libraries", "Misc.html#lib", null ],
+      [ "\"Colour picker control\"", "tmColourPicker.html", null ],
+      [ "\"Slider with text control\"", "tmSliderWithText.html", null ],
+      [ "\"wxTreeMultiCtrl\"", "wxTreeMultiCtrl.html", [
+        [ "How does it work?", "wxTreeMultiCtrl.html#how_work", null ],
+        [ "What can it do and what not?", "wxTreeMultiCtrl.html#what_dp", null ]
+      ] ]
+    ] ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -69,7 +78,7 @@ var NAVTREEINDEX =
 "classQueriesList.html",
 "classtmEditManager.html#a4b3f07a9d239d4fdb2f8334556749ac6",
 "classtmSymbolDLGRaster.html",
-"objectdefinitionlistdlg_8h_source.html"
+"openerror__dlg_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
