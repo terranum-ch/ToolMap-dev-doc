@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['picker_20control_0',['&quot;Colour picker control&quot;',['../tmColourPicker.html',1,'Misc']]],
-  ['project_20definition_1',['Project definition',['../Prj_def.html',1,'index']]]
+  ['slider_20with_20text_20control_0',['&quot;Slider with text control&quot;',['../tmSliderWithText.html',1,'Misc']]],
+  ['startup_1',['Program startup',['../startup.html',1,'index']]]
 ];

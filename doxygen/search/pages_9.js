@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['text_20control_0',['&quot;Slider with text control&quot;',['../tmSliderWithText.html',1,'Misc']]],
-  ['todo_20list_1',['Todo List',['../todo.html',1,'']]],
-  ['toolmap_2',['ToolMap',['../index.html',1,'']]]
+  ['with_20text_20control_0',['&quot;Slider with text control&quot;',['../tmSliderWithText.html',1,'Misc']]],
+  ['wxtreemultictrl_1',['&quot;wxTreeMultiCtrl&quot;',['../wxTreeMultiCtrl.html',1,'Misc']]]
 ];
