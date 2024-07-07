@@ -28,7 +28,6 @@ var NAVTREE =
     [ "Introduction", "index.html#intro_sec", null ],
     [ "Documentation topics", "index.html#doc", null ],
     [ "Licence", "index.html#Licence", null ],
-    [ "Building the program", "building.html", null ],
     [ "Program startup", "startup.html", null ],
     [ "Project definition", "Prj_def.html", [
       [ "Introduction", "Prj_def.html#Introduction", null ],
@@ -76,10 +75,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Misc.html",
-"classQueriesLayerList.html",
-"classtmEditManager.html#a400e3d15fe484df7f73114f02dbfd7bd",
-"classtmSymbolDLGPolygon.html#aa406e991fadba73957feab9e1f6ec491",
-"openerror__dlg_8h_source.html"
+"classQueriesList.html",
+"classtmEditManager.html#a4b3f07a9d239d4fdb2f8334556749ac6",
+"classtmSymbolDLGRaster.html",
+"pages.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
