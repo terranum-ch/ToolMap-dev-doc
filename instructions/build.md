@@ -9,7 +9,7 @@ for more information
 
         python3 -m pip install --user pipx
         python3 -m pipx ensurepath
-        pipx install conan
+        pipx install conan==1.*  (conan 2.0 isn't supported)
 
 ## Toolmap
 
@@ -30,11 +30,13 @@ Build using the following command
 
 The following options are supported by `conan install ..` :
 
-| Option              | CMAKE equivalent  | Description                                                     |
-|---------------------|-------------------|-----------------------------------------------------------------|
-| -s build_type=Debug | ---               | Use the libraries and create the project in debug mode          |
-| --build=missing     | ---               | Build the missing libraries                                     |
-| -o unit_test=True   | -DUSE_UNITTEST=ON | Install the necessary libraries for the unit tests and run them |
+| Option                  | CMAKE equivalent         | Description                                                     |
+|---------------------    |-------------------       |-----------------------------------------------------------------|
+| -s build_type=Debug     | ---                      | Use the libraries and create the project in debug mode          |
+| --build=missing         | ---                      | Build the missing libraries                                     |
+| -o unit_test=True       | -DUSE_UNITTEST=ON        | Install the necessary libraries for the unit tests and run them |
+| -o code_coverage=True   | -USE_CODECOV=ON          | Install the necessary libraries and options for code coverage   |
+|                         | -USE_CODECOVERAGE_IDE=ON | Install options for code coverage into the IDE                  |
 
 ## Working from an IDE
 
