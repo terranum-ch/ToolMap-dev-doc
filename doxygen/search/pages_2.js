@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['definition_0',['definition',['../Prj_Edit_Obj.html',1,'Object Definition'],['../Prj_def.html',1,'Project definition']]]
+  ['definition_0',['Object Definition',['../Prj_Edit_Obj.html',1,'index']]],
+  ['definition_1',['Project definition',['../Prj_def.html',1,'index']]]
 ];

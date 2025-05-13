@@ -3,7 +3,7 @@ var searchData=
   ['undolastvertex_0',['UndoLastVertex',['../classtmEditManager.html#ae4205b5c6542afdab51d84672089d953',1,'tmEditManager']]],
   ['uninitattributionmanager_1',['UnInitAttributionManager',['../classtmAttributionManager.html#a6e025cfb134d7ffb0fadfc9b3a620251',1,'tmAttributionManager']]],
   ['uninitlayermanager_2',['UnInitLayerManager',['../classtmLayerManager.html#a258ef3c472aab26e80826011621c6120',1,'tmLayerManager']]],
-  ['unselect_3',['unselect',['../classTreeMultiItemBase.html#a5efd45e310beb4b2b6b07e5988f5e9d2',1,'TreeMultiItemBase::Unselect()'],['../classwxTreeMultiCtrl.html#aae4541d63b82d95f1cbca195327ebbf6',1,'wxTreeMultiCtrl::Unselect(wxTreeMultiItem const &amp;Item)']]],
+  ['unselect_3',['Unselect',['../classTreeMultiItemBase.html#a5efd45e310beb4b2b6b07e5988f5e9d2',1,'TreeMultiItemBase::Unselect()'],['../classwxTreeMultiCtrl.html#aae4541d63b82d95f1cbca195327ebbf6',1,'wxTreeMultiCtrl::Unselect(wxTreeMultiItem const &amp;Item)']]],
   ['unselectall_4',['UnselectAll',['../classwxTreeMultiCtrl.html#ae4d42e7dff7469d20585dd2c6be55ff8',1,'wxTreeMultiCtrl']]],
   ['updatedatabaseproject_5',['UpdateDataBaseProject',['../classDataBaseTM.html#a09f386c3ee98241d92bcd8b2401e7b9d',1,'DataBaseTM']]],
   ['updatefeature_6',['UpdateFeature',['../classtmGISDataVectorSHP.html#adb05759739be169b5ee19c28ca6b03d5',1,'tmGISDataVectorSHP']]],

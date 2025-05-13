@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['queries_5fpanel_0',['queries_panel',['../classQueries__PANEL.html',1,'Queries_PANEL'],['../classQueries__PANEL.html#a22f5e1fb512a5c9c310827cd3c6bd249',1,'Queries_PANEL::Queries_PANEL()']]],
+  ['queries_5fpanel_0',['Queries_PANEL',['../classQueries__PANEL.html',1,'Queries_PANEL'],['../classQueries__PANEL.html#a22f5e1fb512a5c9c310827cd3c6bd249',1,'Queries_PANEL::Queries_PANEL()']]],
   ['queriesbuilder_1',['QueriesBuilder',['../classQueriesBuilder.html',1,'']]],
   ['queriesdata_2',['QueriesData',['../classQueriesData.html',1,'']]],
   ['queriesgeneric_3',['QueriesGeneric',['../classQueriesGeneric.html',1,'']]],
   ['querieslayerlist_4',['QueriesLayerList',['../classQueriesLayerList.html',1,'']]],
-  ['querieslist_5',['querieslist',['../classQueriesList.html',1,'QueriesList'],['../classQueriesList.html#a95a06959717cb5d9204bf0040ccb8756',1,'QueriesList::QueriesList()']]],
-  ['querieslistdlg_6',['querieslistdlg',['../classQueriesListDLG.html#a36f8e2f3778ec1b9419e2338ec475d52',1,'QueriesListDLG::QueriesListDLG()'],['../classQueriesListDLG.html',1,'QueriesListDLG']]],
+  ['querieslist_5',['QueriesList',['../classQueriesList.html',1,'QueriesList'],['../classQueriesList.html#a95a06959717cb5d9204bf0040ccb8756',1,'QueriesList::QueriesList()']]],
+  ['querieslistdlg_6',['QueriesListDLG',['../classQueriesListDLG.html',1,'QueriesListDLG'],['../classQueriesListDLG.html#a36f8e2f3778ec1b9419e2338ec475d52',1,'QueriesListDLG::QueriesListDLG()']]],
   ['queriespageattribut1_7',['QueriesPageAttribut1',['../classQueriesPageAttribut1.html',1,'']]],
   ['queriespageattribut2_8',['QueriesPageAttribut2',['../classQueriesPageAttribut2.html',1,'']]],
   ['queriespageexpert_9',['QueriesPageExpert',['../classQueriesPageExpert.html',1,'']]],

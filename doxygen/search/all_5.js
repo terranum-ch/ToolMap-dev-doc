@@ -6,7 +6,7 @@ var searchData=
   ['editproject_3',['EditProject',['../classProjectManager.html#a75aaccfaaeff04eeb4901565857866cf',1,'ProjectManager']]],
   ['editqueries_4',['EditQueries',['../classDataBaseTM.html#ab6699cc6aaee45688c3da7396147498d',1,'DataBaseTM']]],
   ['editshortcut_5',['EditShortcut',['../classDataBaseTM.html#ab2c3b11266c002a28c52465fc280ce2a',1,'DataBaseTM']]],
-  ['editvertexdlg_6',['editvertexdlg',['../classEditVertexDLG.html#accdfa8d983842557c9f99938f395e954',1,'EditVertexDLG::EditVertexDLG()'],['../classEditVertexDLG.html',1,'EditVertexDLG']]],
+  ['editvertexdlg_6',['EditVertexDLG',['../classEditVertexDLG.html',1,'EditVertexDLG'],['../classEditVertexDLG.html#accdfa8d983842557c9f99938f395e954',1,'EditVertexDLG::EditVertexDLG()']]],
   ['editvertexposition_7',['EditVertexPosition',['../classtmEditManager.html#aaef4489dafe0ee65356b7940f525b389',1,'tmEditManager']]],
   ['emptylistvalues_8',['EmptyListValues',['../classAttribObjType__PANEL.html#ad9f089a32cb403df4dbe9f0d57bdb07c',1,'AttribObjType_PANEL']]],
   ['enablequeriespanel_9',['EnableQueriesPanel',['../classQueries__PANEL.html#a241d88cc771583331d72378c3991c837',1,'Queries_PANEL']]],

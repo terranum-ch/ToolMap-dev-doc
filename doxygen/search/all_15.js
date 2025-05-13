@@ -20,11 +20,11 @@ var searchData=
   ['wxtmc_5fhittest_5fgutter_17',['wxTMC_HITTEST_GUTTER',['../group__hitflags.html#gga06fc87d81c62e9abb8790b6e5713c55bae435f9fcf2135f0a73cd1b82d9303a8a',1,'wxTreeMultiCtrl.h']]],
   ['wxtmc_5fhittest_5fwindow_18',['wxTMC_HITTEST_WINDOW',['../group__hitflags.html#gga06fc87d81c62e9abb8790b6e5713c55baa9d064ee58b3f22c16e8993426ab2b67',1,'wxTreeMultiCtrl.h']]],
   ['wxtmc_5fspan_5fwidth_19',['wxTMC_SPAN_WIDTH',['../group__wndflags.html#gae850dc0ccd236c6afeea0c1ccb9f0bbb',1,'wxTreeMultiCtrl.h']]],
-  ['wxtreemultictrl_20',['wxtreemultictrl',['../wxTreeMultiCtrl.html',1,'&quot;wxTreeMultiCtrl&quot;'],['../classwxTreeMultiEvent.html#treemultievent',1,'Event handlers for wxTreeMultiCtrl'],['../classwxTreeMultiCtrl.html#a3cca0277713c844d7a535a57ef34d4e8',1,'wxTreeMultiCtrl::wxTreeMultiCtrl()'],['../classwxTreeMultiCtrl.html',1,'wxTreeMultiCtrl'],['../classwxTreeMultiCtrl.html#a687060166d4e36396ce033339671ff61',1,'wxTreeMultiCtrl::wxTreeMultiCtrl()']]],
+  ['wxtreemultictrl_20',['wxTreeMultiCtrl',['../wxTreeMultiCtrl.html',1,'&quot;wxTreeMultiCtrl&quot;'],['../classwxTreeMultiEvent.html#treemultievent',1,'Event handlers for wxTreeMultiCtrl'],['../classwxTreeMultiCtrl.html',1,'wxTreeMultiCtrl'],['../classwxTreeMultiCtrl.html#a687060166d4e36396ce033339671ff61',1,'wxTreeMultiCtrl::wxTreeMultiCtrl()'],['../classwxTreeMultiCtrl.html#a3cca0277713c844d7a535a57ef34d4e8',1,'wxTreeMultiCtrl::wxTreeMultiCtrl(wxWindow *parent, wxWindowID id=-1, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=wxTMC_DEFAULT_STYLE, const wxValidator &amp;validator=wxDefaultValidator, const wxString &amp;name=wxTreeMultiCtrlNameStr)']]],
   ['wxtreemultictrl_20classes_21',['wxTreeMultiCtrl Classes',['../group__classes.html',1,'']]],
   ['wxtreemultictrl_20hittest_20flags_22',['wxTreeMultiCtrl HitTest flags',['../group__hitflags.html',1,'']]],
-  ['wxtreemultievent_23',['wxtreemultievent',['../classwxTreeMultiEvent.html',1,'wxTreeMultiEvent'],['../classwxTreeMultiEvent.html#a5235866ff6e3a6896b9d6c15b3031c76',1,'wxTreeMultiEvent::wxTreeMultiEvent()']]],
-  ['wxtreemultiitem_24',['wxtreemultiitem',['../classwxTreeMultiItem.html',1,'wxTreeMultiItem'],['../classwxTreeMultiItem.html#ad38e93ff5dfb1908d328868709470525',1,'wxTreeMultiItem::wxTreeMultiItem()']]],
+  ['wxtreemultievent_23',['wxTreeMultiEvent',['../classwxTreeMultiEvent.html',1,'wxTreeMultiEvent'],['../classwxTreeMultiEvent.html#a5235866ff6e3a6896b9d6c15b3031c76',1,'wxTreeMultiEvent::wxTreeMultiEvent()']]],
+  ['wxtreemultiitem_24',['wxTreeMultiItem',['../classwxTreeMultiItem.html',1,'wxTreeMultiItem'],['../classwxTreeMultiItem.html#ad38e93ff5dfb1908d328868709470525',1,'wxTreeMultiItem::wxTreeMultiItem()']]],
   ['wxtreemultiwindowinfo_25',['wxTreeMultiWindowInfo',['../classwxTreeMultiWindowInfo.html',1,'']]],
   ['wxtreemultiwindowitem_20flags_26',['wxTreeMultiWindowItem flags',['../group__wndflags.html',1,'']]]
 ];
