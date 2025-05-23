@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"objectattribution__dlg_8h_source.html":[11,0,0,4,16],
 "objectdefinitionlistdlg_8h_source.html":[11,0,0,4,17],
 "openerror__dlg_8h_source.html":[11,0,0,4,18],
 "pages.html":[],

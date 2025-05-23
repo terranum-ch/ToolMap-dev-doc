@@ -24,7 +24,8 @@ var NAVTREEINDEX3 =
 "classtmValidator.html":[10,0,205],
 "classtmValidator.html#a67dcc96ad8c032b5c7dab837d8383209":[10,0,205,0],
 "classtmWMSBrowser.html":[10,0,208],
-"classtmWMSBrowser.html#aa3220c4650b828e0f5e369635ec68234":[10,0,208,0],
+"classtmWMSBrowser.html#a1f6bc2aefd9d6132c97fb36628b690be":[10,0,208,1],
+"classtmWMSBrowser.html#af98508215705399267782183cd5db0f1":[10,0,208,0],
 "classtmWindowPosition.html":[10,0,206],
 "classtmWizardImport.html":[10,0,207],
 "classtmZoomExtent.html":[10,0,209],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "menumanager_8cpp.html":[11,0,0,4,13],
 "menumanager_8h.html":[11,0,0,4,14],
 "menumanager_8h_source.html":[11,0,0,4,14],
-"newtemplateprjwizard_8h_source.html":[11,0,0,4,15],
-"objectattribution__dlg_8h_source.html":[11,0,0,4,16]
+"newtemplateprjwizard_8h_source.html":[11,0,0,4,15]
 };
