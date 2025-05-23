@@ -230,6 +230,7 @@ var annotated_dup =
     [ "tmValidator", "classtmValidator.html", "classtmValidator" ],
     [ "tmWindowPosition", "classtmWindowPosition.html", null ],
     [ "tmWizardImport", "classtmWizardImport.html", null ],
+    [ "tmWMSBrowser", "classtmWMSBrowser.html", "classtmWMSBrowser" ],
     [ "tmZoomExtent", "classtmZoomExtent.html", "classtmZoomExtent" ],
     [ "TocCtrl", "classTocCtrl.html", null ],
     [ "TocCtrlModel", "classTocCtrlModel.html", "classTocCtrlModel" ],
