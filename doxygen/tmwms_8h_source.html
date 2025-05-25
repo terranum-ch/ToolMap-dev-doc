@@ -139,21 +139,40 @@ $(function(){initNavTree('tmwms_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classtmWMSBrowser.html">tmWMSBrowser</a>(<span class="keyword">const</span> wxString&amp; wms_url);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classtmWMSBrowser.html#af98508215705399267782183cd5db0f1">DownloadCapabilities</a>(<span class="keyword">const</span> wxString &amp; output_xml_file_name);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classtmWMSBrowser.html#a6f1029630b4f271f7e372d60aaa52d48">DownloadCapabilities</a>(<span class="keyword">const</span> wxString &amp; output_xml_file_name, <span class="keyword">const</span> wxString &amp;lang=wxEmptyString);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classtmWMSBrowser.html#a1f6bc2aefd9d6132c97fb36628b690be">GetLayers</a>(wxArrayString&amp; layers_names,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                   wxArrayString&amp; layers_titles,</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                   wxArrayString&amp; layers_abstracts);;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    wxString GetWMSUrl()<span class="keyword"> const </span>{<span class="keywordflow">return</span> m_wms_url;}</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    wxString GetWMSCapabilitiesURL(<span class="keyword">const</span> wxString &amp; lang = wxEmptyString)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">return</span> m_wms_url + <span class="stringliteral">&quot;&amp;REQUEST=GetCapabilities&quot;</span> + (lang.IsEmpty() ? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;&amp;lang=&quot;</span> + lang);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif  </span><span class="comment">// TMWMS_H</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classtmWMSFileXML.html">   41</a></span><span class="keyword">class </span><a class="code hl_class" href="classtmWMSFileXML.html">tmWMSFileXML</a> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    wxString m_wms_url = wxEmptyString;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classtmWMSFileXML.html">tmWMSFileXML</a>(<span class="keyword">const</span> wxString&amp; wms_url);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">bool</span> CreateXML(<span class="keyword">const</span> wxString &amp; layer_name, <span class="keyword">const</span> wxString&amp; output_xml_file_name);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    wxString GetWMSUrl()<span class="keyword"> const </span>{<span class="keywordflow">return</span> m_wms_url;}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    wxString GetWMSLayerURL(<span class="keyword">const</span> wxString &amp; layer_name)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> m_wms_url + <span class="stringliteral">&quot;&amp;REQUEST=GetMap&amp;LAYERS=&quot;</span> + layer_name + <span class="stringliteral">&quot;&amp;CRS=EPSG:3857&quot;</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif  </span><span class="comment">// TMWMS_H</span></div>
 <div class="ttc" id="aclasstmWMSBrowser_html"><div class="ttname"><a href="classtmWMSBrowser.html">tmWMSBrowser</a></div><div class="ttdef"><b>Definition</b> tmwms.h:18</div></div>
-<div class="ttc" id="aclasstmWMSBrowser_html_a1f6bc2aefd9d6132c97fb36628b690be"><div class="ttname"><a href="classtmWMSBrowser.html#a1f6bc2aefd9d6132c97fb36628b690be">tmWMSBrowser::GetLayers</a></div><div class="ttdeci">bool GetLayers(wxArrayString &amp;layers_names, wxArrayString &amp;layers_titles, wxArrayString &amp;layers_abstracts)</div><div class="ttdoc">Get the layers names, titles and abstracts from the XML capabilities.</div><div class="ttdef"><b>Definition</b> tmwms.cpp:38</div></div>
-<div class="ttc" id="aclasstmWMSBrowser_html_af98508215705399267782183cd5db0f1"><div class="ttname"><a href="classtmWMSBrowser.html#af98508215705399267782183cd5db0f1">tmWMSBrowser::DownloadCapabilities</a></div><div class="ttdeci">bool DownloadCapabilities(const wxString &amp;output_xml_file_name)</div><div class="ttdoc">Download and store the XML file containing the WMS capabilities (Layers and other information)</div><div class="ttdef"><b>Definition</b> tmwms.cpp:12</div></div>
+<div class="ttc" id="aclasstmWMSBrowser_html_a1f6bc2aefd9d6132c97fb36628b690be"><div class="ttname"><a href="classtmWMSBrowser.html#a1f6bc2aefd9d6132c97fb36628b690be">tmWMSBrowser::GetLayers</a></div><div class="ttdeci">bool GetLayers(wxArrayString &amp;layers_names, wxArrayString &amp;layers_titles, wxArrayString &amp;layers_abstracts)</div><div class="ttdoc">Get the layers names, titles and abstracts from the XML capabilities.</div><div class="ttdef"><b>Definition</b> tmwms.cpp:40</div></div>
+<div class="ttc" id="aclasstmWMSBrowser_html_a6f1029630b4f271f7e372d60aaa52d48"><div class="ttname"><a href="classtmWMSBrowser.html#a6f1029630b4f271f7e372d60aaa52d48">tmWMSBrowser::DownloadCapabilities</a></div><div class="ttdeci">bool DownloadCapabilities(const wxString &amp;output_xml_file_name, const wxString &amp;lang=wxEmptyString)</div><div class="ttdoc">Download and store the XML file containing the WMS capabilities (Layers and other information)</div><div class="ttdef"><b>Definition</b> tmwms.cpp:13</div></div>
+<div class="ttc" id="aclasstmWMSFileXML_html"><div class="ttname"><a href="classtmWMSFileXML.html">tmWMSFileXML</a></div><div class="ttdef"><b>Definition</b> tmwms.h:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

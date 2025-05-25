@@ -77,6 +77,7 @@ var hierarchy =
     [ "tmSymbolRule", "classtmSymbolRule.html", null ],
     [ "tmSymbolRuleManager", "classtmSymbolRuleManager.html", null ],
     [ "tmWMSBrowser", "classtmWMSBrowser.html", null ],
+    [ "tmWMSFileXML", "classtmWMSFileXML.html", null ],
     [ "tmZoomExtent", "classtmZoomExtent.html", null ],
     [ "TocCtrlModelNode", "classTocCtrlModelNode.html", null ],
     [ "TreeMultiItemBase", "classTreeMultiItemBase.html", [
