@@ -27,6 +27,7 @@ var NAVTREEINDEX3 =
 "classtmWMSBrowser.html#a1f6bc2aefd9d6132c97fb36628b690be":[10,0,208,1],
 "classtmWMSBrowser.html#a6f1029630b4f271f7e372d60aaa52d48":[10,0,208,0],
 "classtmWMSBrowserFrame.html":[10,0,209],
+"classtmWMSBrowserFrame.html#a1fd8fa92128ede77fc14a8e953354a86":[10,0,209,0],
 "classtmWMSFileXML.html":[10,0,210],
 "classtmWindowPosition.html":[10,0,206],
 "classtmWizardImport.html":[10,0,207],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "lscrashreport_8h_source.html":[11,0,0,0,0,0],
 "main__panel_8h_source.html":[11,0,0,4,11],
 "managed__aui__wnd_8h_source.html":[11,0,0,4,12],
-"menumanager_8cpp.html":[11,0,0,4,13],
-"menumanager_8h.html":[11,0,0,4,14]
+"menumanager_8cpp.html":[11,0,0,4,13]
 };
