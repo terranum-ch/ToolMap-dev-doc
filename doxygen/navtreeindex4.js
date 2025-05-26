@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"menumanager_8h_source.html":[11,0,0,4,14],
 "newtemplateprjwizard_8h_source.html":[11,0,0,4,15],
 "objectattribution__dlg_8h_source.html":[11,0,0,4,16],
 "objectdefinitionlistdlg_8h_source.html":[11,0,0,4,17],
@@ -150,10 +151,11 @@ var NAVTREEINDEX4 =
 "tmvalidator_8h_source.html":[11,0,0,1,34],
 "tmwindowposition_8h_source.html":[11,0,0,1,35],
 "tmwms_8h_source.html":[11,0,0,3,53],
+"tmwmsframe_8h_source.html":[11,0,0,4,40],
 "tocctrl_8h_source.html":[11,0,0,3,54],
 "tocctrlmodel_8h_source.html":[11,0,0,3,55],
 "tocrenderer_8h_source.html":[11,0,0,3,56],
-"tocwindow__dlg_8h_source.html":[11,0,0,4,40],
+"tocwindow__dlg_8h_source.html":[11,0,0,4,41],
 "todo.html":[7],
 "tooldanglingnodes_8h_source.html":[11,0,0,3,57],
 "toolmap_8h_source.html":[11,0,0,1,36],
@@ -162,12 +164,12 @@ var NAVTREEINDEX4 =
 "vrprogress_8h_source.html":[11,0,0,3,58],
 "vrrealrect_8h_source.html":[11,0,0,1,37],
 "vrrubberband_8h_source.html":[11,0,0,1,38],
-"wizard__import__data_8h_source.html":[11,0,0,4,41],
+"wizard__import__data_8h_source.html":[11,0,0,4,42],
 "wxTreeMultiCtrl.html":[6,4],
 "wxTreeMultiCtrl.html#how_work":[6,4,0],
 "wxTreeMultiCtrl.html#what_dp":[6,4,1],
 "wxTreeMultiCtrl_8h_source.html":[11,0,0,0,4,5],
 "wxTreeMultiEvent_8h_source.html":[11,0,0,0,4,6],
 "wxdirpickerctrlbest_8h_source.html":[11,0,0,1,39],
-"wxflatbutton_8h_source.html":[11,0,0,4,42]
+"wxflatbutton_8h_source.html":[11,0,0,4,43]
 };

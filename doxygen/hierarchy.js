@@ -159,7 +159,8 @@ var hierarchy =
         [ "tmSymbolDLGPolygon", "classtmSymbolDLGPolygon.html", null ],
         [ "tmSymbolDLGRaster", "classtmSymbolDLGRaster.html", null ]
       ] ],
-      [ "tmSymbolRuleEdit_DLG", "classtmSymbolRuleEdit__DLG.html", null ]
+      [ "tmSymbolRuleEdit_DLG", "classtmSymbolRuleEdit__DLG.html", null ],
+      [ "tmWMSBrowserFrame", "classtmWMSBrowserFrame.html", null ]
     ] ],
     [ "wxDirPickerCtrl", null, [
       [ "wxDirPickerCtrlBest", "classwxDirPickerCtrlBest.html", null ]

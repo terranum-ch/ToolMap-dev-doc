@@ -40,6 +40,7 @@ var dir_99d0482cf009f9d97a0877749b817f19 =
     [ "tmimportdatawiz.h", "tmimportdatawiz_8h_source.html", null ],
     [ "tmlabel_dlg.h", "tmlabel__dlg_8h_source.html", null ],
     [ "tmtoolmanager.h", "tmtoolmanager_8h_source.html", null ],
+    [ "tmwmsframe.h", "tmwmsframe_8h_source.html", null ],
     [ "tocwindow_dlg.h", "tocwindow__dlg_8h_source.html", null ],
     [ "wizard_import_data.h", "wizard__import__data_8h_source.html", null ],
     [ "wxflatbutton.h", "wxflatbutton_8h_source.html", null ]
