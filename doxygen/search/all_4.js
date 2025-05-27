@@ -35,10 +35,9 @@ var searchData=
   ['documentation_20topics_32',['Documentation topics',['../index.html#doc',1,'']]],
   ['does_20it_20work_33',['How does it work?',['../wxTreeMultiCtrl.html#how_work',1,'']]],
   ['does_20it_20work_20in_20details_34',['How does it work in details',['../Prj_Edit_Obj.html#Details',1,'']]],
-  ['downloadcapabilities_35',['DownloadCapabilities',['../classtmWMSBrowser.html#a6f1029630b4f271f7e372d60aaa52d48',1,'tmWMSBrowser']]],
-  ['drawcirclevideoinverse_36',['DrawCircleVideoInverse',['../classtmRenderer.html#ad62272069cb848a021b77c4167f8b5df',1,'tmRenderer']]],
-  ['draweditline_37',['DrawEditLine',['../classtmDrawer.html#a96b1fe9ac2dfcf38ce98501b250d2aa7',1,'tmDrawer']]],
-  ['draweditsegment_38',['DrawEditSegment',['../classtmDrawer.html#aca1dccb7e146e7d3b2644702f582fa46',1,'tmDrawer']]],
-  ['draweditvertex_39',['DrawEditVertex',['../classtmDrawer.html#a862e5f8a92538f04ba89b1684db79f48',1,'tmDrawer']]],
-  ['drawextentintobitmap_40',['DrawExtentIntoBitmap',['../classtmDrawer.html#a9ecf0a252bb7365b1f31161b561ec039',1,'tmDrawer']]]
+  ['drawcirclevideoinverse_35',['DrawCircleVideoInverse',['../classtmRenderer.html#ad62272069cb848a021b77c4167f8b5df',1,'tmRenderer']]],
+  ['draweditline_36',['DrawEditLine',['../classtmDrawer.html#a96b1fe9ac2dfcf38ce98501b250d2aa7',1,'tmDrawer']]],
+  ['draweditsegment_37',['DrawEditSegment',['../classtmDrawer.html#aca1dccb7e146e7d3b2644702f582fa46',1,'tmDrawer']]],
+  ['draweditvertex_38',['DrawEditVertex',['../classtmDrawer.html#a862e5f8a92538f04ba89b1684db79f48',1,'tmDrawer']]],
+  ['drawextentintobitmap_39',['DrawExtentIntoBitmap',['../classtmDrawer.html#a9ecf0a252bb7365b1f31161b561ec039',1,'tmDrawer']]]
 ];

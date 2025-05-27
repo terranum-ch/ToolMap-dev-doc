@@ -19,10 +19,9 @@ var searchData=
   ['deleteshortcut_16',['DeleteShortcut',['../classDataBaseTM.html#ada1f1808f9e39f54cb45abf7e02660b2',1,'DataBaseTM']]],
   ['deletesnappingmemory_17',['DeleteSnappingMemory',['../classtmSnappingMemory.html#a5454c3aa007546e5c571b7f2e347473d',1,'tmSnappingMemory']]],
   ['displayinformationswnd_18',['DisplayInformationsWnd',['../classtmAttributionManager.html#a3cba5369cc03f721011ce1a0724db38b',1,'tmAttributionManager']]],
-  ['downloadcapabilities_19',['DownloadCapabilities',['../classtmWMSBrowser.html#a6f1029630b4f271f7e372d60aaa52d48',1,'tmWMSBrowser']]],
-  ['drawcirclevideoinverse_20',['DrawCircleVideoInverse',['../classtmRenderer.html#ad62272069cb848a021b77c4167f8b5df',1,'tmRenderer']]],
-  ['draweditline_21',['DrawEditLine',['../classtmDrawer.html#a96b1fe9ac2dfcf38ce98501b250d2aa7',1,'tmDrawer']]],
-  ['draweditsegment_22',['DrawEditSegment',['../classtmDrawer.html#aca1dccb7e146e7d3b2644702f582fa46',1,'tmDrawer']]],
-  ['draweditvertex_23',['DrawEditVertex',['../classtmDrawer.html#a862e5f8a92538f04ba89b1684db79f48',1,'tmDrawer']]],
-  ['drawextentintobitmap_24',['DrawExtentIntoBitmap',['../classtmDrawer.html#a9ecf0a252bb7365b1f31161b561ec039',1,'tmDrawer']]]
+  ['drawcirclevideoinverse_19',['DrawCircleVideoInverse',['../classtmRenderer.html#ad62272069cb848a021b77c4167f8b5df',1,'tmRenderer']]],
+  ['draweditline_20',['DrawEditLine',['../classtmDrawer.html#a96b1fe9ac2dfcf38ce98501b250d2aa7',1,'tmDrawer']]],
+  ['draweditsegment_21',['DrawEditSegment',['../classtmDrawer.html#aca1dccb7e146e7d3b2644702f582fa46',1,'tmDrawer']]],
+  ['draweditvertex_22',['DrawEditVertex',['../classtmDrawer.html#a862e5f8a92538f04ba89b1684db79f48',1,'tmDrawer']]],
+  ['drawextentintobitmap_23',['DrawExtentIntoBitmap',['../classtmDrawer.html#a9ecf0a252bb7365b1f31161b561ec039',1,'tmDrawer']]]
 ];
