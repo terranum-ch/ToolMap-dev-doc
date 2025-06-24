@@ -233,6 +233,7 @@ var annotated_dup =
     [ "tmWMSBrowser", "classtmWMSBrowser.html", "classtmWMSBrowser" ],
     [ "tmWMSBrowserFrame", "classtmWMSBrowserFrame.html", "classtmWMSBrowserFrame" ],
     [ "tmWMSFileXML", "classtmWMSFileXML.html", null ],
+    [ "tmWMSFrameDetails", "classtmWMSFrameDetails.html", null ],
     [ "tmZoomExtent", "classtmZoomExtent.html", "classtmZoomExtent" ],
     [ "TocCtrl", "classTocCtrl.html", null ],
     [ "TocCtrlModel", "classTocCtrlModel.html", "classTocCtrlModel" ],

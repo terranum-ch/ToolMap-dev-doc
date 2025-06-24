@@ -160,7 +160,8 @@ var hierarchy =
         [ "tmSymbolDLGRaster", "classtmSymbolDLGRaster.html", null ]
       ] ],
       [ "tmSymbolRuleEdit_DLG", "classtmSymbolRuleEdit__DLG.html", null ],
-      [ "tmWMSBrowserFrame", "classtmWMSBrowserFrame.html", null ]
+      [ "tmWMSBrowserFrame", "classtmWMSBrowserFrame.html", null ],
+      [ "tmWMSFrameDetails", "classtmWMSFrameDetails.html", null ]
     ] ],
     [ "wxDirPickerCtrl", null, [
       [ "wxDirPickerCtrlBest", "classwxDirPickerCtrlBest.html", null ]

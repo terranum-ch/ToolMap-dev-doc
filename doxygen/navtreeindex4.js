@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"menumanager_8cpp.html":[11,0,0,4,13],
 "menumanager_8h.html":[11,0,0,4,14],
 "menumanager_8h_source.html":[11,0,0,4,14],
 "newtemplateprjwizard_8h_source.html":[11,0,0,4,15],
