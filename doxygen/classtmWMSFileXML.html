@@ -122,15 +122,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af80b4ea5367c7e1dac31082a5f8ccc5f" id="r_af80b4ea5367c7e1dac31082a5f8ccc5f"><td class="memItemLeft" align="right" valign="top"><a id="af80b4ea5367c7e1dac31082a5f8ccc5f" name="af80b4ea5367c7e1dac31082a5f8ccc5f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>tmWMSFileXML</b> (const wxString &amp;wms_url)</td></tr>
 <tr class="separator:af80b4ea5367c7e1dac31082a5f8ccc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70288ea40da3b8ff874f3f6422e677f8" id="r_a70288ea40da3b8ff874f3f6422e677f8"><td class="memItemLeft" align="right" valign="top"><a id="a70288ea40da3b8ff874f3f6422e677f8" name="a70288ea40da3b8ff874f3f6422e677f8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateXML</b> (const wxString &amp;layer_name, const wxString &amp;output_xml_file_name)</td></tr>
-<tr class="separator:a70288ea40da3b8ff874f3f6422e677f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e44ec773140b21393b13fc519e8134" id="r_ab1e44ec773140b21393b13fc519e8134"><td class="memItemLeft" align="right" valign="top"><a id="ab1e44ec773140b21393b13fc519e8134" name="ab1e44ec773140b21393b13fc519e8134"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateXML</b> (const wxString &amp;layer_name, const wxString &amp;output_xml_file_name, const wxString &amp;projection_epsg)</td></tr>
+<tr class="separator:ab1e44ec773140b21393b13fc519e8134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee1d27990d27c6ef575a101da7c3f70" id="r_a3ee1d27990d27c6ef575a101da7c3f70"><td class="memItemLeft" align="right" valign="top"><a id="a3ee1d27990d27c6ef575a101da7c3f70" name="a3ee1d27990d27c6ef575a101da7c3f70"></a>
 wxString&#160;</td><td class="memItemRight" valign="bottom"><b>GetWMSUrl</b> () const</td></tr>
 <tr class="separator:a3ee1d27990d27c6ef575a101da7c3f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77eb427eb0a23d039b464960bc2d6c2c" id="r_a77eb427eb0a23d039b464960bc2d6c2c"><td class="memItemLeft" align="right" valign="top"><a id="a77eb427eb0a23d039b464960bc2d6c2c" name="a77eb427eb0a23d039b464960bc2d6c2c"></a>
-wxString&#160;</td><td class="memItemRight" valign="bottom"><b>GetWMSLayerURL</b> (const wxString &amp;layer_name) const</td></tr>
-<tr class="separator:a77eb427eb0a23d039b464960bc2d6c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c25d7f9ee51e01782cdcdf810b9d68" id="r_a73c25d7f9ee51e01782cdcdf810b9d68"><td class="memItemLeft" align="right" valign="top"><a id="a73c25d7f9ee51e01782cdcdf810b9d68" name="a73c25d7f9ee51e01782cdcdf810b9d68"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>GetWMSLayerURL</b> (const wxString &amp;layer_name, const wxString &amp;projection_epsg) const</td></tr>
+<tr class="separator:a73c25d7f9ee51e01782cdcdf810b9d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for creating a XML file from a WMS server using GDALDriver::CreateCopy capability see here for tutorial <a href="https://gdal.org/en/stable/tutorials/raster_api_tut.html">https://gdal.org/en/stable/tutorials/raster_api_tut.html</a> GDAL needs to be initialized before using this class, see <a class="el" href="classtmGISData.html#aecc889710c744efa29530763947dd1cb" title="Init the GDAL / OGR driver.">tmGISData::InitGISDrivers</a> or GDALAllRegister </p>

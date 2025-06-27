@@ -90,7 +90,7 @@ var searchData=
   ['getlastselecteditem_87',['GetLastSelectedItem',['../classwxTreeMultiCtrl.html#a98293d74e4c60f4d88fc1deab13cab05',1,'wxTreeMultiCtrl']]],
   ['getlayerid_88',['GetLayerID',['../classDataBaseTM.html#a853393c8e2423fd66e3e2fdb519dbd54',1,'DataBaseTM']]],
   ['getlayernamebytype_89',['GetLayerNameByType',['../classDataBaseTM.html#aecca785a9ccfa28095a98b43a2f40cdf',1,'DataBaseTM']]],
-  ['getlayers_90',['GetLayers',['../classtmWMSBrowser.html#a1f6bc2aefd9d6132c97fb36628b690be',1,'tmWMSBrowser']]],
+  ['getlayers_90',['GetLayers',['../classtmWMSBrowser.html#a82adf14319cb5f5b452748a25c217f72',1,'tmWMSBrowser']]],
   ['getmemoryprojectdefinition_91',['GetMemoryProjectDefinition',['../classProjectManager.html#a2bbd55243d941be9faa588eee0af99af',1,'ProjectManager']]],
   ['getmetadataashtml_92',['GetMetaDataAsHtml',['../classtmGISDataRaster.html#ac31db18803bd53525928f212cecf0179',1,'tmGISDataRaster::GetMetaDataAsHtml()'],['../classtmGISDataVectorMYSQL.html#adc9d590feed6213d3433856c66aa74d0',1,'tmGISDataVectorMYSQL::GetMetaDataAsHtml()'],['../classtmGISDataVectorSHP.html#abdac92303d6c4768e0d282db4a2d5283',1,'tmGISDataVectorSHP::GetMetaDataAsHtml()']]],
   ['getminimalboundingrectangleashtml_93',['GetMinimalBoundingRectangleAsHtml',['../classtmGISData.html#ad5f4685a9df4cbc80e0332c914bc6690',1,'tmGISData']]],
