@@ -13,6 +13,7 @@ var dir_aebb8dcc11953d78e620bbef0b9e2183 =
     [ "prjdefmemmanage.h", "prjdefmemmanage_8h_source.html", null ],
     [ "projectdefmemory.h", "projectdefmemory_8h.html", "projectdefmemory_8h" ],
     [ "projectmanager.h", "projectmanager_8h.html", "projectmanager_8h" ],
+    [ "proxy.h", "proxy_8h_source.html", null ],
     [ "queriesbuilder.h", "queriesbuilder_8h_source.html", null ],
     [ "queriesdata.h", "queriesdata_8h_source.html", null ],
     [ "scale.h", "scale_8h_source.html", null ],
